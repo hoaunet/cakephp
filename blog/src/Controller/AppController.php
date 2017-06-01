@@ -64,13 +64,27 @@ class AppController extends Controller
     }
     public function isAuthorized($user)
 	{
-    	// Admin can access every action
+    	/*// Admin can access every action
     	if (isset($user['role']) && $user['role'] === 'admin') {
         	return true;
     	}
 
     	// Default deny
-    	return false;
+    	return false;*/
+		// All registered users can add articles
+		if ($this->request->getParam('action') === 'add') {
+			return true;
+		}
+	
+		// The owner of an article can edit and delete it
+		if (in_array($this->request->getParam('action'), ['edit', 'delete'])) {
+			$articleId = (int)$this->request->getParam('pass.0');
+			if ($this->Articles->isOwnedBy($articleId, $user['id'])) {
+				return true;
+			}
+		}
+	
+		return parent::isAuthorized($user);
 	}
  /**
      * Before render callback.
