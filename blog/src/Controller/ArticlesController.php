@@ -28,7 +28,7 @@ class ArticlesController extends AppController
 		$articles = $this->Articles->find('all');
         
         $articles = $this->paginate($this->Articles);
-
+        //$this->view
         $this->set(compact('articles'));
         $this->set('_serialize', ['articles']);
     }

@@ -1,13 +1,21 @@
-<div class="actions large-2 medium-3 columns">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Category'), ['action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="categories index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
+<!-- File: src/Template/Articles/index.ctp (delete links added) -->
+<?php $this->layout = "admin_template";?>
+<!-- Content Header (Page header) -->
+
+<section class="content-header">
+  <h1> Categories <small>Control panel</small> </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active"><?= __('Actions') ?></li>
+  </ol>
+</section>
+<div class="row col-xs-12" style="height:35px; color:#fff"><span class="label label-primary" >
+  <?= $this->Html->link('New Category', ['action' => 'add', 'style'=>'height:35px; color:#fff']) ?>
+  </span> </div>
+<section class="content">
+  <div class="box-body table-responsive no-padding">
+    <table class="table table-hover">
+      <tr>
             <th>Id</th>
             <th>Parent Id</th>
             <th>Lft</th>
@@ -17,9 +25,7 @@
             <th>Created</th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($categories as $category): ?>
+      <?php foreach ($categories as $category): ?>
         <tr>
             <td><?= $category->id ?></td>
             <td><?= $category->parent_id ?></td>
@@ -37,6 +43,6 @@
             </td>
         </tr>
     <?php endforeach; ?>
-    </tbody>
     </table>
-</div>
+  </div>
+</section>

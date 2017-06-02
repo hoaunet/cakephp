@@ -37,6 +37,6 @@ class AppView extends View
     public function initialize()
     {
         // Always enable the MyUtils Helper
-        $this->loadHelper('MyUtils');
+       // $this->loadHelper('MyUtils');
     }
 }
