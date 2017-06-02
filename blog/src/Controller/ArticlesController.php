@@ -15,7 +15,6 @@ class ArticlesController extends AppController
 	public function initialize()
     {
         parent::initialize();
-
         $this->loadComponent('Flash'); // Include the FlashComponent
     }
     /**
@@ -26,8 +25,7 @@ class ArticlesController extends AppController
     public function index()
     {
 		$articles = $this->Articles->find('all');
-        
-        $articles = $this->paginate($this->Articles);
+		$articles = $this->paginate($this->Articles);
         //$this->view
         $this->set(compact('articles'));
         $this->set('_serialize', ['articles']);

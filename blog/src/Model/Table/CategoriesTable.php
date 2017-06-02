@@ -37,9 +37,9 @@ class CategoriesTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('categories');
+        /*$this->setTable('categories');
         $this->setDisplayField('name');
-        $this->setPrimaryKey('id');
+        $this->setPrimaryKey('id');*/
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('Tree');
@@ -71,11 +71,21 @@ class CategoriesTable extends Table
 
         $validator
             ->requirePresence('name', 'create')
-            ->notEmpty('name');
+            ->notEmpty('name');			
 
         $validator
             ->requirePresence('description', 'create')
             ->notEmpty('description');
+			
+		$validator
+        ->add('lft', 'valid', ['rule' => 'numeric'])
+    //    ->requirePresence('lft', 'create')
+        ->notEmpty('lft');
+
+    $validator
+        ->add('rght', 'valid', ['rule' => 'numeric'])
+    //    ->requirePresence('rght', 'create')
+        ->notEmpty('rght');	
 
         return $validator;
     }

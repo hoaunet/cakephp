@@ -20,13 +20,18 @@ class CategoriesController extends AppController
      */
     public function index()
     {
-		$categories = $this->Categories->find()
+		/*$categories = $this->Categories->find()
             ->order(['lft' => 'ASC']);
+			
         $this->paginate = [
             'contain' => ['ParentCategories']
         ];
         $categories = $this->paginate($this->Categories);
-
+       
+        $this->set(compact('categories'));
+        $this->set('_serialize', ['categories']);*/
+		$categories = $this->Categories->find()
+            ->order(['lft' => 'ASC']);
         $this->set(compact('categories'));
         $this->set('_serialize', ['categories']);
     }
