@@ -47,7 +47,7 @@ echo $this->fetch('script');
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header bg-light-blue"><?php echo $this->Html->image("avatar_hoaunet_s3s.jpg", [
-    "alt" => "Brownies","class"=>"img-circle",'url' => ['controller' => 'Users', 'action' => 'view', 6]
+    "alt" => "Blog","class"=>"img-circle",'url' => ['controller' => 'Users', 'action' => 'view', 6]
 ]);?> 
               <p> Jane Doe - Web Developer <small>Member since Nov. 2012</small> </p>
             </li>

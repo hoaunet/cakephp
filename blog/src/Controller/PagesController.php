@@ -55,6 +55,11 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
+		/*
+		$articles = $this->Articles->find('all');
+		print_r($articles);		
+		$this->set('article', $article);
+		*/
         $this->set(compact('page', 'subpage'));
 
         try {
@@ -66,4 +71,5 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+	
 }
