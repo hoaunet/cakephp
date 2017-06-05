@@ -1,23 +1,12 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link      http://cakephp.org CakePHP(tm) Project
- * @since     0.2.9
- * @license   http://www.opensource.org/licenses/mit-license.php MIT License
- */
 namespace App\Controller;
 
+use Cake\ORM\TableRegistry;
 use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
+
 
 /**
  * Static content controller
@@ -29,6 +18,12 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
 
+	public function initialize()
+    {
+        parent::initialize();
+
+        
+    }
     /**
      * Displays a view
      *
@@ -39,7 +34,10 @@ class PagesController extends AppController
      *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
      */
     public function display(...$path)
-    {
+    {		
+	    $articles = TableRegistry::get('Articles');
+		$query = $articles->find()->order(['created' => 'DESC'])->limit(4);				
+		$this->set('articles', $query);	
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');
@@ -55,12 +53,7 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
-		/*
-		$articles = $this->Articles->find('all');
-		print_r($articles);		
-		$this->set('article', $article);
-		*/
-        $this->set(compact('page', 'subpage'));
+		$this->set(compact('page', 'subpage'));
 
         try {
             $this->render(implode('/', $path));
@@ -71,5 +64,6 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
-	
+	public function index(){
+	}
 }

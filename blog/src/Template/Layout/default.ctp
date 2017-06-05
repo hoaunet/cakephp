@@ -15,21 +15,18 @@ echo $this->fetch('script');
 <div id="background">
   <div id="page">
     <div id="header">
-      <div id="logo"> <?php echo $this->Html->image("avatar_hoaunet_s3s.jpg", [
-    "alt" => "Blog","class"=>"img-circle",'url' => ['controller' => 'Pages', 'action' => 'display']
+      <div id="logo"> <?php echo $this->Html->image("avatar_hoaunet_s3s.png", [
+    "alt" => "Blog","class"=>"img-circle","height"=>'50px','url' => ['controller' => 'Pages', 'action' => 'display']
 ]);?>  </div>
       <div id="navigation">
         <ul id="primary">
-          <li class="selected"> <a href="index.html">Home</a> </li>
-          <li> <a href="new.html">New Arrivals</a> </li>
-          <li> <a href="mens.html">Mens</a> </li>
-          <li> <a href="womens.html">Womens</a> </li>
-          <li> <a href="faq.html">Faq</a> </li>
-          <li class="highlight"> <a href="sale.html">Sale Items</a> </li>
+          <li class="selected"><?php echo $this->Html->link('Trang chủ',['controller' => 'Pages', 'action' => 'index', '_full' => true]);?> </li>
+          <li><?php echo $this->Html->link('Phụ nữ',['controller' => 'Articles', 'action' => 'category', 1]);?></li>
+          <li><?php echo $this->Html->link('Nam giới',['controller' => 'Articles', 'action' => 'index', '_full' => true]);?></li>          
         </ul>
         <ul id="secondary">
           <li> <a href="checkout.html">Cart</a> </li>
-          <li> <a href="index.html">Login</a> | <a href="index.html">Signup</a> </li>
+          <li><?php echo $this->Html->link('Đăng nhập',['controller' => 'Users', 'action' => 'login', '_full' => true]);?> | <a href="index.html">Signup</a> </li>
         </ul>
       </div>
     </div>

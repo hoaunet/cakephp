@@ -23,7 +23,11 @@ use Cake\Routing\Route\DashedRoute;
  *
  */
 Router::defaultRouteClass(DashedRoute::class);
-
+Router::prefix('admin', function (RouteBuilder $routes) {
+	
+	$routes->connect('/', ['controller' => 'Articles', 'action' => 'index']);
+	$routes->fallbacks(DashedRoute::class);	
+});
 Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
@@ -32,7 +36,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 	 
      */
 	$routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']); 
-	$routes->connect('/articles', ['controller' => 'Articles', 'action' => 'index']); 
+	$routes->connect('/articles', ['controller' => 'Articles', 'action' => 'index']);
+	//$routes->connect('/categories/article/*', ['controller' => 'Categories', 'action' => 'category']); 
    
 
     /**
