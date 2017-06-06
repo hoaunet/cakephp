@@ -1,0 +1,3023 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-04-23 16:52+0200\n"
+"PO-Revision-Date: 2017-04-23 16:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: EMAIL@ADDRESS\n"
+"Language: vn_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#: Controller/AppController.php:88
+msgid ""
+"You need to be logged in or you are not authorized to access that location !"
+msgstr ""
+"Bạn phải đăng nhập hay bạn không có quyền truy cập "
+"!"
+
+#: Controller/BlogController.php:95
+msgid "This category doesn't exist or has been deleted."
+msgstr "Thể loại không tồn tai hay đã bị xóa"
+
+#: Controller/BlogController.php:160
+msgid "This article doesn't exist or has been deleted."
+msgstr "Tin này không tồn tại hay đã bị xóa."
+
+#: Controller/BlogController.php:171
+msgid "You must be connected to post a comment."
+msgstr "Vous devez être connecté pour poster un commentaire."
+
+#: Controller/BlogController.php:194
+msgid "Your comment has been posted successfully !"
+msgstr "Votre commentaire a été posté avec succès !"
+
+#: Controller/BlogController.php:327
+msgid "has said :"
+msgstr "a dit :"
+
+#: Controller/BlogController.php:347
+msgid "This comment doesn't exist."
+msgstr "Ce commentaire n'existe pas."
+
+#: Controller/BlogController.php:379
+msgid "This comment doesn't exist or has been deleted."
+msgstr "Ce commentaire n'existe pas ou a été supprimé."
+
+#: Controller/BlogController.php:530
+msgid "You already like this article !"
+msgstr "Vous aimez déjà cet article."
+
+#: Controller/BlogController.php:551
+msgid "This article doesn't exist !"
+msgstr "Cet article n'existe pas."
+
+#: Controller/BlogController.php:573
+msgid "Thanks for {0} this article ! "
+msgstr "Merci d'avoir {0} cet article !"
+
+#: Controller/BlogController.php:574 Template/Blog/article.ctp:196
+msgid "You {0} this article."
+msgstr "Vous {0} cet article."
+
+#: Controller/BlogController.php:583;647
+msgid "An error occurred, please try again later."
+msgstr "Une erreur s'est produite, veuillez réessayer plus tard."
+
+#: Controller/BlogController.php:624
+msgid "You don't like this article !"
+msgstr "Vous n'aimez pas cet article."
+
+#: Controller/BlogController.php:644 Template/Blog/article.ctp:212
+msgid "Like {0}"
+msgstr "J'aime {0}"
+
+#: Controller/BlogController.php:678;743;805
+msgid "This comment doesn't exist or has been deleted !"
+msgstr "Ce commentaire n'existe pas ou a été supprimé !"
+
+#: Controller/BlogController.php:699
+msgid "You don't have the authorization to delete this comment !"
+msgstr "Vous n'avez pas l'autorisation de supprimer ce commentaire !"
+
+#: Controller/BlogController.php:709
+msgid "This comment has been deleted successfully !"
+msgstr "Ce commentaire a été supprimé avec succès !"
+
+#: Controller/BlogController.php:767;826
+msgid "You don't have the authorization to edit this comment !"
+msgstr "Vous n'avez pas l'autorisation d'éditer ce commentaire !"
+
+#: Controller/BlogController.php:833
+msgid "This comment has been edited successfully !"
+msgstr "Ce commentaire a été édité avec succès !"
+
+#: Controller/ContactController.php:62
+msgid "You need to put your E-mail."
+msgstr "Vous devez renseigner votre E-mail."
+
+#: Controller/ContactController.php:65 Model/Table/UsersTable.php:135;239;326
+msgid "You must specify a valid E-mail address."
+msgstr "Vous devez spécifier une adresse Email valide."
+
+#: Controller/ContactController.php:67
+msgid "You need to put your name."
+msgstr "Vous devez renseigner votre nom."
+
+#: Controller/ContactController.php:68
+msgid "You need to give a message."
+msgstr "Vous devez mettre un message."
+
+#: Controller/ContactController.php:71
+msgid "Your message can not contain less than {0} characters."
+msgstr "Votre message ne peut pas contenir moins de {0} caractères."
+
+#: Controller/ContactController.php:85
+msgid ""
+"Your message has been sent successfully, you will get a response shortly !"
+msgstr ""
+"Votre message a été envoyé avec succès, vous obtiendrez une réponse "
+"prochainement !"
+
+#: Controller/PagesController.php:138
+msgid "Thanks for accepting to use the cookies !"
+msgstr "Merci d'avoir accepté d'utiliser les cookies !"
+
+#: Controller/PollsController.php:34
+msgid "This answer doesn't exist."
+msgstr "Cette réponse n'existe pas."
+
+#: Controller/PollsController.php:40
+msgid "This poll is expired, you can not vote anymore."
+msgstr "Ce sondage est expiré, vous ne pouvez plus voter."
+
+#: Controller/PollsController.php:58
+msgid ""
+"You have already voted for this poll ! (You voted <strong>{0}</strong>)."
+msgstr ""
+"Vous avez déjà voté pour ce sondage ! (Vous avez voté <strong>{0}</strong>)"
+
+#: Controller/PollsController.php:69
+msgid ""
+"Your have successfully voted for this poll ! (You voted <strong>{0}</"
+"strong>)."
+msgstr ""
+"Vous avez avec succès pour ce sondage ! (Vous avez voté <strong>{0}</strong>)"
+
+#: Controller/PollsController.php:74
+msgid "An error occured while saving the vote !"
+msgstr ""
+"Une erreur est survenue lors de la sauvegarde du sondage. Veuillez réessayer."
+
+#: Controller/TfaController.php:42;77
+msgid "You have already set-up the Two-factor authentication."
+msgstr "Vous avez déjà activé l'authentification à deux facteurs."
+
+#: Controller/TfaController.php:127;176
+msgid ""
+"Two-factor secret verification failed. Please verify your secret and try "
+"again."
+msgstr ""
+"La vérification du code à deux facteurs a échoué. S'il vous plaît vérifier "
+"votre code et essayer à nouveau."
+
+#: Controller/TfaController.php:172
+msgid "Two-factor authentication successfully enabled !"
+msgstr "L'authentification à deux facteurs a été activé avec succès!"
+
+#: Controller/TfaController.php:204;266;297
+msgid "The Two-factor authentication is not enabled !"
+msgstr "L'authentification à deux facteurs est pas activé !"
+
+#: Controller/TfaController.php:234
+msgid "The Two-factor authentication has been disabled !"
+msgstr "L'authentification à deux facteurs a été désactivé !"
+
+#: Controller/TfaController.php:335
+msgid "New two-factor recovery code successfully generated."
+msgstr "Le nouveau code de récupération a été généré avec succès."
+
+#: Controller/TfaController.php:339
+msgid "Error to generate two-factor recovery code."
+msgstr "Erreur lors de la génération du code de récupération."
+
+#: Controller/UsersController.php:90
+msgid "The Login action is disabled for the moment, please try again later."
+msgstr ""
+"L'action Connexion est désactivé pour le moment, veuillez réessayer à "
+"nouveau plus tard."
+
+#: Controller/UsersController.php:94
+msgid "The Register action is disabled for the moment, please try again later."
+msgstr ""
+"L'action S'inscrire est désactivé pour le moment, veuillez réessayer à "
+"nouveau plus tard."
+
+#: Controller/UsersController.php:98
+msgid "While the site is in maintenance, you can not register a new account."
+msgstr ""
+"Pendant que le site est en maintenance, vous ne pouvez pas créer un nouveau "
+"compte."
+
+#: Controller/UsersController.php:115
+msgid "This account has been deleted."
+msgstr "Ce compte a été supprimé."
+
+#: Controller/UsersController.php:200
+msgid "Your username or password doesn't match."
+msgstr "Votre nom d'utilisateur ou mot de passe ne correspondent pas."
+
+#: Controller/UsersController.php:248
+msgid "Your account has been created successfully !"
+msgstr "Votre compte a été créé avec succès !"
+
+#: Controller/UsersController.php:258
+msgid "Please, correct your mistake."
+msgstr "S'il vous plaît, corrigez vos erreurs."
+
+#: Controller/UsersController.php:260;710
+msgid "Please, correct your Captcha."
+msgstr "S'il vous plaît, corrigez votre Captcha."
+
+#: Controller/UsersController.php:327
+msgid "Happy to see you again {0} ! "
+msgstr "Content de vous revoir {0} !"
+
+#: Controller/UsersController.php:337
+msgid "See you later {0} ! "
+msgstr "À plus tard {0} !"
+
+#: Controller/UsersController.php:367
+msgid "The link used for the Two-factor Authentication is incorrect."
+msgstr "Le lien utilisé pour l'authentification à deux facteurs est incorrect."
+
+#: Controller/UsersController.php:430
+msgid ""
+"Two-factor secret verification failed. Please verify your code and try again."
+msgstr ""
+"La vérification du code à deux facteurs a échoué. S'il vous plaît vérifier "
+"votre code et essayer à nouveau."
+
+#: Controller/UsersController.php:470
+msgid "Your information has been updated !"
+msgstr "Vos informations ont été mises à jour."
+
+#: Controller/UsersController.php:515
+msgid "Your E-mail has been changed !"
+msgstr "Votre Email a été changé !"
+
+#: Controller/UsersController.php:524
+msgid "Please, complete all fields !"
+msgstr "S'il vous plaît, complétez tous les champs !"
+
+#: Controller/UsersController.php:530
+msgid "Your old password don't match !"
+msgstr "Votre ancien mot de passe ne correspond pas !"
+
+#: Controller/UsersController.php:546;796
+msgid "Your password has been changed !"
+msgstr "Votre mot de passe a été changé !"
+
+#: Controller/UsersController.php:611
+msgid "This user doesn't exist or has been deleted."
+msgstr "Cet utilisateur n'existe pas ou a été supprimé."
+
+#: Controller/UsersController.php:633
+msgid "Your password doesn't match !"
+msgstr "Votre mot de passe ne correspond pas !"
+
+#: Controller/UsersController.php:641
+msgid "Your account has been deleted successfully ! Thanks for your visit !"
+msgstr "Votre compte a été supprimé avec succès ! Merci de votre visite !"
+
+#: Controller/UsersController.php:646
+msgid "Unable to delete your account, please try again."
+msgstr ""
+"Impossible de supprimer votre compte, s'il vous plaît réessayez plus tard."
+
+#: Controller/UsersController.php:702
+msgid "This E-mail doesn't exist or the account has been deleted."
+msgstr "Cet E-mail n'existe pas ou l'utilisateur à été supprimé."
+
+#: Controller/UsersController.php:746
+msgid ""
+"An E-mail has been send to <strong>{0}</strong>. Please follow the "
+"instructions in the E-mail."
+msgstr ""
+"Un E-mail a été envoyé à <strong>{0}</strong>. Suivez les instructions "
+"contenue dans l'E-mail."
+
+#: Controller/UsersController.php:765;779
+msgid "This code is not associated with this users or is incorrect."
+msgstr "Ce code n'est pas associé avec cet utilisateur ou est incorrect."
+
+#: Controller/UsersController.php:787
+msgid "This code is expired, please ask another E-mail code."
+msgstr "Ce code est expiré, s'il vous plaît veuillez demander un autre code."
+
+#: Controller/Component/MaintenanceComponent.php:71
+msgid ""
+"Hello {0}, The website is under maintenance, only you and the staff groups "
+"have the access !"
+msgstr ""
+"Bonjour {0}, le site est en maintenance, seul vous et les groupes du staff "
+"avez l'accès !"
+
+#: Model/Table/BadgesTable.php:55
+msgid "You must select a name."
+msgstr "Vous devez sélectionner un nom."
+
+#: Model/Table/BadgesTable.php:58
+msgid "Please, {0} characters minimum for the name."
+msgstr "S'il vous plaît, {0} caractères minimum pour le nom."
+
+#: Model/Table/BadgesTable.php:64 Model/Table/BlogAttachmentsTable.php:61
+#: Model/Table/UsersTable.php:168
+msgid "The mimeType is not allowed."
+msgstr "Le mimeType n'est pas autorisé."
+
+#: Model/Table/BadgesTable.php:71 Model/Table/BlogAttachmentsTable.php:65
+msgid "The extension allowed are {0}."
+msgstr "Les extensions autorisées sont {0}."
+
+#: Model/Table/BadgesTable.php:78 Model/Table/UsersTable.php:182
+msgid "The file exceeded the max allowed size of {0}"
+msgstr "Le fichier a dépassé la taille maximale autorisée de {0}."
+
+#: Model/Table/BadgesTable.php:86 Model/Table/UsersTable.php:190
+msgid ""
+"The file exceeded the max allowed dimension. Max height : {0} Max width : {1}"
+msgstr ""
+"Le fichier a dépassé les dimensions maximum autorisées. Hauteur maximale : "
+"{0} Largeur maximum : {1}"
+
+#: Model/Table/BadgesTable.php:93
+msgid "You must select a type."
+msgstr "Vous devez sélectionner un type."
+
+#: Model/Table/BadgesTable.php:96
+msgid "This type is not allowed. Allowed types : {0}"
+msgstr "Ce type ne est pas autorisé. Types autorisés : {0}"
+
+#: Model/Table/BadgesTable.php:98
+msgid "You must select a rule."
+msgstr "Vous devez sélectionner une règle."
+
+#: Model/Table/BadgesUsersTable.php:43
+msgid "You must select a badge."
+msgstr "Vous devez sélectionner un badge."
+
+#: Model/Table/BadgesUsersTable.php:47
+msgid "You must select an user."
+msgstr "Vous devez sélectionner un utilisateur."
+
+#: Model/Table/BlogArticlesCommentsTable.php:54
+msgid "Please, {0} characters minimum for your comment."
+msgstr "S'il vous plaît, {0} caractères minimum pour votre commentaire."
+
+#: Model/Table/BlogArticlesTable.php:68
+msgid "You must select a category."
+msgstr "Vous devez sélectionner une catégorie."
+
+#: Model/Table/BlogArticlesTable.php:72 Model/Table/BlogCategoriesTable.php:45
+msgid "The title is required."
+msgstr "Le titre est requis."
+
+#: Model/Table/BlogArticlesTable.php:77 Model/Table/BlogCategoriesTable.php:50
+msgid "This title is already used."
+msgstr "Le titre est déjà utilisé."
+
+#: Model/Table/BlogArticlesTable.php:81 Model/Table/BlogCategoriesTable.php:54
+msgid "Please, {0} characters minimum for the title."
+msgstr "S'il vous plaît, {0} caractères minimum pour le titre."
+
+#: Model/Table/BlogArticlesTable.php:84
+msgid "The content is required."
+msgstr "Le contenu est requis."
+
+#: Model/Table/BlogArticlesTable.php:87
+msgid "Please, {0} characters minimum for the content."
+msgstr "S'il vous plaît, {0} caractères minimum pour le contenu."
+
+#: Model/Table/BlogArticlesTable.php:92
+msgid ""
+"Incorrect value, please do not attempt to modify the HTML, little hacker. ;)"
+msgstr "Valeur incorrect, n'essayez pas de modifier l'HTML, petit hacker. ;)"
+
+#: Model/Table/BlogAttachmentsTable.php:52
+msgid "You must set an article."
+msgstr "Vous devez définir un article."
+
+#: Model/Table/BlogAttachmentsTable.php:55
+msgid "The article must be numeric value."
+msgstr "L'article doit être une valeur numérique."
+
+#: Model/Table/BlogAttachmentsTable.php:57
+msgid "You must upload a file."
+msgstr "Vous devez uploader un fichier."
+
+#: Model/Table/BlogAttachmentsTable.php:69
+msgid "The file exceeded the max allowed size of {0}."
+msgstr "Le fichier a dépassé la taille maximum autorisée de {0}."
+
+#: Model/Table/BlogCategoriesTable.php:60
+msgid "Please, {0} characters maximum for the description."
+msgstr "S'il vous plaît, {0} caractères maximum pour la description."
+
+#: Model/Table/GroupsTable.php:47
+msgid "You must set a name."
+msgstr "Vous devez définir un nom."
+
+#: Model/Table/GroupsTable.php:50
+msgid "The name can not be less than {0} characters."
+msgstr "Le nom ne peut pas contenir moins de {0} caractères."
+
+#: Model/Table/NotificationsTable.php:54
+msgid ""
+"<strong>{0}</strong> has replied in your conversation <strong>{1}</strong>."
+msgstr ""
+"<strong>{0}</strong> a répondu dans votre conversation <strong>{1}</strong>."
+
+#: Model/Table/NotificationsTable.php:60
+msgid ""
+"<strong>{0}</strong> has replied in the conversation <strong>{1}</strong>."
+msgstr ""
+"<strong>{0}</strong> a répondu dans la conversation <strong>{1}</strong>."
+
+#: Model/Table/NotificationsTable.php:71
+msgid ""
+"Welcome on <strong>{0}</strong>! You can now post your first comment in the "
+"blog."
+msgstr ""
+"Bienvenue sur <strong>{0}</strong>! Vous pouvez dès à présent poster votre "
+"premier commentaire dans le Blog !"
+
+#: Model/Table/NotificationsTable.php:81
+msgid "You have unlock the badge \"{0}\"."
+msgstr "Vous avez débloqué le badge \"{0}\"."
+
+#: Model/Table/UsersTable.php:96;300
+msgid "You must set an username"
+msgstr "Vous devez définir un nom d'utilisateur."
+
+#: Model/Table/UsersTable.php:101;305
+msgid "This username is already used."
+msgstr "Ce nom d'utilisateur est déjà utilisé."
+
+#: Model/Table/UsersTable.php:105;309
+msgid "Only alphanumeric characters."
+msgstr "Seulement des caractères alphanumériques."
+
+#: Model/Table/UsersTable.php:109;313
+msgid "Your username must be between {0} and {1} characters."
+msgstr "Votre nom d'utilisateur doit être compris entre {0} et {1} caractères."
+
+#: Model/Table/UsersTable.php:112
+msgid "You must specify your password."
+msgstr "Vous devez spécifier votre mot de passe."
+
+#: Model/Table/UsersTable.php:113;248;274
+msgid "You must specify your password (confirmation)."
+msgstr "Vous devez spécifier votre mot de passe (confirmation)."
+
+#: Model/Table/UsersTable.php:117;252;278
+msgid "Your password (confirmation) must be between {0} and {1} characters."
+msgstr ""
+"Votre mot de passe (confirmation) doit être compris entre {0} et {1} "
+"caractères."
+
+#: Model/Table/UsersTable.php:123
+msgid "Your password confirm must match with your password."
+msgstr ""
+"Votre mot de passe confirmation doit correspondre avec votre mot de passe."
+
+#: Model/Table/UsersTable.php:131;322
+msgid "This E-mail is already used."
+msgstr "Cet Email est déjà utilisé."
+
+#: Model/Table/UsersTable.php:157
+msgid "Your First Name can not contain more than {0} characters."
+msgstr "Votre prénom ne peut pas contenir plus de {0} caractères."
+
+#: Model/Table/UsersTable.php:162
+msgid "Your Last Name can not contain more than {0} characters."
+msgstr "Votre nom ne peut pas contenir plus de {0} caractères."
+
+#: Model/Table/UsersTable.php:175
+msgid "The extensions allowed are {0}."
+msgstr "Les extensions autorisées sont {0}."
+
+#: Model/Table/UsersTable.php:200
+msgid "Your Facebook can not contain more than {0} characters."
+msgstr "Votre Facebook ne peut pas contenir plus de {0} caractères."
+
+#: Model/Table/UsersTable.php:205
+msgid "Your Twitter can not contain more than {0} characters."
+msgstr "Votre Twitter ne peut pas contenir plus de {0} caractères."
+
+#: Model/Table/UsersTable.php:212;220
+msgid "Your biography can not contain more than {0} characters."
+msgstr "Votre biographie ne peut pas contenir plus de {0} caractères."
+
+#: Model/Table/UsersTable.php:235
+msgid "Your E-mail can not be empty."
+msgstr "Votre Email ne peut pas être vide."
+
+#: Model/Table/UsersTable.php:244
+msgid "This E-mail is already used, please choose another E-mail."
+msgstr ""
+"Cet Email est déjà utilisé, s'il vous plaît veuillez choisir un autre Email."
+
+#: Model/Table/UsersTable.php:247;273
+msgid "You must specify your new password."
+msgstr "Vous devez indiquer votre nouveau mot de passe."
+
+#: Model/Table/UsersTable.php:258;284
+msgid "Your password confirm must match with your new password"
+msgstr ""
+"Votre mot de passe confirmation doit correspondre avec votre nouveau mot de "
+"passe."
+
+#: Template/Admin/Categories/edit.ctp:24
+msgid "Edit a Category"
+msgstr "Editer une Catégorie"
+
+#: Template/Blog/archive.ctp:2
+msgid "Blog Archive : {0}"
+msgstr "Blog Archive : {0}"
+
+#: Template/Blog/archive.ctp:10 Template/Blog/article.ctp:42
+#: Template/Blog/category.ctp:10 Template/Blog/index.ctp:10
+#: Template/Blog/search.ctp:10 Template/Contact/index.ctp:10
+#: Template/Element/header.ctp:17 Template/Error/error400.ctp:117
+#: Template/Error/error500.ctp:117 Template/Groups/view.ctp:9
+#: Template/Layout/Email/html/default.ctp:44 Template/Pages/terms.ctp:13
+#: Template/Tfa/configure.ctp:10 Template/Tfa/enable.ctp:10
+#: Template/Tfa/index.ctp:14 Template/Tfa/intro.ctp:10
+#: Template/Tfa/recovery_code.ctp:10 Template/Users/account.ctp:24
+#: Template/Users/index.ctp:9 Template/Users/notifications.ctp:10
+#: Template/Users/profile.ctp:76 Template/Users/security.ctp:10
+#: Template/Users/settings.ctp:10
+msgid "Home"
+msgstr "Accueil"
+
+#: Template/Blog/archive.ctp:13 Template/Blog/article.ctp:45
+#: Template/Blog/category.ctp:13 Template/Blog/index.ctp:2;13
+#: Template/Blog/search.ctp:13 Template/Element/header.ctp:22
+#: Template/Layout/Email/html/default.ctp:49
+msgid "Blog"
+msgstr "Blog"
+
+#: Template/Blog/archive.ctp:16
+msgid "Archive"
+msgstr "Archive"
+
+#: Template/Blog/archive.ctp:93 Template/Blog/category.ctp:81
+#: Template/Blog/index.ctp:86 Template/Blog/search.ctp:76
+msgid "This article has a poll"
+msgstr "Cet article a un sondage"
+
+#: Template/Blog/archive.ctp:99 Template/Blog/category.ctp:87
+#: Template/Blog/index.ctp:92 Template/Blog/search.ctp:82
+msgid "This article has an attachment"
+msgstr "Cet article a un fichier"
+
+#: Template/Blog/archive.ctp:117 Template/Blog/category.ctp:106
+#: Template/Blog/index.ctp:111 Template/Blog/search.ctp:102
+msgid "{0} Read More"
+msgstr "{0} Lire Plus"
+
+#: Template/Blog/archive.ctp:135 Template/Blog/category.ctp:124
+#: Template/Blog/index.ctp:129
+msgid "No articles found"
+msgstr "Aucun articles trouvés"
+
+#: Template/Blog/archive.ctp:137
+msgid "No articles were found for this date."
+msgstr "Aucun article n'a été trouvé pour cette date."
+
+#: Template/Blog/archive.ctp:85 Template/Blog/article.ctp:99;392
+#: Template/Blog/category.ctp:73 Template/Blog/index.ctp:78
+#: Template/Blog/search.ctp:68
+msgid "{0} Comment"
+msgid_plural "{0} Comments"
+msgstr[0] "{0} Commentaire"
+msgstr[1] "{0} Commentaires"
+
+#: Template/Blog/archive.ctp:89 Template/Blog/article.ctp:103
+#: Template/Blog/category.ctp:77 Template/Blog/index.ctp:82
+#: Template/Blog/search.ctp:72
+msgid "{0} Like"
+msgid_plural "{0} Likes"
+msgstr[0] "{0} J'aime"
+msgstr[1] "{0} J'aimes"
+
+#: Template/Blog/article.ctp:145
+msgid "File Size :"
+msgstr "Taille du fichier :"
+
+#: Template/Blog/article.ctp:153
+msgid "Download :"
+msgstr "Téléchargement :"
+
+#: Template/Blog/article.ctp:167;170
+msgid "{0} Reply"
+msgstr "{0} Répondre"
+
+#: Template/Blog/article.ctp:296
+msgid "Related Articles"
+msgstr "Articles en Relation"
+
+#: Template/Blog/article.ctp:363 Template/Pages/home.ctp:273
+msgid "Read More {0}"
+msgstr "Lire Plus {0}"
+
+#: Template/Blog/article.ctp:435;449
+msgid "{0} Quote"
+msgstr "{0} Citer"
+
+#: Template/Blog/article.ctp:464
+msgid "{0} Edit"
+msgstr "{0} Editer"
+
+#: Template/Blog/article.ctp:483;556
+msgid "{0} Delete"
+msgstr "{0} Supprimer"
+
+#: Template/Blog/article.ctp:512
+msgid "Leave a Comment"
+msgstr "Laisser un Commentaire"
+
+#: Template/Blog/article.ctp:529
+msgid "{0} Post Comment"
+msgstr "{0} Poster le Commentaire"
+
+#: Template/Blog/article.ctp:546 Template/Users/settings.ctp:86;111
+msgid "Close"
+msgstr "Fermer"
+
+#: Template/Blog/article.ctp:548
+msgid "Delete a Comment"
+msgstr "Supprimer un Commentaire"
+
+#: Template/Blog/article.ctp:552
+msgid "Are you sure you want delete this comment ?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce commentaire ?"
+
+#: Template/Blog/article.ctp:557
+msgid "{0} Close"
+msgstr "{0} Fermer"
+
+#: Template/Blog/category.ctp:2
+msgid "Blog Category : {0}"
+msgstr "Blog Catégorie : {0}"
+
+#: Template/Blog/category.ctp:16
+msgid "Category"
+msgstr "Catégorie"
+
+#: Template/Blog/category.ctp:126
+msgid "No articles were found for this category."
+msgstr "Aucun article n'a été trouvé pour cette catégorie."
+
+#: Template/Blog/index.ctp:131
+msgid "No articles were found."
+msgstr "Aucun article n'a été trouvé."
+
+#: Template/Blog/search.ctp:2
+msgid "Blog Search : {0}"
+msgstr "Blog Recherche : {0}"
+
+#: Template/Blog/search.ctp:16
+msgid "Search : {0}"
+msgstr "Recherche : {0}"
+
+#: Template/Blog/search.ctp:120
+msgid "No results found"
+msgstr "Aucun résultat trouvé"
+
+#: Template/Blog/search.ctp:122
+msgid ""
+"No articles were found for your search, please try again with a different "
+"word."
+msgstr ""
+"Aucun article n'a été trouvé pour votre recherche, s'il vous plaît ressayez "
+"à nouveau avec un autre mot."
+
+#: Template/Blog/search.ctp:124
+msgid "Suggestions :"
+msgstr "Suggestions :"
+
+#: Template/Blog/search.ctp:127
+msgid "Check the spelling of your search words."
+msgstr "Vérifiez l'orthographe de vos mots de recherche."
+
+#: Template/Blog/search.ctp:130
+msgid "Try more general keywords."
+msgstr "Utilisez des mots plus généraux."
+
+#: Template/Blog/json/get_edit_comment.ctp:17 Template/Users/account.ctp:125
+#: Template/Users/settings.ctp:46
+msgid "{0} Save"
+msgstr "{0} Sauvegarder"
+
+#: Template/Blog/json/get_edit_comment.ctp:18
+msgid "{0} Cancel"
+msgstr "{0} Annuler"
+
+#: Template/Cell/Blog/sidebar.ctp:3
+msgid "Search Posts"
+msgstr "Rechercher des Articles"
+
+#: Template/Cell/Blog/sidebar.ctp:14
+msgid "Type your search..."
+msgstr "Tapez votre recherche..."
+
+#: Template/Cell/Blog/sidebar.ctp:21
+msgid "Featured Article"
+msgstr "Dernier Article"
+
+#: Template/Cell/Blog/sidebar.ctp:59
+msgid "Categories"
+msgstr "Catégories"
+
+#: Template/Cell/Blog/sidebar.ctp:73
+msgid "Archives"
+msgstr "Archives"
+
+#: Template/Cell/Blog/sidebar.ctp:78
+msgid "{0} ({1})"
+msgstr "{0} ({1})"
+
+#: Template/Cell/Notification/notifications.ctp:7
+msgid "News Notifications"
+msgstr "Nouvelles Notifications"
+
+#: Template/Cell/Notification/notifications.ctp:31
+#: Template/Users/notifications.ctp:59
+msgid "New"
+msgstr "New"
+
+#: Template/Cell/Notification/notifications.ctp:41
+msgid "You don't have any notifications."
+msgstr "Vous n'avez pas de notifications."
+
+#: Template/Cell/Notification/notifications.ctp:46
+msgid "All Notifications"
+msgstr "Toutes les Notifications"
+
+#: Template/Contact/index.ctp:2
+msgid "Contact me"
+msgstr "Contactez-Moi"
+
+#: Template/Contact/index.ctp:13;72 Template/Element/footer.ctp:18
+#: Template/Element/header.ctp:27 Template/Error/error400.ctp:118
+#: Template/Error/error500.ctp:118 Template/Layout/Email/html/default.ctp:54
+msgid "Contact"
+msgstr "Contact"
+
+#: Template/Contact/index.ctp:23
+msgid "Contact me !"
+msgstr "Contactez moi !"
+
+#: Template/Contact/index.ctp:26
+msgid ""
+"You have found a problem on the site or you just want to contact me ? Use "
+"the form below and i will answer you shortly !"
+msgstr ""
+"Vous avez trouvé un problème sur le site ou vous voulez juste me contacter ? "
+"Utilisez le formulaire ci-dessous et je vous répondrais prochainement !"
+
+#: Template/Contact/index.ctp:29
+msgid ""
+"NEW : You can now contact me directly on the web site via the Private "
+"Conversation {0} !"
+msgstr ""
+"NEW : Vous pouvez maintenant me contacter directement sur le site via les "
+"Conversations Privées {0} !"
+
+#: Template/Contact/index.ctp:32 Template/Pages/terms.ctp:126
+msgid "here"
+msgstr "ici"
+
+#: Template/Contact/index.ctp:53
+msgid "Name {0}"
+msgstr "Nom {0}"
+
+#: Template/Contact/index.ctp:53;57;64
+msgid "Required."
+msgstr "Requis."
+
+#: Template/Contact/index.ctp:54
+msgid "Name"
+msgstr "Nom"
+
+#: Template/Contact/index.ctp:57
+msgid "Email {0}"
+msgstr "Email {0}"
+
+#: Template/Contact/index.ctp:58
+msgid "Email"
+msgstr "Email"
+
+#: Template/Contact/index.ctp:61
+msgid "Subject"
+msgstr "Sujet"
+
+#: Template/Contact/index.ctp:64
+msgid "Message {0}"
+msgstr "Message {0}"
+
+#: Template/Contact/index.ctp:65
+msgid "Enter your message..."
+msgstr "Entrez votre message..."
+
+#: Template/Contact/index.ctp:67
+msgid "{0} Send"
+msgstr "{0} Envoyer"
+
+#: Template/Contact/index.ctp:81
+msgid "Secret"
+msgstr "Secret"
+
+#: Template/Contact/index.ctp:89
+msgid "Social"
+msgstr "Social"
+
+#: Template/Conversations/view.ctp:69 Template/Users/profile.ctp:112
+msgid "Joined"
+msgstr "Inscription"
+
+#: Template/Element/cookies.ctp:3
+msgid ""
+"Cookies ensure the proper functioning of the site. By using this site, you "
+"accept the use of cookies."
+msgstr ""
+"Les cookies assurent le bon fonctionnement du site. En utilisant ce site, "
+"vous acceptez l'utilisation des cookies."
+
+#: Template/Element/cookies.ctp:5
+msgid "{0} I understood."
+msgstr "{0} J'ai compris."
+
+#: Template/Element/footer.ctp:10 Template/Layout/Email/html/default.ctp:135
+msgid "&copy; {0} {1}."
+msgstr "&copy; {0} {1}."
+
+#: Template/Element/footer.ctp:15 Template/Pages/terms.ctp:16
+msgid "Terms"
+msgstr "Conditions d'Utilisation"
+
+#: Template/Element/footer.ctp:21
+msgid "Source Code available on Github"
+msgstr "Code Source disponible sur GitHub"
+
+#: Template/Element/footer.ctp:25
+msgid "Version : {0}"
+msgstr "Version : {0}"
+
+#: Template/Element/footer.ctp:29
+msgid "{0} with {1} and {2} by"
+msgstr "{0} avec {1} et {2} par"
+
+#: Template/Element/header.ctp:35
+msgid "Hello,"
+msgstr "Bonjour,"
+
+#: Template/Element/header.ctp:43
+msgid "Login"
+msgstr "Connexion"
+
+#: Template/Element/header.ctp:48
+msgid "Sign up"
+msgstr "Inscription"
+
+#: Template/Element/header.ctp:66
+msgid "Visit your profile !"
+msgstr "Visiter votre profil !"
+
+#: Template/Element/header.ctp:71;77
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: Template/Element/header.ctp:73
+msgid "Access to the site administration."
+msgstr "Accéder à l'administration du site."
+
+#: Template/Element/header.ctp:86;92 Template/Users/account.ctp:2;30
+msgid "My Account"
+msgstr "Mon Compte"
+
+#: Template/Element/header.ctp:88
+msgid "Manage your account settings."
+msgstr "Gérer les paramètres de votre compte."
+
+#: Template/Element/header.ctp:101;107
+msgid "Conversations"
+msgstr "Conversations"
+
+#: Template/Element/header.ctp:103
+msgid "Check your private messages."
+msgstr "Consulter vos messages privés."
+
+#: Template/Element/header.ctp:116;122 Template/Users/notifications.ctp:2;16;30
+msgid "Notifications"
+msgstr "Notifications"
+
+#: Template/Element/header.ctp:118
+msgid "Check your new and old notifications."
+msgstr "Regarder vos nouvelles et anciennes notifications."
+
+#: Template/Element/header.ctp:131;137
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: Template/Element/header.ctp:133
+msgid "See you later !"
+msgstr "À plus tard !"
+
+#: Template/Element/meta.ctp:4;24;40
+msgid "Welcome on Xeta"
+msgstr "Bienvenue sur Xeta"
+
+#: Template/Element/Blog/polls.ctp:27
+msgid "{0} Vote"
+msgstr "{0} Voter"
+
+#: Template/Element/Blog/polls.ctp:53
+msgid "This poll expire in"
+msgstr "Ce sondage expire dans"
+
+#: Template/Element/Blog/polls.ctp:61
+msgid "This poll is expired !"
+msgstr "Ce sondage est expiré !"
+
+#: Template/Element/Blog/polls.ctp:70
+msgid "Total votes : {0}"
+msgstr "Total de Votes : {0}"
+
+#: Template/Element/Blog/polls.ctp:73
+msgid "You have already voted ! (You voted <strong>{0}</strong>)"
+msgstr "Vous avez déjà voté ! (Vous avez voté <strong>{0}</strong>)"
+
+#: Template/Element/Users/sidebar.ctp:8
+msgid "{0} Account {1}"
+msgstr "{0} Compte {1}"
+
+#: Template/Element/Users/sidebar.ctp:16
+msgid "{0} Conversations {1}"
+msgstr "{0} Conversations {1}"
+
+#: Template/Element/Users/sidebar.ctp:24
+msgid "{0} Notifications {1}"
+msgstr "{0} Notifications {1}"
+
+#: Template/Element/Users/sidebar.ctp:32
+msgid "{0} Settings {1}"
+msgstr "{0} Paramètres {1}"
+
+#: Template/Element/Users/sidebar.ctp:40
+msgid "{0} Security {1}"
+msgstr "{0} Sécurité {1}"
+
+#: Template/Error/error400.ctp:3 Template/Error/error500.ctp:3
+msgid "Error {0} :("
+msgstr "Erreur {0} :("
+
+#: Template/Error/error400.ctp:114
+msgid "Aaaaaaaaaaaaaah ! You broke the robot !"
+msgstr "Aaaaaaaaaaaaaah ! Vous avez cassé le robot !"
+
+#: Template/Error/error500.ctp:114
+msgid "Our monkey's team are working on this error !"
+msgstr "Notre équipe de singe travaillent sur cette erreur !"
+
+#: Template/Groups/view.ctp:2 Template/Users/index.ctp:2
+msgid "Xeta's members"
+msgstr "Membres de Xeta"
+
+#: Template/Groups/view.ctp:12 Template/Pages/home.ctp:343
+#: Template/Tfa/configure.ctp:13 Template/Tfa/enable.ctp:13
+#: Template/Tfa/index.ctp:17 Template/Tfa/intro.ctp:13
+#: Template/Tfa/recovery_code.ctp:13 Template/Users/account.ctp:27
+#: Template/Users/index.ctp:12 Template/Users/notifications.ctp:13
+#: Template/Users/profile.ctp:79 Template/Users/security.ctp:13
+#: Template/Users/settings.ctp:13
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Template/Groups/view.ctp:23 Template/Users/index.ctp:23
+msgid "All {0}'s members"
+msgstr "Tous les membres de {0}."
+
+#: Template/Groups/view.ctp:26
+msgid "Ordered by Group : {0}"
+msgstr "Ordonné par Groupe : {0}"
+
+#: Template/Groups/view.ctp:31 Template/Users/index.ctp:28
+#: Template/Users/login.ctp:45;146
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Template/Groups/view.ctp:32 Template/Users/index.ctp:29
+msgid "Full Name"
+msgstr "Nom Complet"
+
+#: Template/Groups/view.ctp:33 Template/Users/index.ctp:30
+msgid "Group"
+msgstr "Groupes "
+
+#: Template/Groups/view.ctp:34 Template/Users/index.ctp:31
+msgid "Registered date"
+msgstr "Date d'inscription"
+
+#: Template/Groups/view.ctp:35 Template/Users/index.ctp:32
+msgid "Last login"
+msgstr "Dernière connexion"
+
+#: Template/Groups/view.ctp:51 Template/Users/index.ctp:48
+msgid "Visit his profile."
+msgstr "Visiter son profil."
+
+#: Template/Pages/home.ctp:137
+msgid "Welcome on {0} !"
+msgstr "Bienvenue sur {0} !"
+
+#: Template/Pages/home.ctp:141
+msgid ""
+"Welcome to my personal website ! I use this site as my personal blog and for "
+"try my  experiences in development."
+msgstr ""
+"Bienvenue sur mon site personnel ! J'utilise ce site comme mon blog "
+"personnel et pour essayer mes expériences dans le développement."
+
+#: Template/Pages/home.ctp:146
+msgid "{0} Sign Up now"
+msgstr "{0} Inscrivez-Vous"
+
+#: Template/Pages/home.ctp:147;149
+msgid "{0} Visit the Blog"
+msgstr "{0} Visitez le Blog"
+
+#: Template/Pages/home.ctp:180
+msgid "Open Source"
+msgstr "Open Source"
+
+#: Template/Pages/home.ctp:183
+msgid ""
+"The code source of this website is open source and available on {0}. If you "
+"want to contribute, feel free to do a PR."
+msgstr ""
+"Le code source de ce site est open source et disponible sur {0}. Si vous "
+"souhaitez contribuer, n'hésitez pas à faire une PR."
+
+#: Template/Pages/home.ctp:200
+msgid "Experiences"
+msgstr "Expériences"
+
+#: Template/Pages/home.ctp:203
+msgid ""
+"I use this site for my personal experiences in development, to try new "
+"things like JS libraries, or PHP libraries."
+msgstr ""
+"J'utilise ce site pour mes expériences personnelles en matière de "
+"développement, essayer de nouvelles choses comme des librairies JS, PHP, CSS "
+"etc."
+
+#: Template/Pages/home.ctp:220
+msgid "Interact"
+msgstr "Interagir"
+
+#: Template/Pages/home.ctp:223
+msgid ""
+"You can interact with {0}'s members in the blog or directly with me in the "
+"comments of an article."
+msgstr ""
+"Vous pouvez interagir avec les membres de {0} dans le blog ou directement "
+"avec moi dans les commentaires d'un article."
+
+#: Template/Pages/home.ctp:234
+msgid "Latest Articles"
+msgstr "Derniers Articles"
+
+#: Template/Pages/home.ctp:358
+msgid "Articles"
+msgstr "Articles"
+
+#: Template/Pages/home.ctp:373 Template/Users/profile.ctp:41
+msgid "Comments"
+msgstr "Commentaires"
+
+#: Template/Pages/home.ctp:388
+msgid "Likes"
+msgstr "J'aimes"
+
+#: Template/Pages/home.ctp:402
+msgid "Latest Comments"
+msgstr "Derniers Commentaires"
+
+#: Template/Pages/maintenance.ctp:2
+msgid "Website in maintenance"
+msgstr "Site en maintenance"
+
+#: Template/Pages/maintenance.ctp:113
+msgid ""
+"Oops ! The website is in maintenance, our monkey's team are working on it !"
+msgstr ""
+"Oops ! Le site est en maintenance, notre équipe de singes travaillent "
+"dessus !"
+
+#: Template/Pages/terms.ctp:5;27 Template/Users/login.ctp:114
+msgid "Terms of Service"
+msgstr "Conditions d'Utilisation"
+
+#: Template/Pages/terms.ctp:31
+msgid "Last update : {0}"
+msgstr "Dernière Édition : {0}"
+
+#: Template/Pages/terms.ctp:38
+msgid "Summary"
+msgstr "Sommaire"
+
+#: Template/Pages/terms.ctp:43;90
+msgid "General Information"
+msgstr "Informations Générales"
+
+#: Template/Pages/terms.ctp:48;101
+msgid "Account Terms"
+msgstr "Conditions des Comptes"
+
+#: Template/Pages/terms.ctp:53;134
+msgid "Copyright and Content Ownership"
+msgstr "Droits d'Auteur et la Propriété de Contenu"
+
+#: Template/Pages/terms.ctp:58;149
+msgid "General Conditions"
+msgstr "Conditions Générales"
+
+#: Template/Pages/terms.ctp:63;182
+msgid "Privacy Policy Terms"
+msgstr "Conditions des Politiques de Confidentialité"
+
+#: Template/Pages/terms.ctp:69;188
+msgid "Cookies"
+msgstr "Cookies"
+
+#: Template/Pages/terms.ctp:74;206
+msgid "Data Storage"
+msgstr "Stockage des Données"
+
+#: Template/Pages/terms.ctp:79;218
+msgid "Information Gathering and Usage"
+msgstr "Collecte et Utilisation des Informations"
+
+#: Template/Pages/terms.ctp:93
+msgid ""
+"Violation of any of the terms below will result in the termination of your "
+"Account. While {0} prohibits such conduct and Content on the Service, you "
+"understand and agree that {0} cannot be responsible for the Content posted "
+"on the Service and you nonetheless may be exposed to such materials. You "
+"agree to use the Service at your own risk."
+msgstr ""
+"La violation de l'une des conditions ci-dessous entraînera la résiliation de "
+"votre compte. Alors que {0} interdit un tel comportement et de contenu sur "
+"le Service, vous comprenez et acceptez que {0} ne peut pas être responsable "
+"du Contenu publié sur le service et que vous pouvez néanmoins être exposés à "
+"ces matériaux. Vous vous engagez à utiliser le Service à vos propres risques."
+
+#: Template/Pages/terms.ctp:105
+msgid "You must be 13 years or older to use this Service."
+msgstr "Vous devez avoir 13 ans ou plus pour utiliser ce Service."
+
+#: Template/Pages/terms.ctp:108
+msgid ""
+"You must provide your username, a valid email address, and any other "
+"information requested in order to complete the signup process."
+msgstr ""
+"Vous devez fournir votre nom, une adresse E-mail valide, et toute autre "
+"information requise afin de compléter le processus d'inscription."
+
+#: Template/Pages/terms.ctp:111
+msgid ""
+"You are responsible for maintaining the security of your account and "
+"password. {0} cannot and will not be liable for any loss or damage from your "
+"failure to comply with this security obligation."
+msgstr ""
+"Vous êtes responsable du maintien de la sécurité de votre compte et de votre "
+"mot de passe. {0} ne peut pas et ne sera pas responsable de toute perte ou "
+"dommages résultant de votre non-respect de cette obligation de sécurité."
+
+#: Template/Pages/terms.ctp:114
+msgid ""
+"You are responsible for all Content posted and activity that occurs under "
+"your Account."
+msgstr ""
+"Vous êtes responsable de tout Contenu posté et de l'activité qui se produit "
+"avec votre Compte."
+
+#: Template/Pages/terms.ctp:117
+msgid ""
+"Selling your Account is totally prohibited and will result in the "
+"termination of your Account."
+msgstr ""
+"La vente de votre Compte est totalement interdite et entraînera la "
+"résiliation de votre Compte."
+
+#: Template/Pages/terms.ctp:120
+msgid ""
+"It is totally prohibited to share your Account with an other user. In that "
+"case, the Account shared will be immediately banned and you will lose all "
+"purchases made from your Account."
+msgstr ""
+"Il est totalement interdit de partager votre Compte avec un autre "
+"utilisateur. Dans ce cas, le Compte partagé sera immédiatement résilié et "
+"vous perdrez tous les achats effectués depuis votre Compte."
+
+#: Template/Pages/terms.ctp:123
+msgid "One person or legal entity may not maintain more than one Account."
+msgstr ""
+"Une personne physique ou morale ne peuvent pas maintenir plus d'un Compte."
+
+#: Template/Pages/terms.ctp:126
+msgid ""
+"When deleting your Account, all your Content will not be deleted directly. "
+"If you want all your Content to be deleted, please ask {0}."
+msgstr ""
+"Lors de la suppression de votre Compte, tout votre Contenu ne sera pas "
+"supprimé directement. Si vous voulez que tout votre contenu soit supprimé, "
+"s'il vous plaît veuillez demander {0}."
+
+#: Template/Pages/terms.ctp:138
+msgid ""
+"The look and feel of the Service is copyright &copy;{0} {1}. All rights "
+"reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, "
+"Javascript, or visual design elements or concepts without express written "
+"permission from {1}."
+msgstr ""
+"L'aspect et la convivialité du Service sont protégés par les droits d'auteur "
+"&copy;{0} {1}. Tous droits réservés. Vous ne pouvez pas dupliquer, copier, "
+"ou réutiliser toute ou une partie du HTML/CSS, Javascript, ou des éléments "
+"de conception visuelle ou des concepts sans autorisation expresse écrite de "
+"{1}."
+
+#: Template/Pages/terms.ctp:141
+msgid ""
+"All trademarks, service marks, trade names, trade dress, product names and "
+"logos appearing on the site are the property of their respective owners."
+msgstr ""
+"Toutes les marques de commerce, marques de service, noms commerciaux, robe "
+"de commerce, noms de produits et logos figurant sur le site sont la "
+"propriété de leurs propriétaires respectifs."
+
+#: Template/Pages/terms.ctp:153
+msgid ""
+"Your use of the Service is at your sole risk. The service is provided on an "
+"\"as is\" and \"as available\" basis."
+msgstr ""
+"Votre utilisation du Service est à votre seul risque. Le service est fourni "
+"\"tel quel\" et \"tel que disponible\"."
+
+#: Template/Pages/terms.ctp:156
+msgid ""
+"You understand that {0} uses third-party vendors and hosting partners to "
+"provide the necessary hardware, software, networking, storage, and related "
+"technology required to run the Service."
+msgstr ""
+"Vous comprenez que {0} utilise ou peut utiliser des fournisseurs tiers et "
+"partenaires d'hébergement pour fournir le matériel, les logiciels, les "
+"réseaux, le stockage et la technologie nécessaire pour exécuter le Service."
+
+#: Template/Pages/terms.ctp:159
+msgid ""
+"You must not modify, adapt or hack the Service or modify another website so "
+"as to falsely imply that it is associated with the Service, {0}, or any "
+"other {0} service."
+msgstr ""
+"Vous ne devez pas modifier, adapter ou pirater le Service ou modifier un "
+"autre site afin d'impliquer faussement qu'il est associé avec le Service, "
+"{0}, ou tout autre Service {0}."
+
+#: Template/Pages/terms.ctp:162
+msgid ""
+"You agree not to reproduce, duplicate, copy, sell, resell or exploit any "
+"portion of the Service, use of the Service, or access to the Service without "
+"the express written permission by {0}."
+msgstr ""
+"Vous acceptez de ne pas reproduire, dupliquer, copier, vendre, revendre ou "
+"exploiter tout ou une partie du Service, l'utilisation du Service, ou "
+"l'accès au Service sans l'autorisation expresse écrite par {0}."
+
+#: Template/Pages/terms.ctp:165
+msgid ""
+"We may, but have no obligation to, remove Content and Accounts containing "
+"Content that we determine in our sole discretion are unlawful, offensive, "
+"threatening, libelous, defamatory, pornographic, obscene or otherwise "
+"objectionable or violates any party's intellectual property or these Terms "
+"of Service."
+msgstr ""
+"Nous pouvons, mais n'avons aucune obligation, de supprimer du Contenu et des "
+"Comptes contenant du contenu que nous déterminons à notre seule discrétion "
+"qui sont illégales, offensant, menaçant, diffamatoire, pornographique, "
+"obscène ou autrement répréhensible ou qui viole la propriété intellectuelle "
+"d'une partie ou de ces Conditions d'Utilisation."
+
+#: Template/Pages/terms.ctp:168
+msgid ""
+"Verbal, physical, written or other abuse (including threats of abuse or "
+"retribution) of any {0} customer, members, or staff will result in immediate "
+"account termination."
+msgstr ""
+"Tout abus verbale, physique, écrit ou autre abus (y compris les menaces de "
+"violence) envers tout client, membre ou personnel {0}, entraînera la "
+"résiliation immédiate du compte."
+
+#: Template/Pages/terms.ctp:171
+msgid ""
+"You understand that the technical processing and transmission of the "
+"Service, including your Content, may be transferred unencrypted."
+msgstr ""
+"Vous comprenez que le traitement technique et la transmission du Service, y "
+"compris votre Contenu, peuvent être transférées \"en clair\", non crypté."
+
+#: Template/Pages/terms.ctp:174
+msgid "Questions about the Terms of Service should be sent to {0}."
+msgstr ""
+"Les questions sur les Conditions d'Utilisation doivent être envoyées à {0}."
+
+#: Template/Pages/terms.ctp:193
+msgid ""
+"A cookie is a small amount of data, which often includes an anonymous unique "
+"identifier, that is sent to your browser from a web site's computers and "
+"stored on your computer's hard drive."
+msgstr ""
+"Un \"Cookie\" est une petite quantité de données, qui comprend souvent un "
+"identifiant unique et anonyme, qui est envoyé à votre navigateur depuis les "
+"ordinateurs d'un site web et stocké sur le disque dur de votre ordinateur."
+
+#: Template/Pages/terms.ctp:196
+msgid "Cookies are required to use the {0} service."
+msgstr "Les Cookies sont nécessaires à l'utilisation du Service {0}."
+
+#: Template/Pages/terms.ctp:199
+msgid ""
+"We use cookies to record current session information, but do not use "
+"permanent cookies. You are required to re-login to your {0} account after a "
+"certain period of time has elapsed to protect you against others "
+"accidentally accessing your account contents."
+msgstr ""
+"Nous utilisons les Cookies pour enregistrer des informations de session en "
+"cours, mais nous utilisons pas des Cookies permanents. Vous êtes tenu de "
+"vous reconnecter à votre compte {0} après un certain laps de temps, pour "
+"vous protéger contre les autres personnes physiques et moral qui pourrais "
+"accéder accidentellement au contenu de votre compte."
+
+#: Template/Pages/terms.ctp:211
+msgid ""
+"{0} uses third-party vendors and hosting partners to provide the necessary "
+"hardware, software, networking, storage, and related technology required to "
+"run {0}. Although {0} owns the code, databases, and all rights to the {0} "
+"application, you retain all rights to your data."
+msgstr ""
+"{0} utilise des fournisseurs tiers et partenaires d'hébergement pour fournir "
+"le matériel, les logiciels, les réseaux, le stockage et la technologie "
+"nécessaire pour faire fonctionner le service {0}. Bien que {0} possède le "
+"code, bases de données, et tous les droits à l'application {0}, vous "
+"conservez tous les droits sur vos données."
+
+#: Template/Pages/terms.ctp:223
+msgid ""
+"{0} uses collected information for the following general purposes: products "
+"and services payments, billing, identification and authentication, services "
+"improvement, contact, and research."
+msgstr ""
+"{0} utilise les informations collectées pour les fins suivantes: les "
+"paiements de produits et services, la facturation, l'identification et "
+"l'authentification, l'amélioration des services, et la recherche."
+
+#: Template/Tfa/configure.ctp:2
+msgid "Two-factor Authentication : Configure"
+msgstr "Authentification à Deux Facteurs : Configuration"
+
+#: Template/Tfa/configure.ctp:16 Template/Tfa/enable.ctp:16
+#: Template/Tfa/index.ctp:20 Template/Tfa/intro.ctp:16
+#: Template/Tfa/recovery_code.ctp:16 Template/Users/security.ctp:2;16
+msgid "Security"
+msgstr "Sécurité"
+
+#: Template/Tfa/configure.ctp:19;37 Template/Tfa/enable.ctp:19;37
+#: Template/Tfa/index.ctp:6;23;38 Template/Tfa/intro.ctp:19;37
+#: Template/Tfa/recovery_code.ctp:19 Template/Users/security.ctp:31
+#: Template/Users/tfa.ctp:32
+msgid "Two-factor Authentication"
+msgstr "Authentification à Deux Facteurs"
+
+#: Template/Tfa/configure.ctp:22
+msgid "Configure"
+msgstr "Configuration"
+
+#: Template/Tfa/configure.ctp:41
+msgid ""
+"You will need to install a two-factor authentication application on your "
+"phone."
+msgstr ""
+"Vous aurez besoin d'installer une application d'authentification à deux "
+"facteurs sur votre téléphone."
+
+#: Template/Tfa/configure.ctp:46
+msgid "1. Scan QrCode"
+msgstr "1. Scanner le QrCode"
+
+#: Template/Tfa/configure.ctp:52
+msgid ""
+"Scan the image above with the two-factor authentication app on your phone."
+msgstr ""
+"Scanner l'image ci-dessus avec l'application à deux facteurs sur votre "
+"téléphone."
+
+#: Template/Tfa/configure.ctp:53
+msgid "If you can’t use a barcode, {0}enter this text code{1} instead."
+msgstr ""
+"Si vous ne pouvez pas utiliser un QrCode, {0}entrez ce code{1} à la place."
+
+#: Template/Tfa/configure.ctp:58
+msgid ""
+"After scanning the barcode image, the app will display a six-digit code that "
+"you can enter below."
+msgstr ""
+"Après avoir scanné l'image du QrCode, l'application affichera un code à six "
+"chiffres que vous pouvez entrer ci-dessous."
+
+#: Template/Tfa/configure.ctp:69
+msgid "2. Enter the six-digit code from the application"
+msgstr "2. Entrez le code à six chiffres de l'application"
+
+#: Template/Tfa/configure.ctp:71 Template/Tfa/intro.ctp:69
+#: Template/Users/security.ctp:65
+msgid "{0} Enable Two-factor Authentication"
+msgstr "{0} Activer l'Authentification à Deux Facteurs"
+
+#: Template/Tfa/enable.ctp:2
+msgid "Two-factor Authentication : Enable"
+msgstr "Authentification à Deux Facteurs : Activer"
+
+#: Template/Tfa/enable.ctp:22
+msgid "Enable"
+msgstr "Activer"
+
+#: Template/Tfa/enable.ctp:42
+msgid "Enabled {0}"
+msgstr "Activé {0}"
+
+#: Template/Tfa/enable.ctp:43
+msgid "Two-factor authentication is currently on."
+msgstr "L'Authentification à Deux Facteurs est actuellement activé."
+
+#: Template/Tfa/enable.ctp:46
+msgid "{0} Disable two-factor authentication"
+msgstr "{0} Désactiver l'authentification à deux facteurs"
+
+#: Template/Tfa/enable.ctp:51
+msgid "Don’t get locked out of your {0} account"
+msgstr "Ne perdez pas l'accès à votre compte {0}"
+
+#: Template/Tfa/enable.ctp:53
+msgid ""
+"<strong>Your account is now more secure, make sure you don’t get locked out</"
+"strong>.\n"
+"                        If you lose your two-factor device, the {0} Support "
+"cannot restore access to accounts with two-factor authentication enabled for "
+"security reasons, <strong>printing your recovery codes will keep you from "
+"permanently losing access to your {0} account.</strong>."
+msgstr ""
+"<strong>Votre compte est maintenant plus sûr, assurez-vous que vous ne "
+"perdrez pas votre compte</strong>.\n"
+"                         Si vous perdez votre téléphone, le Staff {0} ne "
+"peut pas restaurer l'accès aux comptes qui ont l'authentification à deux "
+"facteurs activés pour des raisons de sécurité, <strong>imprimer votre code "
+"de récupération vous empêchera de perdre définitivement l'accès à votre "
+"compte {0}</strong>."
+
+#: Template/Tfa/enable.ctp:57
+msgid ""
+"Recovery codes can be used to access your account in the event you lose "
+"access to your device and cannot receive two-factor authentication codes."
+msgstr ""
+"Le code de récupération peut être utilisé pour accéder à votre compte dans "
+"le cas où vous perdez l'accès à votre téléphone."
+
+#: Template/Tfa/enable.ctp:60
+msgid "{0} View recovery code"
+msgstr "{0} Voir le code de récupération"
+
+#: Template/Tfa/index.ctp:44;63
+msgid "About Two-Factor Authentication"
+msgstr "A-propos de l'Authentification à Deux Facteurs"
+
+#: Template/Tfa/index.ctp:49;83
+msgid "Application on phone"
+msgstr "Application sur votre téléphone"
+
+#: Template/Tfa/index.ctp:54;111 Template/Tfa/recovery_code.ctp:22
+msgid "Recovery Code"
+msgstr "Code de Récupération"
+
+#: Template/Tfa/index.ctp:66
+msgid ""
+"Two-factor authentication, or 2FA, is a way of logging into websites that "
+"requires more than just a password. Using a password to log into a website "
+"is susceptible to security threats, because it represents a single piece of "
+"information a malicious person needs to acquire. The added security that 2FA "
+"provides is requiring additional information to sign in."
+msgstr ""
+"L'Authentification à deux facteurs, ou 2FA, est une façon de se connecter à "
+"des sites web qui exige plus que juste un mot de passe. L'utilisation d'un "
+"mot de passe pour vous connecter à un site web peut être vulnérable aux "
+"menaces de sécurité, car il représente qu'un seul élément d'information à "
+"obtenir pour une personne malveillante. La sécurité ajouté par 2FA, offre un "
+"besoin de renseignements supplémentaire pour vous connecter."
+
+#: Template/Tfa/index.ctp:69
+msgid ""
+"In {0}'s case, this additional information is an authentication code "
+"delivered to your cell phone that's generated by an application on your "
+"smartphone.The only way someone can sign into your account is if they know "
+"both your password and have access to the authentication code on your phone."
+msgstr ""
+"Dans le cas de {0}, cette information supplémentaire est un code "
+"d'authentification affiché sur votre téléphone qui est généré par une "
+"application sur votre smartphone. La seule façon où quelqu'un peut se "
+"connecter à votre compte est si il sait à la fois votre mot de passe et "
+"qu'il a accès au code d'authentification sur votre téléphone."
+
+#: Template/Tfa/index.ctp:72
+msgid ""
+"We <strong>strongly</strong> urge you to turn on 2FA for the safety of your "
+"account, not only on {0}, but on other websites that support it."
+msgstr ""
+"Nous vous invitons <strong>fortement</strong> à utiliser 2FA pour la "
+"sécurité de votre compte, non seulement sur {0}, mais aussi sur les autres "
+"sites qui le propose."
+
+#: Template/Tfa/index.ctp:76
+msgid ""
+"<strong>Warning</strong>: For security reasons, the {0} Support cannot "
+"restore access to accounts with two-factor authentication enabled if you "
+"lose your phone and don't have access to your recovery code."
+msgstr ""
+"<strong>Attention</strong>: Pour des raisons de sécurité, le Staff {0} ne "
+"peut pas restaurer l'accès aux comptes avec l'authentification à deux "
+"facteurs activé si vous perdez votre téléphone et que vous n'avez pas accès "
+"à votre code de récupération."
+
+#: Template/Tfa/index.ctp:86
+msgid ""
+"A <em>Time-based One-Time Password</em> (TOTP) application automatically "
+"generates an authentication code that changes after a certain period of time."
+msgstr ""
+"Une <em>Time-based One-Time Password</em> (TOTP) application génère "
+"automatiquement un code d'authentification qui change après une certaine "
+"période de temps."
+
+#: Template/Tfa/index.ctp:89
+msgid "Download one of these applications :"
+msgstr "Télécharger une de ces applications :"
+
+#: Template/Tfa/index.ctp:93
+msgid "For Android, iOS, and Blackberry : {0}"
+msgstr "Pour les téléphones Android, iOS, et Blackberry : {0}"
+
+#: Template/Tfa/index.ctp:96
+msgid "For Android and iOS : {0}"
+msgstr "Pour les téléphones Android et iOS : {0}"
+
+#: Template/Tfa/index.ctp:99
+msgid "For Windows Phone : {0}"
+msgstr "Pour les téléphones Windows : {0}"
+
+#: Template/Tfa/index.ctp:104
+msgid ""
+"To configure authentication via TOTP on multiple devices, during setup, scan "
+"the QR code using <strong>each device at the same time</strong>. If 2FA is "
+"already enabled and you want to add another device, you must re-configure "
+"2FA from your security settings."
+msgstr ""
+"Pour configurer l'authentification via TOTP sur plusieurs appareils, lors de "
+"l'installation, scannez le QrCode en utilisant <strong>chaque appareil en "
+"même temps</strong>. Si 2FA est déjà activé et que vous souhaitez ajouter un "
+"autre appareil, vous devez reconfigurer 2FA dans vos paramètres de sécurité."
+
+#: Template/Tfa/index.ctp:114
+msgid ""
+"After successfully setting up two-factor authentication via a TOTP mobile "
+"application, the {0} page lists your recovery code. We <strong>strongly</"
+"strong> recommend saving your recovery code immediately. If you don't, "
+"though, you can download them at any point after enabling two-factor "
+"authentication."
+msgstr ""
+"Après avoir activé avec succès l'authentification à deux facteurs via une "
+"application mobile TOTP, la page {0} contient votre code de récupération. "
+"Nous vous recommandons <strong>fortement</strong> d'enregistrer votre code "
+"de récupération immédiatement. Si vous ne le faites pas, vous pouvez le "
+"télécharger à tout moment après l'activation de l'authentification à deux "
+"facteurs."
+
+#: Template/Tfa/index.ctp:115
+msgid "Two-factor recovery code"
+msgstr "code de récupération"
+
+#: Template/Tfa/index.ctp:118
+msgid ""
+"<strong>Treat your recovery codes with the same level of attention as you "
+"would your password!</strong> They should not be shared or distributed. The "
+"{0} Staff will never ask you your recovery code."
+msgstr ""
+"<strong>Traitez votre code de récupération avec le même niveau d'attention "
+"que vous auriez fait pour votre mot de passe !</strong> Il ne doit pas être "
+"partagé. Le Staff {0} ne vous demandera jamais votre code de récupération."
+
+#: Template/Tfa/index.ctp:122
+msgid ""
+"Once you use your recovery code to regain access to your account, <strong>it "
+"cannot be reused</strong>. If you've used your recovery code, you must {0}."
+msgstr ""
+"Une fois que vous utilisez votre code de récupération pour récupérer l'accès "
+"à votre compte, <strong>il ne peut pas être réutilisé</strong>. Si vous avez "
+"utilisé votre code de récupération, vous devez {0}."
+
+#: Template/Tfa/index.ctp:123
+msgid "generate a new valid recovery code"
+msgstr "générer un nouveau code de récupération valide"
+
+#: Template/Tfa/intro.ctp:2
+msgid "Two-factor Authentication : Intro"
+msgstr "Authentification à Deux Facteurs : Intro"
+
+#: Template/Tfa/intro.ctp:22
+msgid "Intro"
+msgstr "Intro"
+
+#: Template/Tfa/intro.ctp:41
+msgid ""
+"Two-factor authentication adds an extra layer of security to your account. "
+"In addition to your username and password, you'll need to enter a code that "
+"is present in an app on your phone."
+msgstr ""
+"L'Authentification à deux facteurs ajoute une couche de sécurité "
+"supplémentaire à votre compte. En plus de votre nom d'utilisateur et mot de "
+"passe, vous devrez entrer un code qui est présent dans une application sur "
+"votre téléphone où tablette."
+
+#: Template/Tfa/intro.ctp:54
+msgid ""
+"When you sign into {0} you’ll enter your username and password, like always."
+msgstr ""
+"Lorsque vous vous connectez au site {0}, vous entrez votre nom d'utilisateur "
+"et mot de passe, comme toujours."
+
+#: Template/Tfa/intro.ctp:57
+msgid ""
+"When logging in from a new browser, you’ll need to enter an additional code "
+"from your phone or tablet."
+msgstr ""
+"Lorsque vous vous connectez à partir d'un nouveau navigateur, vous devrez "
+"entrer un code supplémentaire à partir de votre téléphone ou tablette."
+
+#: Template/Tfa/intro.ctp:60
+msgid "Once you enter the code on the website, you’ll be logged into {0}."
+msgstr ""
+"Une fois que vous entrez le code sur le site, vous serez connecté sur {0}."
+
+#: Template/Tfa/intro.ctp:66
+msgid "Use an {0} to get two-factor authentication codes when prompted."
+msgstr ""
+"Utilisez une {0} pour obtenir le code d'authentification à deux facteurs "
+"lorsque vous y êtes invité."
+
+#: Template/Tfa/intro.ctp:66
+msgid "application on your phone"
+msgstr "application sur votre téléphone"
+
+#: Template/Tfa/recovery_code.ctp:2;37
+msgid "Two-factor Authentication : Recovery Code"
+msgstr "Authentification à Deux Facteurs : Code de Récupération"
+
+#: Template/Tfa/recovery_code.ctp:41
+msgid ""
+"Recovery code can be used to access your account in the event you lose "
+"access to your device and cannot receive two-factor authentication code."
+msgstr ""
+"Le code de récupération peut être utilisé pour accéder à votre compte dans "
+"le cas où vous perdriez l'accès à votre téléphone."
+
+#: Template/Tfa/recovery_code.ctp:45
+msgid "Your recovery code : {0}"
+msgstr "Votre code de récupération : {0}"
+
+#: Template/Tfa/recovery_code.ctp:46
+msgid "Code Status : "
+msgstr "Statut du Code : "
+
+#: Template/Tfa/recovery_code.ctp:48
+msgid "Used {0}"
+msgstr "Utilisé {0}"
+
+#: Template/Tfa/recovery_code.ctp:50
+msgid "Valid {0}"
+msgstr "Valide {0}"
+
+#: Template/Tfa/recovery_code.ctp:53
+msgid ""
+"Printing your recovery code will keep you from permanently losing access to "
+"your {0} account."
+msgstr ""
+"Imprimer votre code de récupération vous empêchera de perdre définitivement "
+"l'accès à votre compte {0}."
+
+#: Template/Tfa/recovery_code.ctp:60
+msgid ""
+"Once you use your recovery code to regain access to your account, <strong>it "
+"cannot be reused</strong>. If you've used your recovery code, click "
+"<strong>Generate new recovery code</strong> to recreate another recovery "
+"code."
+msgstr ""
+"Une fois que vous utilisez votre code de récupération pour récupérer l'accès "
+"à votre compte, <strong>il ne peut pas être réutilisé</strong>. Si vous avez "
+"utilisé votre code de récupération, cliquez sur <strong>Générer un nouveau "
+"code de récupération</strong> pour recréer un autre code de récupération."
+
+#: Template/Tfa/recovery_code.ctp:63
+msgid ""
+"When you generate a new recovery code, you must download or print the new "
+"code. Your old code won't work anymore."
+msgstr ""
+"Lorsque vous générez un nouveau code de récupération, vous devez télécharger "
+"ou imprimer le nouveau code. Votre ancien code ne fonctionnera plus."
+
+#: Template/Tfa/recovery_code.ctp:66
+msgid "{0} Generate new recovery code"
+msgstr "{0} Générer un nouveau code de récupération"
+
+#: Template/Users/account.ctp:54
+msgid "Default Avatar"
+msgstr "Avatar par Défaut"
+
+#: Template/Users/account.ctp:62
+msgid "Change"
+msgstr "Changer"
+
+#: Template/Users/account.ctp:73
+msgid "First Name"
+msgstr "Prénom"
+
+#: Template/Users/account.ctp:77
+msgid "Last Name"
+msgstr "Nom"
+
+#: Template/Users/account.ctp:85
+msgid "Twitter"
+msgstr "Twitter"
+
+#: Template/Users/account.ctp:92
+msgid "Facebook"
+msgstr "Facebook"
+
+#: Template/Users/account.ctp:99
+msgid "Biography"
+msgstr "Biographie"
+
+#: Template/Users/account.ctp:101
+msgid "The biography will be displayed on your profile page."
+msgstr "La biographie sera affichée sur votre page de profil."
+
+#: Template/Users/account.ctp:114
+msgid ""
+"The signature will be displayed on each article that you have wrotten on the "
+"blog."
+msgstr ""
+"La signature sera affiché sur chaque article que vous avez écrit sur le blog."
+
+#: Template/Users/forgot_password.ctp:2;30
+msgid "Forgot your Password"
+msgstr "﻿Mot de Passe Perdu"
+
+#: Template/Users/forgot_password.ctp:10 Template/Users/reset_password.ctp:10
+msgid "You have forgot your password ?"
+msgstr "Vous avez oublié votre mot de passe ?"
+
+#: Template/Users/forgot_password.ctp:13
+msgid ""
+"Use the form below to recover your password ! An E-mail will be send to you."
+msgstr ""
+"Utilisez la forme ci-dessous pour récupérer votre mot de passe ! Un E-mail "
+"vous sera envoyé ."
+
+#: Template/Users/forgot_password.ctp:46 Template/Users/login.ctp:63
+#: Template/Users/settings.ctp:35
+msgid "E-mail"
+msgstr "Email"
+
+#: Template/Users/forgot_password.ctp:59 Template/Users/reset_password.ctp:77
+msgid "Reset {0}"
+msgstr "Réinitialiser {0}"
+
+#: Template/Users/login.ctp:2
+msgid "Login or Register"
+msgstr "Connexion ou Inscription"
+
+#: Template/Users/login.ctp:10
+msgid "Why create an account ?"
+msgstr "Pourquoi créer un compte?"
+
+#: Template/Users/login.ctp:13
+msgid ""
+"With an account you can download all the sources provided in tutorials and "
+"you can interact with all the community !"
+msgstr ""
+"Avec un compte vous pouvez télécharger toutes les sources dans les tutoriels "
+"et vous pouvez interagir avec toute la communauté !"
+
+#: Template/Users/login.ctp:29
+msgid "Create an Account"
+msgstr "Créer un Compte"
+
+#: Template/Users/login.ctp:81;163 Template/Users/reset_password.ctp:46
+#: Template/Users/settings.ctp:105
+msgid "Password"
+msgstr "Mot de Passe"
+
+#: Template/Users/login.ctp:100 Template/Users/reset_password.ctp:66
+msgid "Password (Confirmation)"
+msgstr "Mot de Passe (Confirmation)"
+
+#: Template/Users/login.ctp:113
+msgid ""
+"By clicking the button \"SignUp\", you accept that you have read and "
+"understand the {0}."
+msgstr ""
+"En cliquant sur le bouton \"Inscription\", vous acceptez que vous avez lu et "
+"compris les {0}."
+
+#: Template/Users/login.ctp:119
+msgid "SignUp {0}"
+msgstr "Inscription {0}"
+
+#: Template/Users/login.ctp:133
+msgid "Login to your Account"
+msgstr "Connectez-vous à votre compte"
+
+#: Template/Users/login.ctp:172
+msgid "Forgot your password ?"
+msgstr "Vous avez oublié votre mot de passe ? "
+
+#: Template/Users/login.ctp:177 Template/Users/tfa.ctp:55
+msgid "LogIn {0}"
+msgstr "Connexion {0}"
+
+#: Template/Users/notifications.ctp:53
+msgid "At {0}"
+msgstr "Le {0}"
+
+#: Template/Users/notifications.ctp:83
+msgid "You don't have any notification yet."
+msgstr "Vous n'avez pas encore de notifications."
+
+#: Template/Users/profile.ctp:2
+msgid "{0}'s profile"
+msgstr "Profil de {0}"
+
+#: Template/Users/profile.ctp:18;19;95;96
+msgid "Online"
+msgstr "En ligne"
+
+#: Template/Users/profile.ctp:21;22;98;99
+msgid "Offline"
+msgstr "Hors ligne"
+
+#: Template/Users/profile.ctp:60
+msgid "{0} Edit my profile"
+msgstr "{0} Éditer mon profil"
+
+#: Template/Users/profile.ctp:118
+msgid "Send a Message"
+msgstr "Envoyer un Message"
+
+#: Template/Users/profile.ctp:141
+msgid "{0} Edit this User"
+msgstr "{0} Éditer cet utilisateur"
+
+#: Template/Users/profile.ctp:155
+msgid "Your Biography"
+msgstr "Votre Biographie"
+
+#: Template/Users/profile.ctp:157
+msgid "His Biography"
+msgstr "Sa Biographie"
+
+#: Template/Users/profile.ctp:167
+msgid "You don't have set a biography."
+msgstr "Vous n'avez pas encore renseigné votre biographie."
+
+#: Template/Users/profile.ctp:168
+msgid "{0} Add one now"
+msgstr "{0} Modifier maintenant"
+
+#: Template/Users/profile.ctp:170
+msgid "This user hasn't set a biography yet."
+msgstr "Cet utilisateur n'a pas encore renseigné sa biographie."
+
+#: Template/Users/profile.ctp:179
+msgid "Your Badges"
+msgstr "Vos Badges"
+
+#: Template/Users/profile.ctp:181
+msgid "His Badges"
+msgstr "Ces Badges"
+
+#: Template/Users/profile.ctp:202
+msgid "Your Lastest Articles in the Blog"
+msgstr "Vos derniers Articles dans le Blog"
+
+#: Template/Users/profile.ctp:204
+msgid "His Lastest Articles in the Blog"
+msgstr "Ces derniers Articles dans le Blog"
+
+#: Template/Users/profile.ctp:229;268
+msgid "Created at {0}"
+msgstr "Créé le {0}"
+
+#: Template/Users/profile.ctp:241
+msgid "Your Lastest Comments in the Blog"
+msgstr "Vos derniers Commentaires dans le Blog"
+
+#: Template/Users/profile.ctp:243
+msgid "His Lastest Comments in the Blog"
+msgstr "Ces derniers Commentaires dans le Blog"
+
+#: Template/Users/reset_password.ctp:2;30
+msgid "Reset your Password"
+msgstr " Réinitialiser votre Mot de Passe"
+
+#: Template/Users/reset_password.ctp:13
+msgid "Use the form below to reset your password !"
+msgstr "Utilisez la forme ci-dessous pour réinitialiser votre mot de passe !"
+
+#: Template/Users/security.ctp:37
+msgid ""
+"{0} in a safe place. It will allow you to access your account if you lose "
+"your phone."
+msgstr ""
+"{0} dans un endroit sûr. Il vous permettra d'accéder à votre compte si vous "
+"perdez votre téléphone."
+
+#: Template/Users/security.ctp:39
+msgid "{0} Save your recovery code"
+msgstr "{0} Enregistrez votre code de récupération"
+
+#: Template/Users/security.ctp:42
+msgid "{0} provides another layer of security to your account."
+msgstr "{0} fournit une couche de sécurité supplémentaire à votre compte."
+
+#: Template/Users/security.ctp:44
+msgid "{0} Two-factor Authentication"
+msgstr "{0} L'Authentification à Deux Facteurs"
+
+#: Template/Users/security.ctp:50
+msgid "Status : "
+msgstr "Statut : "
+
+#: Template/Users/security.ctp:53
+msgid "On {0}"
+msgstr "Activé {0}"
+
+#: Template/Users/security.ctp:57
+msgid "Off {0}"
+msgstr "Désactivé {0}"
+
+#: Template/Users/security.ctp:63
+msgid "{0} Disable Two-factor Authentication"
+msgstr "{0} Désactiver l'Authentification à Deux Facteurs"
+
+#: Template/Users/security.ctp:73
+msgid "Sessions"
+msgstr "Sessions"
+
+#: Template/Users/security.ctp:77
+msgid "This is a list of devices that are logged into your account."
+msgstr "Ceci est une liste de périphériques qui sont connectés à votre compte."
+
+#: Template/Users/security.ctp:102
+msgid "Your current session"
+msgstr "Votre session en cours"
+
+#: Template/Users/security.ctp:104
+msgid "Other session"
+msgstr "Autre session"
+
+#: Template/Users/security.ctp:112
+msgid "on {0}"
+msgstr "sur {0}"
+
+#: Template/Users/security.ctp:116
+msgid "Last seen on"
+msgstr "Dernièrement vu sur"
+
+#: Template/Users/security.ctp:125
+msgid "Last seen"
+msgstr "Vue la dernière fois le"
+
+#: Template/Users/security.ctp:130
+msgid "Created"
+msgstr "Créée le"
+
+#: Template/Users/security.ctp:139
+msgid "There's currently no sessions online for your account."
+msgstr "Il y a actuellement aucune sessions en ligne pour votre compte."
+
+#: Template/Users/security.ctp:148
+msgid "Security History"
+msgstr "Historique de Sécurité"
+
+#: Template/Users/security.ctp:153
+msgid "This is a security log of important events involving your account."
+msgstr ""
+"Ceci est une liste de log de sécurité des événements importants concernant "
+"votre compte."
+
+#: Template/Users/security.ctp:178
+msgid "action"
+msgstr "action"
+
+#: Template/Users/security.ctp:182
+msgid "browser"
+msgstr "navigateur"
+
+#: Template/Users/security.ctp:186
+msgid "plateform"
+msgstr "plate-forme "
+
+#: Template/Users/security.ctp:190
+msgid "username"
+msgstr "pseudo"
+
+#: Template/Users/security.ctp:194
+msgid "user_ip"
+msgstr "ip"
+
+#: Template/Users/security.ctp:198
+msgid "created"
+msgstr "créé"
+
+#: Template/Users/security.ctp:207
+msgid "{0} More informations about security actions"
+msgstr "{0} Plus d'informations sur les actions de sécurité"
+
+#: Template/Users/security.ctp:222
+msgid "Action name"
+msgstr "Nom de l'Action"
+
+#: Template/Users/security.ctp:223
+msgid "Action description"
+msgstr "Description de l'Action"
+
+#: Template/Users/security.ctp:229
+msgid "Triggered when an user login on the login page."
+msgstr "Déclenchée quand un utilisateur se connecte sur la page de connexion."
+
+#: Template/Users/security.ctp:233
+msgid "Triggered when the user failed to login on the login page."
+msgstr ""
+"Déclenché quand un utilisateur n'a pas réussi à se connecter sur la page de "
+"connexion."
+
+#: Template/Users/security.ctp:237
+msgid "Triggered when an user is automated login with Cookies."
+msgstr ""
+"Déclenchée quand un utilisateur est automatiquement connecté avec les "
+"Cookies."
+
+#: Template/Users/security.ctp:241
+msgid "Triggered when an user has modified his account."
+msgstr "Déclenchée quand un utilisateur a modifié son compte."
+
+#: Template/Users/security.ctp:245
+msgid "Triggered when an user has changed his Email."
+msgstr "Déclenchée quand un utilisateur a changé son E-mail."
+
+#: Template/Users/security.ctp:249
+msgid "Triggered when an user has changed his password."
+msgstr "Déclenchée quand un utilisateur a changé son mot de passe."
+
+#: Template/Users/security.ctp:253
+msgid "Triggered when an user has asked a password reset."
+msgstr ""
+"Déclenchée quand un utilisateur a fait une demande de réinitialisation de "
+"mot de passe."
+
+#: Template/Users/security.ctp:257
+msgid ""
+"Triggered when an user has successfully reset his password with the Email."
+msgstr ""
+"Déclenchée quand un utilisateur a réinitialisé son mot de passe avec l'E-"
+"mail."
+
+#: Template/Users/security.ctp:261
+msgid "Triggered when an user enbale the 2FA mode."
+msgstr "Déclenchée quand un utilisateur active le mode 2FA."
+
+#: Template/Users/security.ctp:265
+msgid "Triggered when an user disable the 2FA mode."
+msgstr "Déclenchée quand un utilisateur désactive le mode 2FA."
+
+#: Template/Users/security.ctp:269
+msgid "Triggered when an user regenerate a new recovery code."
+msgstr ""
+"Déclenchée quand un utilisateur régénère un nouveau code de récupération."
+
+#: Template/Users/security.ctp:273
+msgid "Triggered when an user use his recovery code."
+msgstr "Déclenchée quand un utilisateur utilise son code de récupération."
+
+#: Template/Users/security.ctp:283
+msgid "There's no logs for your account."
+msgstr "Il n'y a pas de logs pour votre compte."
+
+#: Template/Users/settings.ctp:2;16
+msgid "My Settings"
+msgstr "Mes Paramètres"
+
+#: Template/Users/settings.ctp:30
+msgid "Change your E-mail"
+msgstr "Changez votre Email"
+
+#: Template/Users/settings.ctp:41
+msgid "New E-mail"
+msgstr "Nouveau Email"
+
+#: Template/Users/settings.ctp:52
+msgid "Change your Password"
+msgstr "Changez votre Mot de Passe"
+
+#: Template/Users/settings.ctp:57
+msgid "Current Password"
+msgstr "Mot de Passe Actuel"
+
+#: Template/Users/settings.ctp:61
+msgid "New Password"
+msgstr "Nouveau Mot de Passe"
+
+#: Template/Users/settings.ctp:65
+msgid "New Password (confirm)"
+msgstr "Nouveau Mot de Passe (confirmation)"
+
+#: Template/Users/settings.ctp:70
+msgid "{0} Change"
+msgstr "{0} Changer"
+
+#: Template/Users/settings.ctp:75
+msgid "Delete your Account"
+msgstr "Supprimer votre Compte"
+
+#: Template/Users/settings.ctp:78
+msgid "{0} Delete my Account"
+msgstr "{0} Supprimer mon Compte"
+
+#: Template/Users/settings.ctp:88
+msgid "Delete my Account"
+msgstr "Supprimer mon Compte"
+
+#: Template/Users/settings.ctp:97
+msgid ""
+"Are you sure you want delete your account ? <strong>This operation is not "
+"reversible.</strong>"
+msgstr ""
+"Êtes-vous sûr de vouloir supprimer votre compte? <strong>Cette opération "
+"n'est pas réversible.</strong>"
+
+#: Template/Users/settings.ctp:110
+msgid "Yes, i confirm !"
+msgstr "Oui, je confirme !"
+
+#: Template/Users/tfa.ctp:2
+msgid "Login : Two-Factor Authentication"
+msgstr "Connexion : Authentification à Deux Facteurs"
+
+#: Template/Users/tfa.ctp:10
+msgid "Two-Factor Authentication required"
+msgstr "Authentification à Deux Facteurs requis"
+
+#: Template/Users/tfa.ctp:13
+msgid ""
+"This account is protected by the Two-factor Authentication method. You need "
+"to specify below the code obtained on your phone !"
+msgstr ""
+"Ce compte est protégé par la méthode d'authentification à deux facteurs. "
+"Vous devez indiquer ci-dessous le code obtenu sur votre téléphone !"
+
+#: Template/Users/tfa.ctp:46
+msgid "123456"
+msgstr "123456"
+
+#~ msgid "Premium"
+#~ msgstr "Premium"
+
+#~ msgid "This offer does not exist."
+#~ msgstr "Cet offre n'existe pas."
+
+#~ msgid "Your discount code isn't valid or has already been used."
+#~ msgstr "Votre code de réduction n'est pas valide ou a déjà été utilisé."
+
+#~ msgid ""
+#~ "Unable to get the Paypal URL, please contact an administrator or try "
+#~ "again later."
+#~ msgstr ""
+#~ "Impossible d'obtenir l'URL Paypal, veuillez contacter un administrateur "
+#~ "ou réessayez plus tard."
+
+#~ msgid "Premium {0} month"
+#~ msgid_plural "Premium {0} months"
+#~ msgstr[0] "Premium {0} mois"
+#~ msgstr[1] "Premium {0} mois"
+
+#~ msgid "Forgot your Password - Xeta"
+#~ msgstr "Réinitialisation du Mot de Passe - Xeta"
+
+#~ msgid "The txn {0} has already been used."
+#~ msgstr "The txn {0} a déjà été utilisé."
+
+#~ msgid "The Email {0} is not the same as the config Email {0}."
+#~ msgstr "L'Email {0} n'est pas le même que l'Email de configuration {0}."
+
+#~ msgid "The price does not match with the offer price."
+#~ msgstr "Le prix ne correspond pas avec le prix de l'offre."
+
+#~ msgid "The currency offer does not match with the Paypal currency."
+#~ msgstr ""
+#~ "Le code monétaire de l'offre ne correspond pas avec le code monétaire "
+#~ "Paypal."
+
+#~ msgid "The discount offer does not match with the Paypal discount."
+#~ msgstr ""
+#~ "La réduction de l'offre ne correspond pas avec la réduction de Paypal."
+
+#~ msgid "Error to update the user."
+#~ msgstr "Impossible de mettre à jour l'utilisateur."
+
+#~ msgid "Status Payment invalid : {0}"
+#~ msgstr "Statut de Paiement invalide : {0}"
+
+#~ msgid "Response INVALID."
+#~ msgstr "Réponse INVALID."
+
+#~ msgid "Failed to initialize cURL : {0}"
+#~ msgstr "Échec de l'initialisation cURL : {0}"
+
+#~ msgid "cURL falied to get the Paypal URL Button : {0}"
+#~ msgstr "cURL n'a pas réussi à obtenir l'URL du bouton PayPal : {0}"
+
+#~ msgid "Unable to get the offer with the ID {0} and the period {1}."
+#~ msgstr "Impossible d'obtenir l'offre avec l'ID {0} et la période {1}."
+
+#~ msgid "The price of the offer {0} is not the same as the Paypal price {1}."
+#~ msgstr "Le prix de l'offre {0} ne est pas le même que le prix Paypal {1}."
+
+#~ msgid "The discount offer {0} does not match with the Paypal discount {1}."
+#~ msgstr ""
+#~ "La réduction de l'offre {0} ne correspond pas avec la réduction Paypal "
+#~ "{1}."
+
+#~ msgid "The currency offer {0} does not match with the Paypal currency {1}."
+#~ msgstr ""
+#~ "Le code monétaire de l'offre  {0} ne correspond pas avec le code "
+#~ "monétaire Paypal {1}."
+
+#~ msgid "I have banned {0} {1}"
+#~ msgstr "J'ai bannis {0} {1}"
+
+#~ msgid "The type \"{0}\" to check is not defined."
+#~ msgstr "Le type \"{0}\" à vérifier est pas défini."
+
+#~ msgid "This thread doesn't exist or has been deleted."
+#~ msgstr "Ce sujet n'existe pas ou a été supprimé."
+
+#~ msgid "You don't like this post !"
+#~ msgstr "Vous n'aimez pas ce post !"
+
+#~ msgid "You already like this post !"
+#~ msgstr "You aimez déjà ce post !"
+
+#~ msgid "Thanks for {0} this post ! "
+#~ msgstr "Merci d'avoir {0} ce post !"
+
+#~ msgid "You {0} this post."
+#~ msgstr "Vous {0} ce post."
+
+#~ msgid "{0} Unlike"
+#~ msgstr "{0} Je n'aime plus"
+
+#~ msgid "This post doesn't exist or has been deleted."
+#~ msgstr "Ce post n'existe pas ou a été supprimé."
+
+#~ msgid "You cannot delete the first post of a thread."
+#~ msgstr "Vous ne pouvez pas supprimer le premier post d'un sujet."
+
+#~ msgid "The post has been deleted successfully !"
+#~ msgstr "Ce post a été supprimé avec succès !"
+
+#~ msgid "This post doesn't exist or has been deleted !"
+#~ msgstr "Ce post n'existe pas ou a été supprimé !"
+
+#~ msgid "You don't have the authorization to edit this post !"
+#~ msgstr "Vous n'avez pas l'autorisation d'éditer ce post !"
+
+#~ msgid "This post has been edited successfully !"
+#~ msgstr "Ce post a été édité avec succès !"
+
+#~ msgid "This category doesn't exist or has been deleted !"
+#~ msgstr "Cette catégorie n'existe pas ou a été supprimée !"
+
+#~ msgid ""
+#~ "You can't create a thread in the category <strong>{0}</strong> because "
+#~ "this category is closed !"
+#~ msgstr ""
+#~ "Vous ne pouvez pas créer un sujet dans la catégorie <strong>{0}</strong> "
+#~ "car cette catégorie est fermée !"
+
+#~ msgid ""
+#~ "You can't not create a thread in the next 5 minutes due to spamming "
+#~ "restrictions."
+#~ msgstr ""
+#~ "Vous ne pouvez pas créer de sujet pendant les 5 prochaines minutes dû aux "
+#~ "restrictions de spam."
+
+#~ msgid "Your thread has been created successfully !"
+#~ msgstr "Votre sujet a été créé avec succès !"
+
+#~ msgid "This thread doesn't exist or has been deleted !"
+#~ msgstr "Ce sujet n'existe pas ou a été supprimé !"
+
+#~ msgid ""
+#~ "You can't assign this thread to the category <strong>{0}</strong> because "
+#~ "this category is closed !"
+#~ msgstr ""
+#~ "Vous ne pouvez pas assigner ce sujet dans la catégorie <strong>{0}</"
+#~ "strong> car cette catégorie est fermée !"
+
+#~ msgid "Your thread has been edited and set to sticky successfully !"
+#~ msgstr "Votre sujet à été éditer et épinglé avec succès !"
+
+#~ msgid "Your thread has been edited successfully !"
+#~ msgstr "Ce sujet a été édité avec succès !"
+
+#~ msgid ""
+#~ "You can't not reply to a thread in the next 5 minutes due to spamming "
+#~ "restrictions."
+#~ msgstr ""
+#~ "Vous ne pouvez pas répondre à ce sujet pendant les 5 prochaines minutes "
+#~ "dû aux restrictions de spam."
+
+#~ msgid "This thread is closed or has been deleted !"
+#~ msgstr "Ce sujet est fermé ou a été supprimé !"
+
+#~ msgid ""
+#~ "Your reply has been posted successfully and the thread has been closed !"
+#~ msgstr ""
+#~ "Votre réponse a été posté avec succès et le sujet a été verrouillé !"
+
+#~ msgid "Your reply has been posted successfully !"
+#~ msgstr "Votre réponse a été posté avec succès !"
+
+#~ msgid "This thread is already closed !"
+#~ msgstr "Ce sujet est déjà fermé !"
+
+#~ msgid "You don't have the authorization to lock this post !"
+#~ msgstr "Vous n'avez pas l'autorisation de verrouiller ce post !"
+
+#~ msgid "This thread has been locked successfully !"
+#~ msgstr "Ce sujet a été verrouillé avec succès !"
+
+#~ msgid "This thread is already open !"
+#~ msgstr "Ce sujet est déjà déverrouillé !"
+
+#~ msgid "You don't have the authorization to unlock this post !"
+#~ msgstr "Vous n'avez pas l'autorisation de déverrouiller ce post !"
+
+#~ msgid "This thread has been unlocked successfully !"
+#~ msgstr "Ce sujet a été déverrouillé avec succès !"
+
+#~ msgid "You already follow this thread !"
+#~ msgstr "Vous suivez déjà ce sujet !"
+
+#~ msgid "You successfully follow this thread now !"
+#~ msgstr "Vous suivez maintenant ce sujet !"
+
+#~ msgid "There was an error while following the thread."
+#~ msgstr "Il y a eu une erreur lors de l'abonnement à ce sujet."
+
+#~ msgid "You don't follow this thread !"
+#~ msgstr "Vous ne suivez pas ce sujet !"
+
+#~ msgid "You successfully unfollow this thread now !"
+#~ msgstr "Vous avez arrêté de suivre ce sujet avec succès !"
+
+#~ msgid "There was an error while unfollowing this thread."
+#~ msgstr "Il y a eu une erreur lors du désabonnement à ce sujet."
+
+#~ msgid "You must select the Groups for the function User::_getGroupName()."
+#~ msgstr ""
+#~ "Vous devez sélectionner le Group pour la fonction User::_getGroupName()."
+
+#~ msgid "You must select the Groups for the function User::_getGroupCss()."
+#~ msgstr "You must select the Groups for the function User::_getGroupCss()."
+
+#~ msgid "You must set a title for the category."
+#~ msgstr "Vous devez définir un titre pour la catégorie."
+
+#~ msgid "The title must be between {0} and {1} characters."
+#~ msgstr "Le titre doit être compris entre {0} et {1} caractères."
+
+#~ msgid "You must specify a message for your response."
+#~ msgstr "Vous devez spécifier un message pour votre réponse."
+
+#~ msgid "Your message must contain at least {0} characters."
+#~ msgstr "Votre message ne peut pas contenir moins de {0} caractères."
+
+#~ msgid "You must set an user."
+#~ msgstr "Vous devez définir un utilisateur."
+
+#~ msgid "The user must be numeric."
+#~ msgstr "L'utilisateur doit être numérique."
+
+#~ msgid "You must set a thread."
+#~ msgstr "Vous devez définir un sujet."
+
+#~ msgid "The thread must be numeric."
+#~ msgstr "Le sujet doit être numérique."
+
+#~ msgid "You must set a title for your thread."
+#~ msgstr "Vous devez définir un titre pour votre sujet."
+
+#~ msgid "You must specify a message for your thread."
+#~ msgstr "Vous devez spécifier un message pour votre sujet."
+
+#~ msgid ""
+#~ "<strong>{0}</strong> has replied to your thread <strong>{1}</strong>."
+#~ msgstr "<strong>{0}</strong> a répondu à votre sujet <strong>{1}</strong>."
+
+#~ msgid "<strong>{0}</strong> has replied to the thread <strong>{1}</strong>."
+#~ msgstr "<strong>{0}</strong> a répondu au sujet <strong>{1}</strong>."
+
+#~ msgid "<strong>{0}</strong> has locked your thread <strong>{1}</strong>."
+#~ msgstr "<strong>{0}</strong> a fermé votre sujet <strong>{1}</strong>."
+
+#~ msgid "<strong>{0}</strong> has liked your post in <strong>{1}</strong>."
+#~ msgstr "<strong>{0}</strong> a aimé votre post dans <strong>{1}</strong>."
+
+#~ msgid ""
+#~ "Welcome on <strong>{0}</strong>! You can now post your first message in "
+#~ "the Forum."
+#~ msgstr ""
+#~ "Bienvenue sur <strong>{0}</strong>! Vous pouvez dès à présent poster "
+#~ "votre premier message dans le Forum !"
+
+#~ msgid "You must set an offer."
+#~ msgstr "Vous devez définir une offre."
+
+#~ msgid "The offer must be numeric value."
+#~ msgstr "L'offre doit être une valeur numérique."
+
+#~ msgid "You must set a code."
+#~ msgstr "Vous devez définir un code."
+
+#~ msgid "The code can not be more than {0} characters."
+#~ msgstr "Le code peut pas avoir plus de {0} caractères."
+
+#~ msgid "You must set a discount."
+#~ msgstr "Vous devez définir une réduction."
+
+#~ msgid "The discount must be numeric value."
+#~ msgstr "La réduction doit être une valeur numérique."
+
+#~ msgid "You must set the used number."
+#~ msgstr "Vous devez définir le nombre d'utilisation."
+
+#~ msgid "The used value must be numeric value."
+#~ msgstr "Le nombre d'utilisation doit être une valeur numérique."
+
+#~ msgid "You must set the max use for the discount."
+#~ msgstr ""
+#~ "Vous devez définir le nombre d'utilisation maximum pour la réduction."
+
+#~ msgid "The max use value must be numeric value."
+#~ msgstr "Le nombre d'utilisation maximum doit être une valeur numérique."
+
+#~ msgid "You must set a period."
+#~ msgstr "Vous devez définir une période."
+
+#~ msgid "The period must be numeric."
+#~ msgstr "La période doit être une valeur numérique."
+
+#~ msgid "You must set a price."
+#~ msgstr "Vous devez définir un prix."
+
+#~ msgid "The price must be numeric."
+#~ msgstr "Le prix doit être une valeur numérique."
+
+#~ msgid "You must set a tax."
+#~ msgstr "Vous devez définir une taxe."
+
+#~ msgid "The tax must be numeric."
+#~ msgstr "La taxe doit être une valeur numérique."
+
+#~ msgid "You must set a currency code."
+#~ msgstr "Vous devez définir le code de devise."
+
+#~ msgid "The currency code can not be more than {0} characters."
+#~ msgstr "Le code de devise ne doit pas contenir plus de {0} caractères."
+
+#~ msgid "You must set a currency symbol."
+#~ msgstr "Vous devez définir un code monétaire."
+
+#~ msgid "The currency symbol can not be more than {0} characters."
+#~ msgstr "Le code monétaire ne doit pas contenir plus de {0} caractères."
+
+#~ msgid "Parent"
+#~ msgstr "Parent"
+
+#~ msgid "Read More"
+#~ msgstr "Lire Plus"
+
+#~ msgid "You need to be <strong>{0}</strong> to download the file."
+#~ msgstr "Vous devez être <strong>{0}</strong> pour télécharger le fichier."
+
+#~ msgid "Post Comment"
+#~ msgstr "Poster le Commentaire"
+
+#~ msgid "Delete"
+#~ msgstr "Supprimer"
+
+#~ msgid "Update Comment"
+#~ msgstr "Mettre à jour le Commentaire"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Staff Online"
+#~ msgstr "Membres de l'équipe en ligne"
+
+#~ msgid "Latest Threads"
+#~ msgstr "Derniers Sujets"
+
+#~ msgid "Created by {0}"
+#~ msgstr "Créé par {0}"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistiques"
+
+#~ msgid "- By {0}"
+#~ msgstr "- Par {0}"
+
+#~ msgid "There are {0} user on this page."
+#~ msgid_plural "There are {0} users on this page."
+#~ msgstr[0] "Il y a {0} utilisateur sur cette page."
+#~ msgstr[1] "Il y a {0} utilisateurs sur cette page."
+
+#~ msgid "Send"
+#~ msgstr "Envoyer"
+
+#~ msgid "Source Code available on {0}"
+#~ msgstr "Code Source disponible sur {0}"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "My Profile"
+#~ msgstr "Mon Profil"
+
+#~ msgid "My Notifications"
+#~ msgstr "Mes Notifications"
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid "Last post"
+#~ msgstr "Dernier post"
+
+#~ msgid "Unread"
+#~ msgstr "Non-lu"
+
+#~ msgid "Read"
+#~ msgstr "Lu"
+
+#~ msgid "(Contains no threads)"
+#~ msgstr "(Contient aucun sujets)"
+
+#~ msgid "By"
+#~ msgstr "Par"
+
+#~ msgid "{0} Thread"
+#~ msgid_plural "{0} Threads"
+#~ msgstr[0] "{0} Sujet"
+#~ msgstr[1] "{0} Sujets"
+
+#~ msgid "{0} New Thread"
+#~ msgstr "{0} Nouveau Sujet"
+
+#~ msgid "{0} Topics"
+#~ msgstr "{0} Sujets"
+
+#~ msgid "No threads found"
+#~ msgstr "Aucun sujet trouvés"
+
+#~ msgid "No threads were found for this category. {0}"
+#~ msgstr "Aucun sujet n'a été trouvé pour cette catégorie. {0}"
+
+#~ msgid "{0} Create a Thread"
+#~ msgstr "{0} Créer un Sujet"
+
+#~ msgid "{0} Response"
+#~ msgid_plural "{0} Responses"
+#~ msgstr[0] "{0} Réponse"
+#~ msgstr[1] "{0} Réponses"
+
+#~ msgid "{0} View"
+#~ msgid_plural "{0} Views"
+#~ msgstr[0] "{0} Vue"
+#~ msgstr[1] "{0} Vues"
+
+#~ msgid "Toggle list"
+#~ msgstr "Déplier la liste"
+
+#~ msgid "Users Online"
+#~ msgstr "Utilisateurs en ligne"
+
+#~ msgid "Total Likes"
+#~ msgstr "Total de J'aimes"
+
+#~ msgid "Total Threads"
+#~ msgstr "Total de Sujets"
+
+#~ msgid "Total Members"
+#~ msgstr "Total d'Utilisateurs"
+
+#~ msgid "Newest Member"
+#~ msgstr "Dernier Membre"
+
+#~ msgid ""
+#~ "{0} registered and {1} guests (based on users active over the past 5 "
+#~ "minutes)"
+#~ msgstr ""
+#~ "{0} utilisateurs enregistrés et {1} invités (basé sur les utilisateurs "
+#~ "actifs des 5 dernières minutes)"
+
+#~ msgid "Legend : "
+#~ msgstr "Légende : "
+
+#~ msgid "In total there is <strong>{0}</strong> user online :"
+#~ msgid_plural "In total there are <strong>{0}</strong> users online :"
+#~ msgstr[0] "Au total, il y a <strong>{0}</strong> utilisateur en ligne :"
+#~ msgstr[1] "Au total, il y a <strong>{0}</strong> utilisateurs en ligne :"
+
+#~ msgid "Registered user :"
+#~ msgid_plural "Registered users :"
+#~ msgstr[0] "Utilisateur enregistré :"
+#~ msgstr[1] "Utilisateurs enregistrés :"
+
+#~ msgid "{0} Lock"
+#~ msgstr "{0} Verrouiller"
+
+#~ msgid "{0} Closed"
+#~ msgstr "{0} Fermé"
+
+#~ msgid "{0} Unlock"
+#~ msgstr "{0} Déverrouiller"
+
+#~ msgid "{0} Edit Thread"
+#~ msgstr "{0} Editer le Sujet"
+
+#~ msgid "Thread Title"
+#~ msgstr "Titre du Sujet"
+
+#~ msgid "Sticky Thread"
+#~ msgstr "Sujet Epinglé"
+
+#~ msgid "Lock Thread"
+#~ msgstr "Verrouiller le Sujet"
+
+#~ msgid "Save"
+#~ msgstr "Sauvegarder"
+
+#~ msgid "{0} Follow"
+#~ msgstr "{0} Suivre"
+
+#~ msgid "Follow this thread"
+#~ msgstr "Suivre ce sujet"
+
+#~ msgid "{0} Unfollow"
+#~ msgstr "{0} Ne plus suivre"
+
+#~ msgid "Unfollow this thread"
+#~ msgstr "Ne plus suivre ce sujet"
+
+#~ msgid "Messsages created"
+#~ msgstr "Messages créés"
+
+#~ msgid "Threads created"
+#~ msgstr "Sujet créés"
+
+#~ msgid "Likes received"
+#~ msgstr "J'aimes reçu"
+
+#~ msgid "Badges"
+#~ msgstr "Badges"
+
+#~ msgid "Post Link"
+#~ msgstr "Lien du Post"
+
+#~ msgid "{0} Last Edit: {1}, {2}"
+#~ msgstr "{0} Dernière Edition: {1}, {2}"
+
+#~ msgid "Advertising"
+#~ msgstr "Publicité"
+
+#~ msgid "Reply to this Thread"
+#~ msgstr "Répondre à ce Sujet"
+
+#~ msgid "Lock the Thread with the response ?"
+#~ msgstr "Verrouiller le sujet avec la réponse ?"
+
+#~ msgid "{0} Premium {1}"
+#~ msgstr "{0} Premium {1}"
+
+#~ msgid "Update Post"
+#~ msgstr "Mettre à jour le Post"
+
+#~ msgid "New Thread"
+#~ msgstr "Nouveau Sujet"
+
+#~ msgid "Create a new Thread"
+#~ msgstr "Créer un nouveau Sujet"
+
+#~ msgid "Title..."
+#~ msgstr "Titre..."
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "{0} Create Thread"
+#~ msgstr "{0} Créer un Sujet"
+
+#~ msgid "{0} Save Draft"
+#~ msgstr "{0} Sauvegarder le Draft"
+
+#~ msgid "The Draft has been saved successfully !"
+#~ msgstr "Le Draft a été enregistré avec succès !"
+
+#~ msgid "Delete the Draft"
+#~ msgstr "Supprimer le Draft"
+
+#~ msgid "The Draft has been cleaned successfully !"
+#~ msgstr "Le Draft a été nettoyé avec succès !"
+
+#~ msgid "Sign Up now {0}"
+#~ msgstr "Inscrivez-vous dès maintenant {0}"
+
+#~ msgid "Visit the Blog {0}"
+#~ msgstr "Visitez le Blog {0}"
+
+#~ msgid "Your payment has been canceled !"
+#~ msgstr "Votre paiement a été annulé !"
+
+#~ msgid ""
+#~ "Your payment has been canceled, you can make a new payment in the page "
+#~ "Premium. {0}"
+#~ msgstr ""
+#~ "Votre paiement a été annulé, vous pouvez faire un nouveau paiement sur la "
+#~ "page Premium. {0}"
+
+#~ msgid "Premium {0}"
+#~ msgstr "Premium {0}"
+
+#~ msgid "Go Home {0}"
+#~ msgstr "Aller à l'Accueil {0}"
+
+#~ msgid ""
+#~ "Become a Premium and access to tutorials resources, win a badge and more "
+#~ "in the future !"
+#~ msgstr ""
+#~ "Devenez un Premium et accédez aux ressources de tutoriels, gagner un "
+#~ "badge et plus dans le futur !"
+
+#~ msgid ""
+#~ "You're already Premium, but you can extend your subscription if you "
+#~ "want ! Your Premium will be ended at {0}."
+#~ msgstr ""
+#~ "Vous êtes déjà Premium, mais vous pouvez prolonger votre abonnement si "
+#~ "vous le souhaitez ! Votre Premium sera terminé à {0}."
+
+#~ msgid "You need to be connected to purchase the Premium. {0}"
+#~ msgstr "Vous devez être connecté pour acheter le Premium. {0}"
+
+#~ msgid "Login {0}"
+#~ msgstr "Connexion {0}"
+
+#~ msgid "Resources in Tutorials"
+#~ msgstr "Ressources dans les Tutoriels"
+
+#~ msgid "Premium Badge"
+#~ msgstr "Badge Premium"
+
+#~ msgid "Yellow color in Chat & Forum"
+#~ msgstr "Couleur jaune dans le Chat & Forum"
+
+#~ msgid "Discount Code"
+#~ msgstr "Code de Réduction"
+
+#~ msgid "Extend {0}"
+#~ msgstr "Prolonger {0}"
+
+#~ msgid "Subscribe {0}"
+#~ msgstr "S'abonner {0}"
+
+#~ msgid "{0} Month"
+#~ msgid_plural "{0} Months"
+#~ msgstr[0] "{0} Mois"
+#~ msgstr[1] "{0} Mois"
+
+#~ msgctxt "Excluding VAT"
+#~ msgid "Excl VAT"
+#~ msgstr "HT"
+
+#~ msgid "Thanks for purchasing the Premium !"
+#~ msgstr "Merci d'avoir acheté le Premium !"
+
+#~ msgid "You have unlock the badge Premium"
+#~ msgstr "Vous avez déverrouillé le badge Premium."
+
+#~ msgid "Your Premium will be ended at {0}."
+#~ msgstr "Votre Premium sera terminé à {0}."
+
+#~ msgid "My Profil {0}"
+#~ msgstr "Mon Profil {0}"
+
+#~ msgid ""
+#~ "Your account will be upgraded when the transaction will be completed ! It "
+#~ "can take 2-3 hours, it depend of Paypal."
+#~ msgstr ""
+#~ "Votre compte sera mis à jour lorsque la transaction sera complétée ! Ceci "
+#~ "peut prendre deux à trois heures, cela dépend de Paypal."
+
+#~ msgid "Select image"
+#~ msgstr "Sélectionner une Image"
+
+#~ msgid "Remove"
+#~ msgstr "Supprimer"
+
+#~ msgid "Premium Purchases"
+#~ msgstr "Achats de Premium"
+
+#~ msgid "You can see here all your premium purchases."
+#~ msgstr "Vous pouvez voir ici tous vos achats de Premium."
+
+#~ msgid "Offer"
+#~ msgstr "Offre"
+
+#~ msgid "Offer Amount"
+#~ msgstr "Montant de l'Offre"
+
+#~ msgid "Amount HT"
+#~ msgstr "Montant HT"
+
+#~ msgid "Tax"
+#~ msgstr "Taxe"
+
+#~ msgid "Discount"
+#~ msgstr "Réduction"
+
+#~ msgid "Discount Amount"
+#~ msgstr "Montant de la Réduction"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "0{0}"
+#~ msgstr "0{0}"
+
+#~ msgid "You haven't purchased the Premium yet. {0}"
+#~ msgstr "Vous n'avez pas encore acheté de Premium. {0}"
+
+#~ msgid "Check the offers {0}"
+#~ msgstr "Voir les offres {0}"
+
+#~ msgid "Your Lastest Threads in the Forum"
+#~ msgstr "Vos dernières Sujets dans le Forum"
+
+#~ msgid "His Lastest Threads in the Forum"
+#~ msgstr "Ces derniers Sujets dans le Forum"
+
+#~ msgid "Your Lastest Posts in the Forum"
+#~ msgstr "Vos derniers Messages dans le Forum"
+
+#~ msgid "His Lastest Posts in the Forum"
+#~ msgstr "Ces derniers Messages dans le Forum"
+
+#~ msgid "Beta"
+#~ msgstr "Bêta"
+
+#~ msgid "You must specify a title for your conversation."
+#~ msgstr "Vous devez spécifier un titre à votre conversation."
+
+#~ msgid "Comment"
+#~ msgstr "Commentaire"
+
+#~ msgid "Like"
+#~ msgstr "J'aime"
+
+#~ msgid "{0} with {1} by"
+#~ msgstr "{0} avec {1} par"
+
+#~ msgid "My Profil"
+#~ msgstr "Mon Profil"
+
+#~ msgid "Rank"
+#~ msgstr "Rang"
+
+#~ msgid "Your article has been created successfully !"
+#~ msgstr "Votre article a été créé avec succès !"
+
+#~ msgid "This article has been deleted successfully !"
+#~ msgstr "Cet article a été supprimé avec succès !"
+
+#~ msgid "Unable to delete this article."
+#~ msgstr "Impossible de supprimer cet article."
+
+#~ msgid ""
+#~ "This article has already an attachment, you can edit it <a href=\"{0}\" "
+#~ "class=\"btn btn-sm btn-danger\">here</a>."
+#~ msgstr ""
+#~ "Cet article a déjà un fichier, vous pouvez l'éditer <a href=\"{0}\" class="
+#~ "\"btn btn-sm btn-danger\">ici</a>."
+
+#~ msgid "Your attachment has been created successfully !"
+#~ msgstr "Votre fichier a été créé avec succès !"
+
+#~ msgid "This attachment doesn't exist or has been deleted."
+#~ msgstr "Ce fichier n'existe pas ou a été supprimé."
+
+#~ msgid "Your attachment has been edited successfully !"
+#~ msgstr "Votre fichier a été édité avec succès !"
+
+#~ msgid "This attachment has been deleted successfully !"
+#~ msgstr "Ce fichier a été supprimé avec succès !"
+
+#~ msgid "Unable to delete this attachment."
+#~ msgstr "Impossible de supprimer ce fichier."
+
+#~ msgid "The category has been created successfully !"
+#~ msgstr "La catégorie a été créée avec succès !"
+
+#~ msgid "This category has been updated successfully !"
+#~ msgstr "La catégorie a été mise à jour avec succès !"
+
+#~ msgid ""
+#~ "You can not deleted this category because one article or more is assigned "
+#~ "to this category."
+#~ msgstr ""
+#~ "Vous ne pouvez pas supprimer cette catégorie car un ou plusieurs "
+#~ "article(s) est affecté à cette catégorie."
+
+#~ msgid "This category has been deleted successfully !"
+#~ msgstr "Cette catégorie a été supprimée avec succès !"
+
+#~ msgid "Unable to delete this category."
+#~ msgstr "Impossible de supprimer cette catégorie."
+
+#~ msgid "This user has been updated successfully !"
+#~ msgstr "Cet utilisateur a été mis à jour avec succès !"
+
+#~ msgid "This user has been deleted successfully !"
+#~ msgstr "Cet utilisateur a été supprimé avec succès !"
+
+#~ msgid "Unable to delete this user."
+#~ msgstr "Impossible de supprimer cet utilisateur."
+
+#~ msgid "His avatar has been deleted successfully !"
+#~ msgstr "Son avatar a été supprimé avec succès !"
+
+#~ msgid "Unable to delete his avatar."
+#~ msgstr "Impossible de supprimer son avatar."
+
+#~ msgid "Your discount has been created successfully !"
+#~ msgstr "Votre réduction a été créée avec succès !"
+
+#~ msgid "This discount doesn't exist or has been deleted."
+#~ msgstr "Cette réduction n'existe pas ou a été supprimée."
+
+#~ msgid "This discount has been updated successfully !"
+#~ msgstr "Cette réduction a été mise à jour avec succès !"
+
+#~ msgid "Your offer has been created successfully !"
+#~ msgstr "Votre offre a été créée avec succès !"
+
+#~ msgid "This offer doesn't exist or has been deleted."
+#~ msgstr "Cette offre n'existe pas ou a été supprimée."
+
+#~ msgid "This offer has been updated successfully !"
+#~ msgstr "Cette offre a été mise à jour avec succès !"
+
+#~ msgid "This offer has been deleted successfully !"
+#~ msgstr "Cette offre a été supprimée avec succès !"
+
+#~ msgid "Unable to delete this offer."
+#~ msgstr "Impossible de supprimer cette offre."

@@ -1,0 +1,1896 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-04-23 16:51+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AppController.php:88
+msgid "You need to be logged in or you are not authorized to access that location !"
+msgstr ""
+
+#: Controller/BlogController.php:95
+msgid "This category doesn't exist or has been deleted."
+msgstr ""
+
+#: Controller/BlogController.php:160
+msgid "This article doesn't exist or has been deleted."
+msgstr ""
+
+#: Controller/BlogController.php:171
+msgid "You must be connected to post a comment."
+msgstr ""
+
+#: Controller/BlogController.php:194
+msgid "Your comment has been posted successfully !"
+msgstr ""
+
+#: Controller/BlogController.php:327
+msgid "has said :"
+msgstr ""
+
+#: Controller/BlogController.php:347
+msgid "This comment doesn't exist."
+msgstr ""
+
+#: Controller/BlogController.php:379
+msgid "This comment doesn't exist or has been deleted."
+msgstr ""
+
+#: Controller/BlogController.php:530
+msgid "You already like this article !"
+msgstr ""
+
+#: Controller/BlogController.php:551
+msgid "This article doesn't exist !"
+msgstr ""
+
+#: Controller/BlogController.php:573
+msgid "Thanks for {0} this article ! "
+msgstr ""
+
+#: Controller/BlogController.php:574
+#: Template/Blog/article.ctp:196
+msgid "You {0} this article."
+msgstr ""
+
+#: Controller/BlogController.php:583;647
+msgid "An error occurred, please try again later."
+msgstr ""
+
+#: Controller/BlogController.php:624
+msgid "You don't like this article !"
+msgstr ""
+
+#: Controller/BlogController.php:644
+#: Template/Blog/article.ctp:212
+msgid "Like {0}"
+msgstr ""
+
+#: Controller/BlogController.php:678;743;805
+msgid "This comment doesn't exist or has been deleted !"
+msgstr ""
+
+#: Controller/BlogController.php:699
+msgid "You don't have the authorization to delete this comment !"
+msgstr ""
+
+#: Controller/BlogController.php:709
+msgid "This comment has been deleted successfully !"
+msgstr ""
+
+#: Controller/BlogController.php:767;826
+msgid "You don't have the authorization to edit this comment !"
+msgstr ""
+
+#: Controller/BlogController.php:833
+msgid "This comment has been edited successfully !"
+msgstr ""
+
+#: Controller/ContactController.php:62
+msgid "You need to put your E-mail."
+msgstr ""
+
+#: Controller/ContactController.php:65
+#: Model/Table/UsersTable.php:135;239;326
+msgid "You must specify a valid E-mail address."
+msgstr ""
+
+#: Controller/ContactController.php:67
+msgid "You need to put your name."
+msgstr ""
+
+#: Controller/ContactController.php:68
+msgid "You need to give a message."
+msgstr ""
+
+#: Controller/ContactController.php:71
+msgid "Your message can not contain less than {0} characters."
+msgstr ""
+
+#: Controller/ContactController.php:85
+msgid "Your message has been sent successfully, you will get a response shortly !"
+msgstr ""
+
+#: Controller/PagesController.php:138
+msgid "Thanks for accepting to use the cookies !"
+msgstr ""
+
+#: Controller/PollsController.php:34
+msgid "This answer doesn't exist."
+msgstr ""
+
+#: Controller/PollsController.php:40
+msgid "This poll is expired, you can not vote anymore."
+msgstr ""
+
+#: Controller/PollsController.php:58
+msgid "You have already voted for this poll ! (You voted <strong>{0}</strong>)."
+msgstr ""
+
+#: Controller/PollsController.php:69
+msgid "Your have successfully voted for this poll ! (You voted <strong>{0}</strong>)."
+msgstr ""
+
+#: Controller/PollsController.php:74
+msgid "An error occured while saving the vote !"
+msgstr ""
+
+#: Controller/TfaController.php:42;77
+msgid "You have already set-up the Two-factor authentication."
+msgstr ""
+
+#: Controller/TfaController.php:127;176
+msgid "Two-factor secret verification failed. Please verify your secret and try again."
+msgstr ""
+
+#: Controller/TfaController.php:172
+msgid "Two-factor authentication successfully enabled !"
+msgstr ""
+
+#: Controller/TfaController.php:204;266;297
+msgid "The Two-factor authentication is not enabled !"
+msgstr ""
+
+#: Controller/TfaController.php:234
+msgid "The Two-factor authentication has been disabled !"
+msgstr ""
+
+#: Controller/TfaController.php:335
+msgid "New two-factor recovery code successfully generated."
+msgstr ""
+
+#: Controller/TfaController.php:339
+msgid "Error to generate two-factor recovery code."
+msgstr ""
+
+#: Controller/UsersController.php:90
+msgid "The Login action is disabled for the moment, please try again later."
+msgstr ""
+
+#: Controller/UsersController.php:94
+msgid "The Register action is disabled for the moment, please try again later."
+msgstr ""
+
+#: Controller/UsersController.php:98
+msgid "While the site is in maintenance, you can not register a new account."
+msgstr ""
+
+#: Controller/UsersController.php:115
+msgid "This account has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:200
+msgid "Your username or password doesn't match."
+msgstr ""
+
+#: Controller/UsersController.php:248
+msgid "Your account has been created successfully !"
+msgstr ""
+
+#: Controller/UsersController.php:258
+msgid "Please, correct your mistake."
+msgstr ""
+
+#: Controller/UsersController.php:260;710
+msgid "Please, correct your Captcha."
+msgstr ""
+
+#: Controller/UsersController.php:327
+msgid "Happy to see you again {0} ! "
+msgstr ""
+
+#: Controller/UsersController.php:337
+msgid "See you later {0} ! "
+msgstr ""
+
+#: Controller/UsersController.php:367
+msgid "The link used for the Two-factor Authentication is incorrect."
+msgstr ""
+
+#: Controller/UsersController.php:430
+msgid "Two-factor secret verification failed. Please verify your code and try again."
+msgstr ""
+
+#: Controller/UsersController.php:470
+msgid "Your information has been updated !"
+msgstr ""
+
+#: Controller/UsersController.php:515
+msgid "Your E-mail has been changed !"
+msgstr ""
+
+#: Controller/UsersController.php:524
+msgid "Please, complete all fields !"
+msgstr ""
+
+#: Controller/UsersController.php:530
+msgid "Your old password don't match !"
+msgstr ""
+
+#: Controller/UsersController.php:546;796
+msgid "Your password has been changed !"
+msgstr ""
+
+#: Controller/UsersController.php:611
+msgid "This user doesn't exist or has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:633
+msgid "Your password doesn't match !"
+msgstr ""
+
+#: Controller/UsersController.php:641
+msgid "Your account has been deleted successfully ! Thanks for your visit !"
+msgstr ""
+
+#: Controller/UsersController.php:646
+msgid "Unable to delete your account, please try again."
+msgstr ""
+
+#: Controller/UsersController.php:702
+msgid "This E-mail doesn't exist or the account has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:746
+msgid "An E-mail has been send to <strong>{0}</strong>. Please follow the instructions in the E-mail."
+msgstr ""
+
+#: Controller/UsersController.php:765;779
+msgid "This code is not associated with this users or is incorrect."
+msgstr ""
+
+#: Controller/UsersController.php:787
+msgid "This code is expired, please ask another E-mail code."
+msgstr ""
+
+#: Controller/Component/MaintenanceComponent.php:71
+msgid "Hello {0}, The website is under maintenance, only you and the staff groups have the access !"
+msgstr ""
+
+#: Model/Table/BadgesTable.php:55
+msgid "You must select a name."
+msgstr ""
+
+#: Model/Table/BadgesTable.php:58
+msgid "Please, {0} characters minimum for the name."
+msgstr ""
+
+#: Model/Table/BadgesTable.php:64
+#: Model/Table/BlogAttachmentsTable.php:61
+#: Model/Table/UsersTable.php:168
+msgid "The mimeType is not allowed."
+msgstr ""
+
+#: Model/Table/BadgesTable.php:71
+#: Model/Table/BlogAttachmentsTable.php:65
+msgid "The extension allowed are {0}."
+msgstr ""
+
+#: Model/Table/BadgesTable.php:78
+#: Model/Table/UsersTable.php:182
+msgid "The file exceeded the max allowed size of {0}"
+msgstr ""
+
+#: Model/Table/BadgesTable.php:86
+#: Model/Table/UsersTable.php:190
+msgid "The file exceeded the max allowed dimension. Max height : {0} Max width : {1}"
+msgstr ""
+
+#: Model/Table/BadgesTable.php:93
+msgid "You must select a type."
+msgstr ""
+
+#: Model/Table/BadgesTable.php:96
+msgid "This type is not allowed. Allowed types : {0}"
+msgstr ""
+
+#: Model/Table/BadgesTable.php:98
+msgid "You must select a rule."
+msgstr ""
+
+#: Model/Table/BadgesUsersTable.php:43
+msgid "You must select a badge."
+msgstr ""
+
+#: Model/Table/BadgesUsersTable.php:47
+msgid "You must select an user."
+msgstr ""
+
+#: Model/Table/BlogArticlesCommentsTable.php:54
+msgid "Please, {0} characters minimum for your comment."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:68
+msgid "You must select a category."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:72
+#: Model/Table/BlogCategoriesTable.php:45
+msgid "The title is required."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:77
+#: Model/Table/BlogCategoriesTable.php:50
+msgid "This title is already used."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:81
+#: Model/Table/BlogCategoriesTable.php:54
+msgid "Please, {0} characters minimum for the title."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:84
+msgid "The content is required."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:87
+msgid "Please, {0} characters minimum for the content."
+msgstr ""
+
+#: Model/Table/BlogArticlesTable.php:92
+msgid "Incorrect value, please do not attempt to modify the HTML, little hacker. ;)"
+msgstr ""
+
+#: Model/Table/BlogAttachmentsTable.php:52
+msgid "You must set an article."
+msgstr ""
+
+#: Model/Table/BlogAttachmentsTable.php:55
+msgid "The article must be numeric value."
+msgstr ""
+
+#: Model/Table/BlogAttachmentsTable.php:57
+msgid "You must upload a file."
+msgstr ""
+
+#: Model/Table/BlogAttachmentsTable.php:69
+msgid "The file exceeded the max allowed size of {0}."
+msgstr ""
+
+#: Model/Table/BlogCategoriesTable.php:60
+msgid "Please, {0} characters maximum for the description."
+msgstr ""
+
+#: Model/Table/GroupsTable.php:47
+msgid "You must set a name."
+msgstr ""
+
+#: Model/Table/GroupsTable.php:50
+msgid "The name can not be less than {0} characters."
+msgstr ""
+
+#: Model/Table/NotificationsTable.php:54
+msgid "<strong>{0}</strong> has replied in your conversation <strong>{1}</strong>."
+msgstr ""
+
+#: Model/Table/NotificationsTable.php:60
+msgid "<strong>{0}</strong> has replied in the conversation <strong>{1}</strong>."
+msgstr ""
+
+#: Model/Table/NotificationsTable.php:71
+msgid "Welcome on <strong>{0}</strong>! You can now post your first comment in the blog."
+msgstr ""
+
+#: Model/Table/NotificationsTable.php:81
+msgid "You have unlock the badge \"{0}\"."
+msgstr ""
+
+#: Model/Table/UsersTable.php:96;300
+msgid "You must set an username"
+msgstr ""
+
+#: Model/Table/UsersTable.php:101;305
+msgid "This username is already used."
+msgstr ""
+
+#: Model/Table/UsersTable.php:105;309
+msgid "Only alphanumeric characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:109;313
+msgid "Your username must be between {0} and {1} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:112
+msgid "You must specify your password."
+msgstr ""
+
+#: Model/Table/UsersTable.php:113;248;274
+msgid "You must specify your password (confirmation)."
+msgstr ""
+
+#: Model/Table/UsersTable.php:117;252;278
+msgid "Your password (confirmation) must be between {0} and {1} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:123
+msgid "Your password confirm must match with your password."
+msgstr ""
+
+#: Model/Table/UsersTable.php:131;322
+msgid "This E-mail is already used."
+msgstr ""
+
+#: Model/Table/UsersTable.php:157
+msgid "Your First Name can not contain more than {0} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:162
+msgid "Your Last Name can not contain more than {0} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:175
+msgid "The extensions allowed are {0}."
+msgstr ""
+
+#: Model/Table/UsersTable.php:200
+msgid "Your Facebook can not contain more than {0} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:205
+msgid "Your Twitter can not contain more than {0} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:212;220
+msgid "Your biography can not contain more than {0} characters."
+msgstr ""
+
+#: Model/Table/UsersTable.php:235
+msgid "Your E-mail can not be empty."
+msgstr ""
+
+#: Model/Table/UsersTable.php:244
+msgid "This E-mail is already used, please choose another E-mail."
+msgstr ""
+
+#: Model/Table/UsersTable.php:247;273
+msgid "You must specify your new password."
+msgstr ""
+
+#: Model/Table/UsersTable.php:258;284
+msgid "Your password confirm must match with your new password"
+msgstr ""
+
+#: Template/Admin/Categories/edit.ctp:24
+msgid "Edit a Category"
+msgstr ""
+
+#: Template/Blog/archive.ctp:2
+msgid "Blog Archive : {0}"
+msgstr ""
+
+#: Template/Blog/archive.ctp:10
+#: Template/Blog/article.ctp:42
+#: Template/Blog/category.ctp:10
+#: Template/Blog/index.ctp:10
+#: Template/Blog/search.ctp:10
+#: Template/Contact/index.ctp:10
+#: Template/Element/header.ctp:17
+#: Template/Error/error400.ctp:117
+#: Template/Error/error500.ctp:117
+#: Template/Groups/view.ctp:9
+#: Template/Layout/Email/html/default.ctp:44
+#: Template/Pages/terms.ctp:13
+#: Template/Tfa/configure.ctp:10
+#: Template/Tfa/enable.ctp:10
+#: Template/Tfa/index.ctp:14
+#: Template/Tfa/intro.ctp:10
+#: Template/Tfa/recovery_code.ctp:10
+#: Template/Users/account.ctp:24
+#: Template/Users/index.ctp:9
+#: Template/Users/notifications.ctp:10
+#: Template/Users/profile.ctp:76
+#: Template/Users/security.ctp:10
+#: Template/Users/settings.ctp:10
+msgid "Home"
+msgstr ""
+
+#: Template/Blog/archive.ctp:13
+#: Template/Blog/article.ctp:45
+#: Template/Blog/category.ctp:13
+#: Template/Blog/index.ctp:2;13
+#: Template/Blog/search.ctp:13
+#: Template/Element/header.ctp:22
+#: Template/Layout/Email/html/default.ctp:49
+msgid "Blog"
+msgstr ""
+
+#: Template/Blog/archive.ctp:16
+msgid "Archive"
+msgstr ""
+
+#: Template/Blog/archive.ctp:93
+#: Template/Blog/category.ctp:81
+#: Template/Blog/index.ctp:86
+#: Template/Blog/search.ctp:76
+msgid "This article has a poll"
+msgstr ""
+
+#: Template/Blog/archive.ctp:99
+#: Template/Blog/category.ctp:87
+#: Template/Blog/index.ctp:92
+#: Template/Blog/search.ctp:82
+msgid "This article has an attachment"
+msgstr ""
+
+#: Template/Blog/archive.ctp:117
+#: Template/Blog/category.ctp:106
+#: Template/Blog/index.ctp:111
+#: Template/Blog/search.ctp:102
+msgid "{0} Read More"
+msgstr ""
+
+#: Template/Blog/archive.ctp:135
+#: Template/Blog/category.ctp:124
+#: Template/Blog/index.ctp:129
+msgid "No articles found"
+msgstr ""
+
+#: Template/Blog/archive.ctp:137
+msgid "No articles were found for this date."
+msgstr ""
+
+#: Template/Blog/archive.ctp:85
+#: Template/Blog/article.ctp:99;392
+#: Template/Blog/category.ctp:73
+#: Template/Blog/index.ctp:78
+#: Template/Blog/search.ctp:68
+msgid "{0} Comment"
+msgid_plural "{0} Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Template/Blog/archive.ctp:89
+#: Template/Blog/article.ctp:103
+#: Template/Blog/category.ctp:77
+#: Template/Blog/index.ctp:82
+#: Template/Blog/search.ctp:72
+msgid "{0} Like"
+msgid_plural "{0} Likes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Template/Blog/article.ctp:145
+msgid "File Size :"
+msgstr ""
+
+#: Template/Blog/article.ctp:153
+msgid "Download :"
+msgstr ""
+
+#: Template/Blog/article.ctp:167;170
+msgid "{0} Reply"
+msgstr ""
+
+#: Template/Blog/article.ctp:296
+msgid "Related Articles"
+msgstr ""
+
+#: Template/Blog/article.ctp:363
+#: Template/Pages/home.ctp:273
+msgid "Read More {0}"
+msgstr ""
+
+#: Template/Blog/article.ctp:435;449
+msgid "{0} Quote"
+msgstr ""
+
+#: Template/Blog/article.ctp:464
+msgid "{0} Edit"
+msgstr ""
+
+#: Template/Blog/article.ctp:483;556
+msgid "{0} Delete"
+msgstr ""
+
+#: Template/Blog/article.ctp:512
+msgid "Leave a Comment"
+msgstr ""
+
+#: Template/Blog/article.ctp:529
+msgid "{0} Post Comment"
+msgstr ""
+
+#: Template/Blog/article.ctp:546
+#: Template/Users/settings.ctp:86;111
+msgid "Close"
+msgstr ""
+
+#: Template/Blog/article.ctp:548
+msgid "Delete a Comment"
+msgstr ""
+
+#: Template/Blog/article.ctp:552
+msgid "Are you sure you want delete this comment ?"
+msgstr ""
+
+#: Template/Blog/article.ctp:557
+msgid "{0} Close"
+msgstr ""
+
+#: Template/Blog/category.ctp:2
+msgid "Blog Category : {0}"
+msgstr ""
+
+#: Template/Blog/category.ctp:16
+msgid "Category"
+msgstr ""
+
+#: Template/Blog/category.ctp:126
+msgid "No articles were found for this category."
+msgstr ""
+
+#: Template/Blog/index.ctp:131
+msgid "No articles were found."
+msgstr ""
+
+#: Template/Blog/search.ctp:2
+msgid "Blog Search : {0}"
+msgstr ""
+
+#: Template/Blog/search.ctp:16
+msgid "Search : {0}"
+msgstr ""
+
+#: Template/Blog/search.ctp:120
+msgid "No results found"
+msgstr ""
+
+#: Template/Blog/search.ctp:122
+msgid "No articles were found for your search, please try again with a different word."
+msgstr ""
+
+#: Template/Blog/search.ctp:124
+msgid "Suggestions :"
+msgstr ""
+
+#: Template/Blog/search.ctp:127
+msgid "Check the spelling of your search words."
+msgstr ""
+
+#: Template/Blog/search.ctp:130
+msgid "Try more general keywords."
+msgstr ""
+
+#: Template/Blog/json/get_edit_comment.ctp:17
+#: Template/Users/account.ctp:125
+#: Template/Users/settings.ctp:46
+msgid "{0} Save"
+msgstr ""
+
+#: Template/Blog/json/get_edit_comment.ctp:18
+msgid "{0} Cancel"
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:3
+msgid "Search Posts"
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:14
+msgid "Type your search..."
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:21
+msgid "Featured Article"
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:59
+msgid "Categories"
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:73
+msgid "Archives"
+msgstr ""
+
+#: Template/Cell/Blog/sidebar.ctp:78
+msgid "{0} ({1})"
+msgstr ""
+
+#: Template/Cell/Notification/notifications.ctp:7
+msgid "News Notifications"
+msgstr ""
+
+#: Template/Cell/Notification/notifications.ctp:31
+#: Template/Users/notifications.ctp:59
+msgid "New"
+msgstr ""
+
+#: Template/Cell/Notification/notifications.ctp:41
+msgid "You don't have any notifications."
+msgstr ""
+
+#: Template/Cell/Notification/notifications.ctp:46
+msgid "All Notifications"
+msgstr ""
+
+#: Template/Contact/index.ctp:2
+msgid "Contact me"
+msgstr ""
+
+#: Template/Contact/index.ctp:13;72
+#: Template/Element/footer.ctp:18
+#: Template/Element/header.ctp:27
+#: Template/Error/error400.ctp:118
+#: Template/Error/error500.ctp:118
+#: Template/Layout/Email/html/default.ctp:54
+msgid "Contact"
+msgstr ""
+
+#: Template/Contact/index.ctp:23
+msgid "Contact me !"
+msgstr ""
+
+#: Template/Contact/index.ctp:26
+msgid "You have found a problem on the site or you just want to contact me ? Use the form below and i will answer you shortly !"
+msgstr ""
+
+#: Template/Contact/index.ctp:29
+msgid "NEW : You can now contact me directly on the web site via the Private Conversation {0} !"
+msgstr ""
+
+#: Template/Contact/index.ctp:32
+#: Template/Pages/terms.ctp:126
+msgid "here"
+msgstr ""
+
+#: Template/Contact/index.ctp:53
+msgid "Name {0}"
+msgstr ""
+
+#: Template/Contact/index.ctp:53;57;64
+msgid "Required."
+msgstr ""
+
+#: Template/Contact/index.ctp:54
+msgid "Name"
+msgstr ""
+
+#: Template/Contact/index.ctp:57
+msgid "Email {0}"
+msgstr ""
+
+#: Template/Contact/index.ctp:58
+msgid "Email"
+msgstr ""
+
+#: Template/Contact/index.ctp:61
+msgid "Subject"
+msgstr ""
+
+#: Template/Contact/index.ctp:64
+msgid "Message {0}"
+msgstr ""
+
+#: Template/Contact/index.ctp:65
+msgid "Enter your message..."
+msgstr ""
+
+#: Template/Contact/index.ctp:67
+msgid "{0} Send"
+msgstr ""
+
+#: Template/Contact/index.ctp:81
+msgid "Secret"
+msgstr ""
+
+#: Template/Contact/index.ctp:89
+msgid "Social"
+msgstr ""
+
+#: Template/Conversations/view.ctp:69
+#: Template/Users/profile.ctp:112
+msgid "Joined"
+msgstr ""
+
+#: Template/Element/cookies.ctp:3
+msgid "Cookies ensure the proper functioning of the site. By using this site, you accept the use of cookies."
+msgstr ""
+
+#: Template/Element/cookies.ctp:5
+msgid "{0} I understood."
+msgstr ""
+
+#: Template/Element/footer.ctp:10
+#: Template/Layout/Email/html/default.ctp:135
+msgid "&copy; {0} {1}."
+msgstr ""
+
+#: Template/Element/footer.ctp:15
+#: Template/Pages/terms.ctp:16
+msgid "Terms"
+msgstr ""
+
+#: Template/Element/footer.ctp:21
+msgid "Source Code available on Github"
+msgstr ""
+
+#: Template/Element/footer.ctp:25
+msgid "Version : {0}"
+msgstr ""
+
+#: Template/Element/footer.ctp:29
+msgid "{0} with {1} and {2} by"
+msgstr ""
+
+#: Template/Element/header.ctp:35
+msgid "Hello,"
+msgstr ""
+
+#: Template/Element/header.ctp:43
+msgid "Login"
+msgstr ""
+
+#: Template/Element/header.ctp:48
+msgid "Sign up"
+msgstr ""
+
+#: Template/Element/header.ctp:66
+msgid "Visit your profile !"
+msgstr ""
+
+#: Template/Element/header.ctp:71;77
+msgid "Dashboard"
+msgstr ""
+
+#: Template/Element/header.ctp:73
+msgid "Access to the site administration."
+msgstr ""
+
+#: Template/Element/header.ctp:86;92
+#: Template/Users/account.ctp:2;30
+msgid "My Account"
+msgstr ""
+
+#: Template/Element/header.ctp:88
+msgid "Manage your account settings."
+msgstr ""
+
+#: Template/Element/header.ctp:101;107
+msgid "Conversations"
+msgstr ""
+
+#: Template/Element/header.ctp:103
+msgid "Check your private messages."
+msgstr ""
+
+#: Template/Element/header.ctp:116;122
+#: Template/Users/notifications.ctp:2;16;30
+msgid "Notifications"
+msgstr ""
+
+#: Template/Element/header.ctp:118
+msgid "Check your new and old notifications."
+msgstr ""
+
+#: Template/Element/header.ctp:131;137
+msgid "Logout"
+msgstr ""
+
+#: Template/Element/header.ctp:133
+msgid "See you later !"
+msgstr ""
+
+#: Template/Element/meta.ctp:4;24;40
+msgid "Welcome on Xeta"
+msgstr ""
+
+#: Template/Element/Blog/polls.ctp:27
+msgid "{0} Vote"
+msgstr ""
+
+#: Template/Element/Blog/polls.ctp:53
+msgid "This poll expire in"
+msgstr ""
+
+#: Template/Element/Blog/polls.ctp:61
+msgid "This poll is expired !"
+msgstr ""
+
+#: Template/Element/Blog/polls.ctp:70
+msgid "Total votes : {0}"
+msgstr ""
+
+#: Template/Element/Blog/polls.ctp:73
+msgid "You have already voted ! (You voted <strong>{0}</strong>)"
+msgstr ""
+
+#: Template/Element/Users/sidebar.ctp:8
+msgid "{0} Account {1}"
+msgstr ""
+
+#: Template/Element/Users/sidebar.ctp:16
+msgid "{0} Conversations {1}"
+msgstr ""
+
+#: Template/Element/Users/sidebar.ctp:24
+msgid "{0} Notifications {1}"
+msgstr ""
+
+#: Template/Element/Users/sidebar.ctp:32
+msgid "{0} Settings {1}"
+msgstr ""
+
+#: Template/Element/Users/sidebar.ctp:40
+msgid "{0} Security {1}"
+msgstr ""
+
+#: Template/Error/error400.ctp:3
+#: Template/Error/error500.ctp:3
+msgid "Error {0} :("
+msgstr ""
+
+#: Template/Error/error400.ctp:114
+msgid "Aaaaaaaaaaaaaah ! You broke the robot !"
+msgstr ""
+
+#: Template/Error/error500.ctp:114
+msgid "Our monkey's team are working on this error !"
+msgstr ""
+
+#: Template/Groups/view.ctp:2
+#: Template/Users/index.ctp:2
+msgid "Xeta's members"
+msgstr ""
+
+#: Template/Groups/view.ctp:12
+#: Template/Pages/home.ctp:343
+#: Template/Tfa/configure.ctp:13
+#: Template/Tfa/enable.ctp:13
+#: Template/Tfa/index.ctp:17
+#: Template/Tfa/intro.ctp:13
+#: Template/Tfa/recovery_code.ctp:13
+#: Template/Users/account.ctp:27
+#: Template/Users/index.ctp:12
+#: Template/Users/notifications.ctp:13
+#: Template/Users/profile.ctp:79
+#: Template/Users/security.ctp:13
+#: Template/Users/settings.ctp:13
+msgid "Users"
+msgstr ""
+
+#: Template/Groups/view.ctp:23
+#: Template/Users/index.ctp:23
+msgid "All {0}'s members"
+msgstr ""
+
+#: Template/Groups/view.ctp:26
+msgid "Ordered by Group : {0}"
+msgstr ""
+
+#: Template/Groups/view.ctp:31
+#: Template/Users/index.ctp:28
+#: Template/Users/login.ctp:45;146
+msgid "Username"
+msgstr ""
+
+#: Template/Groups/view.ctp:32
+#: Template/Users/index.ctp:29
+msgid "Full Name"
+msgstr ""
+
+#: Template/Groups/view.ctp:33
+#: Template/Users/index.ctp:30
+msgid "Group"
+msgstr ""
+
+#: Template/Groups/view.ctp:34
+#: Template/Users/index.ctp:31
+msgid "Registered date"
+msgstr ""
+
+#: Template/Groups/view.ctp:35
+#: Template/Users/index.ctp:32
+msgid "Last login"
+msgstr ""
+
+#: Template/Groups/view.ctp:51
+#: Template/Users/index.ctp:48
+msgid "Visit his profile."
+msgstr ""
+
+#: Template/Pages/home.ctp:137
+msgid "Welcome on {0} !"
+msgstr ""
+
+#: Template/Pages/home.ctp:141
+msgid "Welcome to my personal website ! I use this site as my personal blog and for try my  experiences in development."
+msgstr ""
+
+#: Template/Pages/home.ctp:146
+msgid "{0} Sign Up now"
+msgstr ""
+
+#: Template/Pages/home.ctp:147;149
+msgid "{0} Visit the Blog"
+msgstr ""
+
+#: Template/Pages/home.ctp:180
+msgid "Open Source"
+msgstr ""
+
+#: Template/Pages/home.ctp:183
+msgid "The code source of this website is open source and available on {0}. If you want to contribute, feel free to do a PR."
+msgstr ""
+
+#: Template/Pages/home.ctp:200
+msgid "Experiences"
+msgstr ""
+
+#: Template/Pages/home.ctp:203
+msgid "I use this site for my personal experiences in development, to try new things like JS libraries, or PHP libraries."
+msgstr ""
+
+#: Template/Pages/home.ctp:220
+msgid "Interact"
+msgstr ""
+
+#: Template/Pages/home.ctp:223
+msgid "You can interact with {0}'s members in the blog or directly with me in the comments of an article."
+msgstr ""
+
+#: Template/Pages/home.ctp:234
+msgid "Latest Articles"
+msgstr ""
+
+#: Template/Pages/home.ctp:358
+msgid "Articles"
+msgstr ""
+
+#: Template/Pages/home.ctp:373
+#: Template/Users/profile.ctp:41
+msgid "Comments"
+msgstr ""
+
+#: Template/Pages/home.ctp:388
+msgid "Likes"
+msgstr ""
+
+#: Template/Pages/home.ctp:402
+msgid "Latest Comments"
+msgstr ""
+
+#: Template/Pages/maintenance.ctp:2
+msgid "Website in maintenance"
+msgstr ""
+
+#: Template/Pages/maintenance.ctp:113
+msgid "Oops ! The website is in maintenance, our monkey's team are working on it !"
+msgstr ""
+
+#: Template/Pages/terms.ctp:5;27
+#: Template/Users/login.ctp:114
+msgid "Terms of Service"
+msgstr ""
+
+#: Template/Pages/terms.ctp:31
+msgid "Last update : {0}"
+msgstr ""
+
+#: Template/Pages/terms.ctp:38
+msgid "Summary"
+msgstr ""
+
+#: Template/Pages/terms.ctp:43;90
+msgid "General Information"
+msgstr ""
+
+#: Template/Pages/terms.ctp:48;101
+msgid "Account Terms"
+msgstr ""
+
+#: Template/Pages/terms.ctp:53;134
+msgid "Copyright and Content Ownership"
+msgstr ""
+
+#: Template/Pages/terms.ctp:58;149
+msgid "General Conditions"
+msgstr ""
+
+#: Template/Pages/terms.ctp:63;182
+msgid "Privacy Policy Terms"
+msgstr ""
+
+#: Template/Pages/terms.ctp:69;188
+msgid "Cookies"
+msgstr ""
+
+#: Template/Pages/terms.ctp:74;206
+msgid "Data Storage"
+msgstr ""
+
+#: Template/Pages/terms.ctp:79;218
+msgid "Information Gathering and Usage"
+msgstr ""
+
+#: Template/Pages/terms.ctp:93
+msgid "Violation of any of the terms below will result in the termination of your Account. While {0} prohibits such conduct and Content on the Service, you understand and agree that {0} cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk."
+msgstr ""
+
+#: Template/Pages/terms.ctp:105
+msgid "You must be 13 years or older to use this Service."
+msgstr ""
+
+#: Template/Pages/terms.ctp:108
+msgid "You must provide your username, a valid email address, and any other information requested in order to complete the signup process."
+msgstr ""
+
+#: Template/Pages/terms.ctp:111
+msgid "You are responsible for maintaining the security of your account and password. {0} cannot and will not be liable for any loss or damage from your failure to comply with this security obligation."
+msgstr ""
+
+#: Template/Pages/terms.ctp:114
+msgid "You are responsible for all Content posted and activity that occurs under your Account."
+msgstr ""
+
+#: Template/Pages/terms.ctp:117
+msgid "Selling your Account is totally prohibited and will result in the termination of your Account."
+msgstr ""
+
+#: Template/Pages/terms.ctp:120
+msgid "It is totally prohibited to share your Account with an other user. In that case, the Account shared will be immediately banned and you will lose all purchases made from your Account."
+msgstr ""
+
+#: Template/Pages/terms.ctp:123
+msgid "One person or legal entity may not maintain more than one Account."
+msgstr ""
+
+#: Template/Pages/terms.ctp:126
+msgid "When deleting your Account, all your Content will not be deleted directly. If you want all your Content to be deleted, please ask {0}."
+msgstr ""
+
+#: Template/Pages/terms.ctp:138
+msgid "The look and feel of the Service is copyright &copy;{0} {1}. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from {1}."
+msgstr ""
+
+#: Template/Pages/terms.ctp:141
+msgid "All trademarks, service marks, trade names, trade dress, product names and logos appearing on the site are the property of their respective owners."
+msgstr ""
+
+#: Template/Pages/terms.ctp:153
+msgid "Your use of the Service is at your sole risk. The service is provided on an \"as is\" and \"as available\" basis."
+msgstr ""
+
+#: Template/Pages/terms.ctp:156
+msgid "You understand that {0} uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service."
+msgstr ""
+
+#: Template/Pages/terms.ctp:159
+msgid "You must not modify, adapt or hack the Service or modify another website so as to falsely imply that it is associated with the Service, {0}, or any other {0} service."
+msgstr ""
+
+#: Template/Pages/terms.ctp:162
+msgid "You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by {0}."
+msgstr ""
+
+#: Template/Pages/terms.ctp:165
+msgid "We may, but have no obligation to, remove Content and Accounts containing Content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party's intellectual property or these Terms of Service."
+msgstr ""
+
+#: Template/Pages/terms.ctp:168
+msgid "Verbal, physical, written or other abuse (including threats of abuse or retribution) of any {0} customer, members, or staff will result in immediate account termination."
+msgstr ""
+
+#: Template/Pages/terms.ctp:171
+msgid "You understand that the technical processing and transmission of the Service, including your Content, may be transferred unencrypted."
+msgstr ""
+
+#: Template/Pages/terms.ctp:174
+msgid "Questions about the Terms of Service should be sent to {0}."
+msgstr ""
+
+#: Template/Pages/terms.ctp:193
+msgid "A cookie is a small amount of data, which often includes an anonymous unique identifier, that is sent to your browser from a web site's computers and stored on your computer's hard drive."
+msgstr ""
+
+#: Template/Pages/terms.ctp:196
+msgid "Cookies are required to use the {0} service."
+msgstr ""
+
+#: Template/Pages/terms.ctp:199
+msgid "We use cookies to record current session information, but do not use permanent cookies. You are required to re-login to your {0} account after a certain period of time has elapsed to protect you against others accidentally accessing your account contents."
+msgstr ""
+
+#: Template/Pages/terms.ctp:211
+msgid "{0} uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run {0}. Although {0} owns the code, databases, and all rights to the {0} application, you retain all rights to your data."
+msgstr ""
+
+#: Template/Pages/terms.ctp:223
+msgid "{0} uses collected information for the following general purposes: products and services payments, billing, identification and authentication, services improvement, contact, and research."
+msgstr ""
+
+#: Template/Tfa/configure.ctp:2
+msgid "Two-factor Authentication : Configure"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:16
+#: Template/Tfa/enable.ctp:16
+#: Template/Tfa/index.ctp:20
+#: Template/Tfa/intro.ctp:16
+#: Template/Tfa/recovery_code.ctp:16
+#: Template/Users/security.ctp:2;16
+msgid "Security"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:19;37
+#: Template/Tfa/enable.ctp:19;37
+#: Template/Tfa/index.ctp:6;23;38
+#: Template/Tfa/intro.ctp:19;37
+#: Template/Tfa/recovery_code.ctp:19
+#: Template/Users/security.ctp:31
+#: Template/Users/tfa.ctp:32
+msgid "Two-factor Authentication"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:22
+msgid "Configure"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:41
+msgid "You will need to install a two-factor authentication application on your phone."
+msgstr ""
+
+#: Template/Tfa/configure.ctp:46
+msgid "1. Scan QrCode"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:52
+msgid "Scan the image above with the two-factor authentication app on your phone."
+msgstr ""
+
+#: Template/Tfa/configure.ctp:53
+msgid "If you can’t use a barcode, {0}enter this text code{1} instead."
+msgstr ""
+
+#: Template/Tfa/configure.ctp:58
+msgid "After scanning the barcode image, the app will display a six-digit code that you can enter below."
+msgstr ""
+
+#: Template/Tfa/configure.ctp:69
+msgid "2. Enter the six-digit code from the application"
+msgstr ""
+
+#: Template/Tfa/configure.ctp:71
+#: Template/Tfa/intro.ctp:69
+#: Template/Users/security.ctp:65
+msgid "{0} Enable Two-factor Authentication"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:2
+msgid "Two-factor Authentication : Enable"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:22
+msgid "Enable"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:42
+msgid "Enabled {0}"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:43
+msgid "Two-factor authentication is currently on."
+msgstr ""
+
+#: Template/Tfa/enable.ctp:46
+msgid "{0} Disable two-factor authentication"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:51
+msgid "Don’t get locked out of your {0} account"
+msgstr ""
+
+#: Template/Tfa/enable.ctp:53
+msgid "<strong>Your account is now more secure, make sure you don’t get locked out</strong>.\n                        If you lose your two-factor device, the {0} Support cannot restore access to accounts with two-factor authentication enabled for security reasons, <strong>printing your recovery codes will keep you from permanently losing access to your {0} account.</strong>."
+msgstr ""
+
+#: Template/Tfa/enable.ctp:57
+msgid "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes."
+msgstr ""
+
+#: Template/Tfa/enable.ctp:60
+msgid "{0} View recovery code"
+msgstr ""
+
+#: Template/Tfa/index.ctp:44;63
+msgid "About Two-Factor Authentication"
+msgstr ""
+
+#: Template/Tfa/index.ctp:49;83
+msgid "Application on phone"
+msgstr ""
+
+#: Template/Tfa/index.ctp:54;111
+#: Template/Tfa/recovery_code.ctp:22
+msgid "Recovery Code"
+msgstr ""
+
+#: Template/Tfa/index.ctp:66
+msgid "Two-factor authentication, or 2FA, is a way of logging into websites that requires more than just a password. Using a password to log into a website is susceptible to security threats, because it represents a single piece of information a malicious person needs to acquire. The added security that 2FA provides is requiring additional information to sign in."
+msgstr ""
+
+#: Template/Tfa/index.ctp:69
+msgid "In {0}'s case, this additional information is an authentication code delivered to your cell phone that's generated by an application on your smartphone.The only way someone can sign into your account is if they know both your password and have access to the authentication code on your phone."
+msgstr ""
+
+#: Template/Tfa/index.ctp:72
+msgid "We <strong>strongly</strong> urge you to turn on 2FA for the safety of your account, not only on {0}, but on other websites that support it."
+msgstr ""
+
+#: Template/Tfa/index.ctp:76
+msgid "<strong>Warning</strong>: For security reasons, the {0} Support cannot restore access to accounts with two-factor authentication enabled if you lose your phone and don't have access to your recovery code."
+msgstr ""
+
+#: Template/Tfa/index.ctp:86
+msgid "A <em>Time-based One-Time Password</em> (TOTP) application automatically generates an authentication code that changes after a certain period of time."
+msgstr ""
+
+#: Template/Tfa/index.ctp:89
+msgid "Download one of these applications :"
+msgstr ""
+
+#: Template/Tfa/index.ctp:93
+msgid "For Android, iOS, and Blackberry : {0}"
+msgstr ""
+
+#: Template/Tfa/index.ctp:96
+msgid "For Android and iOS : {0}"
+msgstr ""
+
+#: Template/Tfa/index.ctp:99
+msgid "For Windows Phone : {0}"
+msgstr ""
+
+#: Template/Tfa/index.ctp:104
+msgid "To configure authentication via TOTP on multiple devices, during setup, scan the QR code using <strong>each device at the same time</strong>. If 2FA is already enabled and you want to add another device, you must re-configure 2FA from your security settings."
+msgstr ""
+
+#: Template/Tfa/index.ctp:114
+msgid "After successfully setting up two-factor authentication via a TOTP mobile application, the {0} page lists your recovery code. We <strong>strongly</strong> recommend saving your recovery code immediately. If you don't, though, you can download them at any point after enabling two-factor authentication."
+msgstr ""
+
+#: Template/Tfa/index.ctp:115
+msgid "Two-factor recovery code"
+msgstr ""
+
+#: Template/Tfa/index.ctp:118
+msgid "<strong>Treat your recovery codes with the same level of attention as you would your password!</strong> They should not be shared or distributed. The {0} Staff will never ask you your recovery code."
+msgstr ""
+
+#: Template/Tfa/index.ctp:122
+msgid "Once you use your recovery code to regain access to your account, <strong>it cannot be reused</strong>. If you've used your recovery code, you must {0}."
+msgstr ""
+
+#: Template/Tfa/index.ctp:123
+msgid "generate a new valid recovery code"
+msgstr ""
+
+#: Template/Tfa/intro.ctp:2
+msgid "Two-factor Authentication : Intro"
+msgstr ""
+
+#: Template/Tfa/intro.ctp:22
+msgid "Intro"
+msgstr ""
+
+#: Template/Tfa/intro.ctp:41
+msgid "Two-factor authentication adds an extra layer of security to your account. In addition to your username and password, you'll need to enter a code that is present in an app on your phone."
+msgstr ""
+
+#: Template/Tfa/intro.ctp:54
+msgid "When you sign into {0} you’ll enter your username and password, like always."
+msgstr ""
+
+#: Template/Tfa/intro.ctp:57
+msgid "When logging in from a new browser, you’ll need to enter an additional code from your phone or tablet."
+msgstr ""
+
+#: Template/Tfa/intro.ctp:60
+msgid "Once you enter the code on the website, you’ll be logged into {0}."
+msgstr ""
+
+#: Template/Tfa/intro.ctp:66
+msgid "Use an {0} to get two-factor authentication codes when prompted."
+msgstr ""
+
+#: Template/Tfa/intro.ctp:66
+msgid "application on your phone"
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:2;37
+msgid "Two-factor Authentication : Recovery Code"
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:41
+msgid "Recovery code can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication code."
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:45
+msgid "Your recovery code : {0}"
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:46
+msgid "Code Status : "
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:48
+msgid "Used {0}"
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:50
+msgid "Valid {0}"
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:53
+msgid "Printing your recovery code will keep you from permanently losing access to your {0} account."
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:60
+msgid "Once you use your recovery code to regain access to your account, <strong>it cannot be reused</strong>. If you've used your recovery code, click <strong>Generate new recovery code</strong> to recreate another recovery code."
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:63
+msgid "When you generate a new recovery code, you must download or print the new code. Your old code won't work anymore."
+msgstr ""
+
+#: Template/Tfa/recovery_code.ctp:66
+msgid "{0} Generate new recovery code"
+msgstr ""
+
+#: Template/Users/account.ctp:54
+msgid "Default Avatar"
+msgstr ""
+
+#: Template/Users/account.ctp:62
+msgid "Change"
+msgstr ""
+
+#: Template/Users/account.ctp:73
+msgid "First Name"
+msgstr ""
+
+#: Template/Users/account.ctp:77
+msgid "Last Name"
+msgstr ""
+
+#: Template/Users/account.ctp:85
+msgid "Twitter"
+msgstr ""
+
+#: Template/Users/account.ctp:92
+msgid "Facebook"
+msgstr ""
+
+#: Template/Users/account.ctp:99
+msgid "Biography"
+msgstr ""
+
+#: Template/Users/account.ctp:101
+msgid "The biography will be displayed on your profile page."
+msgstr ""
+
+#: Template/Users/account.ctp:114
+msgid "The signature will be displayed on each article that you have wrotten on the blog."
+msgstr ""
+
+#: Template/Users/forgot_password.ctp:2;30
+msgid "Forgot your Password"
+msgstr ""
+
+#: Template/Users/forgot_password.ctp:10
+#: Template/Users/reset_password.ctp:10
+msgid "You have forgot your password ?"
+msgstr ""
+
+#: Template/Users/forgot_password.ctp:13
+msgid "Use the form below to recover your password ! An E-mail will be send to you."
+msgstr ""
+
+#: Template/Users/forgot_password.ctp:46
+#: Template/Users/login.ctp:63
+#: Template/Users/settings.ctp:35
+msgid "E-mail"
+msgstr ""
+
+#: Template/Users/forgot_password.ctp:59
+#: Template/Users/reset_password.ctp:77
+msgid "Reset {0}"
+msgstr ""
+
+#: Template/Users/login.ctp:2
+msgid "Login or Register"
+msgstr ""
+
+#: Template/Users/login.ctp:10
+msgid "Why create an account ?"
+msgstr ""
+
+#: Template/Users/login.ctp:13
+msgid "With an account you can download all the sources provided in tutorials and you can interact with all the community !"
+msgstr ""
+
+#: Template/Users/login.ctp:29
+msgid "Create an Account"
+msgstr ""
+
+#: Template/Users/login.ctp:81;163
+#: Template/Users/reset_password.ctp:46
+#: Template/Users/settings.ctp:105
+msgid "Password"
+msgstr ""
+
+#: Template/Users/login.ctp:100
+#: Template/Users/reset_password.ctp:66
+msgid "Password (Confirmation)"
+msgstr ""
+
+#: Template/Users/login.ctp:113
+msgid "By clicking the button \"SignUp\", you accept that you have read and understand the {0}."
+msgstr ""
+
+#: Template/Users/login.ctp:119
+msgid "SignUp {0}"
+msgstr ""
+
+#: Template/Users/login.ctp:133
+msgid "Login to your Account"
+msgstr ""
+
+#: Template/Users/login.ctp:172
+msgid "Forgot your password ?"
+msgstr ""
+
+#: Template/Users/login.ctp:177
+#: Template/Users/tfa.ctp:55
+msgid "LogIn {0}"
+msgstr ""
+
+#: Template/Users/notifications.ctp:53
+msgid "At {0}"
+msgstr ""
+
+#: Template/Users/notifications.ctp:83
+msgid "You don't have any notification yet."
+msgstr ""
+
+#: Template/Users/profile.ctp:2
+msgid "{0}'s profile"
+msgstr ""
+
+#: Template/Users/profile.ctp:18;19;95;96
+msgid "Online"
+msgstr ""
+
+#: Template/Users/profile.ctp:21;22;98;99
+msgid "Offline"
+msgstr ""
+
+#: Template/Users/profile.ctp:60
+msgid "{0} Edit my profile"
+msgstr ""
+
+#: Template/Users/profile.ctp:118
+msgid "Send a Message"
+msgstr ""
+
+#: Template/Users/profile.ctp:141
+msgid "{0} Edit this User"
+msgstr ""
+
+#: Template/Users/profile.ctp:155
+msgid "Your Biography"
+msgstr ""
+
+#: Template/Users/profile.ctp:157
+msgid "His Biography"
+msgstr ""
+
+#: Template/Users/profile.ctp:167
+msgid "You don't have set a biography."
+msgstr ""
+
+#: Template/Users/profile.ctp:168
+msgid "{0} Add one now"
+msgstr ""
+
+#: Template/Users/profile.ctp:170
+msgid "This user hasn't set a biography yet."
+msgstr ""
+
+#: Template/Users/profile.ctp:179
+msgid "Your Badges"
+msgstr ""
+
+#: Template/Users/profile.ctp:181
+msgid "His Badges"
+msgstr ""
+
+#: Template/Users/profile.ctp:202
+msgid "Your Lastest Articles in the Blog"
+msgstr ""
+
+#: Template/Users/profile.ctp:204
+msgid "His Lastest Articles in the Blog"
+msgstr ""
+
+#: Template/Users/profile.ctp:229;268
+msgid "Created at {0}"
+msgstr ""
+
+#: Template/Users/profile.ctp:241
+msgid "Your Lastest Comments in the Blog"
+msgstr ""
+
+#: Template/Users/profile.ctp:243
+msgid "His Lastest Comments in the Blog"
+msgstr ""
+
+#: Template/Users/reset_password.ctp:2;30
+msgid "Reset your Password"
+msgstr ""
+
+#: Template/Users/reset_password.ctp:13
+msgid "Use the form below to reset your password !"
+msgstr ""
+
+#: Template/Users/security.ctp:37
+msgid "{0} in a safe place. It will allow you to access your account if you lose your phone."
+msgstr ""
+
+#: Template/Users/security.ctp:39
+msgid "{0} Save your recovery code"
+msgstr ""
+
+#: Template/Users/security.ctp:42
+msgid "{0} provides another layer of security to your account."
+msgstr ""
+
+#: Template/Users/security.ctp:44
+msgid "{0} Two-factor Authentication"
+msgstr ""
+
+#: Template/Users/security.ctp:50
+msgid "Status : "
+msgstr ""
+
+#: Template/Users/security.ctp:53
+msgid "On {0}"
+msgstr ""
+
+#: Template/Users/security.ctp:57
+msgid "Off {0}"
+msgstr ""
+
+#: Template/Users/security.ctp:63
+msgid "{0} Disable Two-factor Authentication"
+msgstr ""
+
+#: Template/Users/security.ctp:73
+msgid "Sessions"
+msgstr ""
+
+#: Template/Users/security.ctp:77
+msgid "This is a list of devices that are logged into your account."
+msgstr ""
+
+#: Template/Users/security.ctp:102
+msgid "Your current session"
+msgstr ""
+
+#: Template/Users/security.ctp:104
+msgid "Other session"
+msgstr ""
+
+#: Template/Users/security.ctp:112
+msgid "on {0}"
+msgstr ""
+
+#: Template/Users/security.ctp:116
+msgid "Last seen on"
+msgstr ""
+
+#: Template/Users/security.ctp:125
+msgid "Last seen"
+msgstr ""
+
+#: Template/Users/security.ctp:130
+msgid "Created"
+msgstr ""
+
+#: Template/Users/security.ctp:139
+msgid "There's currently no sessions online for your account."
+msgstr ""
+
+#: Template/Users/security.ctp:148
+msgid "Security History"
+msgstr ""
+
+#: Template/Users/security.ctp:153
+msgid "This is a security log of important events involving your account."
+msgstr ""
+
+#: Template/Users/security.ctp:178
+msgid "action"
+msgstr ""
+
+#: Template/Users/security.ctp:182
+msgid "browser"
+msgstr ""
+
+#: Template/Users/security.ctp:186
+msgid "plateform"
+msgstr ""
+
+#: Template/Users/security.ctp:190
+msgid "username"
+msgstr ""
+
+#: Template/Users/security.ctp:194
+msgid "user_ip"
+msgstr ""
+
+#: Template/Users/security.ctp:198
+msgid "created"
+msgstr ""
+
+#: Template/Users/security.ctp:207
+msgid "{0} More informations about security actions"
+msgstr ""
+
+#: Template/Users/security.ctp:222
+msgid "Action name"
+msgstr ""
+
+#: Template/Users/security.ctp:223
+msgid "Action description"
+msgstr ""
+
+#: Template/Users/security.ctp:229
+msgid "Triggered when an user login on the login page."
+msgstr ""
+
+#: Template/Users/security.ctp:233
+msgid "Triggered when the user failed to login on the login page."
+msgstr ""
+
+#: Template/Users/security.ctp:237
+msgid "Triggered when an user is automated login with Cookies."
+msgstr ""
+
+#: Template/Users/security.ctp:241
+msgid "Triggered when an user has modified his account."
+msgstr ""
+
+#: Template/Users/security.ctp:245
+msgid "Triggered when an user has changed his Email."
+msgstr ""
+
+#: Template/Users/security.ctp:249
+msgid "Triggered when an user has changed his password."
+msgstr ""
+
+#: Template/Users/security.ctp:253
+msgid "Triggered when an user has asked a password reset."
+msgstr ""
+
+#: Template/Users/security.ctp:257
+msgid "Triggered when an user has successfully reset his password with the Email."
+msgstr ""
+
+#: Template/Users/security.ctp:261
+msgid "Triggered when an user enbale the 2FA mode."
+msgstr ""
+
+#: Template/Users/security.ctp:265
+msgid "Triggered when an user disable the 2FA mode."
+msgstr ""
+
+#: Template/Users/security.ctp:269
+msgid "Triggered when an user regenerate a new recovery code."
+msgstr ""
+
+#: Template/Users/security.ctp:273
+msgid "Triggered when an user use his recovery code."
+msgstr ""
+
+#: Template/Users/security.ctp:283
+msgid "There's no logs for your account."
+msgstr ""
+
+#: Template/Users/settings.ctp:2;16
+msgid "My Settings"
+msgstr ""
+
+#: Template/Users/settings.ctp:30
+msgid "Change your E-mail"
+msgstr ""
+
+#: Template/Users/settings.ctp:41
+msgid "New E-mail"
+msgstr ""
+
+#: Template/Users/settings.ctp:52
+msgid "Change your Password"
+msgstr ""
+
+#: Template/Users/settings.ctp:57
+msgid "Current Password"
+msgstr ""
+
+#: Template/Users/settings.ctp:61
+msgid "New Password"
+msgstr ""
+
+#: Template/Users/settings.ctp:65
+msgid "New Password (confirm)"
+msgstr ""
+
+#: Template/Users/settings.ctp:70
+msgid "{0} Change"
+msgstr ""
+
+#: Template/Users/settings.ctp:75
+msgid "Delete your Account"
+msgstr ""
+
+#: Template/Users/settings.ctp:78
+msgid "{0} Delete my Account"
+msgstr ""
+
+#: Template/Users/settings.ctp:88
+msgid "Delete my Account"
+msgstr ""
+
+#: Template/Users/settings.ctp:97
+msgid "Are you sure you want delete your account ? <strong>This operation is not reversible.</strong>"
+msgstr ""
+
+#: Template/Users/settings.ctp:110
+msgid "Yes, i confirm !"
+msgstr ""
+
+#: Template/Users/tfa.ctp:2
+msgid "Login : Two-Factor Authentication"
+msgstr ""
+
+#: Template/Users/tfa.ctp:10
+msgid "Two-Factor Authentication required"
+msgstr ""
+
+#: Template/Users/tfa.ctp:13
+msgid "This account is protected by the Two-factor Authentication method. You need to specify below the code obtained on your phone !"
+msgstr ""
+
+#: Template/Users/tfa.ctp:46
+msgid "123456"
+msgstr ""
+
