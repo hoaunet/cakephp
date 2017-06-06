@@ -5,12 +5,25 @@ $this->layout = 'default';
 </div>
 <div id="main">
   <div id="featured">
-    <h4><span>Featured Items</span></h4>
+    <h4><span>Loại sản phẩm</span></h4>
     <ul class="items">
-      <li> <a href="product.html"> <img src="images/leather-boots.jpg" alt="Img"> <span>$19.50</span> Cheverlyn Zespax </a> </li>
-      <li> <a href="product.html"> <img src="images/leather-boots.jpg" alt="Img"> <span>$19.50</span> Cheverlyn Zespax </a> </li>
-      <li> <a href="product.html"> <img src="images/leather-boots.jpg" alt="Img"> <span>$19.50</span> Cheverlyn Zespax </a> </li>
-      <li> <a href="product.html"> <img src="images/leather-boots.jpg" alt="Img"> <span>$19.50</span> Cheverlyn Zespax </a> </li>
+     <?php foreach ($product_cates as $product_cate): ?>
+      <li> <?php echo $this->Html->image($product_cate->categories_image, [
+			    "alt" => $product_cate->categories_id,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'view',$product_cate->categories_id]
+]);?> <br /> </li>
+      <?php endforeach; ?>
+      
+    </ul>
+  </div>
+  <div id="featured">
+    <h4><span>Sản phẩm mới nhất</span></h4>
+    <ul class="items">
+     <?php foreach ($products as $product): ?>
+      <li> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'view',$product->products_id]
+]);?> <br /><span><?=$product->products_price?>VNĐ</span><br /><?=$product->products_model?></a> </li>
+      <?php endforeach; ?>
+      
     </ul>
   </div>
   <div id="sale">
