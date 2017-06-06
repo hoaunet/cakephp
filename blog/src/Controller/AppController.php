@@ -24,23 +24,15 @@ class AppController extends Controller
      *
      * @return void
      */
+	 
     public function initialize()
     {
         parent::initialize();
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-		/*$this->loadComponent('Auth', [
-            'loginRedirect' => [
-                'controller' => 'Articles',
-                'action' => 'index'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'display',
-                'home'
-            ]
-        ]);*/
+		
+			
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -49,6 +41,20 @@ class AppController extends Controller
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
     }
+	public function checkLogin()
+	{
+		$this->loadComponent('Auth', [
+            	'loginRedirect' => [
+                	'controller' => 'Articles',
+                	'action' => 'index'
+            	],
+            	'logoutRedirect' => [
+                	'controller' => 'Pages',
+                	'action' => 'display',
+                	'home'
+            	]
+        	]);
+	}
     public function isAuthorized($user)
 	{
     	/*// Admin can access every action

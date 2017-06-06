@@ -12,6 +12,12 @@ use Cake\Event\Event;
  */
 class UsersController extends AppController
 {
+	public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('Flash'); // Include the FlashComponent
+		$this->checkLogin();
+    }
 	public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);

@@ -16,6 +16,7 @@ class ArticlesController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Flash'); // Include the FlashComponent
+		$this->checkLogin();
     }
     /**
      * Index method
