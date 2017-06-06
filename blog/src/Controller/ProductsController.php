@@ -28,6 +28,20 @@ class ProductsController extends AppController
         $this->set(compact('products'));
         $this->set('_serialize', ['products']);
     }
+	 
+    public function display($id = null)
+    {
+        $product = $this->Products->get($id, [
+            'contain' => []
+        ]);
+
+        $this->set('product', $product);
+		
+		$product1 = $this->Products->find()->order(['products_date_added' => 'DESC'])->limit(4);				
+		$this->set('products', $product1);
+		
+        $this->set('_serialize', ['product']);		
+    }
 
     /**
      * View method

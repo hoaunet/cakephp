@@ -20,7 +20,7 @@ $this->layout = 'default';
     <ul class="items">
      <?php foreach ($products as $product): ?>
       <li> <?php echo $this->Html->image($product->products_image, [
-			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'view',$product->products_id]
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
 ]);?> <br /><span><?=$product->products_price?>VNĐ</span><br /><?=$product->products_model?></a> </li>
       <?php endforeach; ?>
       

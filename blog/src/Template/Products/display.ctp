@@ -6,18 +6,22 @@ $this->layout = 'default';
   <div id="product">
     <div class="section">
       <ul>
-        <li> <a href="product.html"><img src="images/boots-view.jpg" alt="thumbnail"></a> </li>
-        <li> <a href="product.html"><img src="images/boots-view2.jpg" alt="thumbnail"></a> </li>
+        <li> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,'url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> </li>
+        <!--<li> <a href="product.html"><img src="images/boots-view2.jpg" alt="thumbnail"></a> </li>
         <li> <a href="product.html"><img src="images/boots-view3.jpg" alt="thumbnail"></a> </li>
         <li> <a href="product.html"><img src="images/boots-view4.jpg" alt="thumbnail"></a> </li>
-        <li> <a href="product.html"><img src="images/boots-view5.jpg" alt="thumbnail"></a> </li>
+        <li> <a href="product.html"><img src="images/boots-view5.jpg" alt="thumbnail"></a> </li>-->
       </ul>
-      <div> <img src="images/leather-boots2.jpg" alt="view"> </div>
+      <div> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> </div>
     </div>
     <div class="section">
-      <h2><span>$8.50</span>Hukbalahap Boots</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis cursus gravida. Suspendisse ut ligula tristique velit blandit vel sit amet ipsum. Nam accumsan turpis id mauris fermentum pharetra. Cras interdum, risus et dictum bibendum, arcu tellus convallis libero, quis placerat urna erat et lorem. Phasellus inter dum turpis vestibulum ligula varius sit amet ultricies massa vulputate. Morbis vehicula, velit a faucibus cursus, turpis magna mattis mi, in ultrices totor nibh eu dui. Nam at ipsum in urna convallis accumsan. Nullam at </p>
-      <form action="index.html" method="post">
+      <h2><span><?=$product->products_price?> VNĐ</span><?=$product->products_model?></h2>
+      <p> <?=$product->products_quantity?> </p>
+      <form action="#" method="post">
         <select>
           <option>Select Size</option>
         </select>
@@ -30,12 +34,13 @@ $this->layout = 'default';
     </div>
   </div>
   <div class="footer">
-    <h4><span>Similar Items</span></h4>
+    <h4><span>Sản phẩm mới nhất</span></h4>
     <ul class="items">
-      <li> <a href="product.html"> <img src="images/boots-brown.jpg" alt="Img"> <span>$8.50</span> Hukbalahap Boots</a> </li>
-      <li> <a href="product.html"> <img src="images/boots-violet.jpg" alt="Img"> <span>$8.50</span> Hukbalahap Boots</a> </li>
-      <li> <a href="product.html"> <img src="images/boots-yellow.jpg" alt="Img"> <span>$8.50</span> Hukbalahap Boots</a> </li>
-      <li> <a href="product.html"> <img src="images/boots-green.jpg" alt="Img"> <span>$8.50</span> Hukbalahap Boots</a> </li>
+     <?php foreach ($products as $product): ?>
+      <li> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> <br /><span><?=$product->products_price?>VNĐ</span><br /><?=$product->products_model?></a> </li>
+      <?php endforeach; ?>
     </ul>
   </div>
 </div>

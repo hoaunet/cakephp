@@ -37,6 +37,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
 	$routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']); 
 	$routes->connect('/articles', ['controller' => 'Articles', 'action' => 'index']);
+	$routes->connect('/products', ['controller' => 'Products', 'action' => 'display']);
+
 	//$routes->connect('/categories/article/*', ['controller' => 'Categories', 'action' => 'category']); 
    
 
