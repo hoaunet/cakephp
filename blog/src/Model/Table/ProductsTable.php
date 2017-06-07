@@ -50,7 +50,7 @@ class ProductsTable extends Table
         $this->belongsTo('Manufacturers', [
             'foreignKey' => 'manufacturers_id'
         ]);*/
-        $this->belongsTo('Categories', [
+        $this->belongsTo('ProductCategories', [
             'foreignKey' => 'categories_id',
             'joinType' => 'INNER'
         ]);
@@ -123,7 +123,7 @@ class ProductsTable extends Table
         $rules->add($rules->existsIn(['products_id'], 'Products'));
         $rules->add($rules->existsIn(['products_tax_class_id'], 'ProductsTaxClasses'));
         $rules->add($rules->existsIn(['manufacturers_id'], 'Manufacturers'));
-        $rules->add($rules->existsIn(['categories_id'], 'Categories'));
+        $rules->add($rules->existsIn(['categories_id'], 'ProductCategories'));
 
         return $rules;
     }

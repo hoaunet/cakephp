@@ -50,7 +50,8 @@ class CategoriesTable extends Table
         ]);
         $this->hasMany('Articles', [
             'foreignKey' => 'category_id'
-        ]);
+        ])->setDependent(true);
+		
         $this->hasMany('ChildCategories', [
             'className' => 'Categories',
             'foreignKey' => 'parent_id'

@@ -21,8 +21,9 @@ echo $this->fetch('script');
       <div id="navigation">
         <ul id="primary">
           <li class="selected"><?php echo $this->Html->link('Trang chủ',['controller' => 'Pages', 'action' => 'index', '_full' => true]);?> </li>
-          <li><?php echo $this->Html->link('Phụ nữ',['controller' => 'Articles', 'action' => 'category', 1]);?></li>
-          <li><?php echo $this->Html->link('Nam giới',['controller' => 'Articles', 'action' => 'index', '_full' => true]);?></li>          
+          <li><?php echo $this->Html->link('Sản phẩm',['controller' => 'Products', 'action' => 'index', '_full' => true]);?></li>
+          <li><?php echo $this->Html->link('Tin tức',['controller' => 'Articles', 'action' => 'index', '_full' => true]);?></li>          
+          <li><?php echo $this->Html->link('Nhà sản xuất',['controller' => 'Manufacturers', 'action' => 'index', '_full' => true]);?></li>          <li>Liên hệ</li> 
         </ul>
         <ul id="secondary">
           <li> <a href="checkout.html">Cart</a> </li>

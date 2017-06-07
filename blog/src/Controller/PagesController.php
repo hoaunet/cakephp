@@ -44,9 +44,13 @@ class PagesController extends AppController
 		$this->set('products', $product);
 			
 		$product_categories = TableRegistry::get('ProductCategories');
-		$product_cates = $product_categories->find()->where(['parent_id' => 0])->limit(4);	
-					
+		$product_cates = $product_categories->find()->where(['parent_id' => 0])->limit(4);					
 		$this->set('product_cates', $product_cates);
+		
+		$manufacturers = TableRegistry::get('Manufacturers');
+		$manufacturer = $manufacturers->find()->order(['date_added' => 'DESC'])->limit(4);					
+		$this->set('manufacturers', $manufacturer);
+		
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');

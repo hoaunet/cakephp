@@ -38,7 +38,7 @@ class ProductCategoriesTable extends Table
         $this->setDisplayField('categories_id');
         $this->setPrimaryKey('categories_id');
 
-        $this->belongsTo('Categories', [
+        $this->belongsTo('ProductCategories', [
             'foreignKey' => 'categories_id',
             'joinType' => 'INNER'
         ]);
@@ -87,7 +87,7 @@ class ProductCategoriesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['categories_id'], 'Categories'));
+        $rules->add($rules->existsIn(['categories_id'], 'ProductCategories'));
         $rules->add($rules->existsIn(['parent_id'], 'ParentProductCategories'));
 
         return $rules;
