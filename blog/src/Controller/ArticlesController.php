@@ -65,12 +65,8 @@ class ArticlesController extends AppController
 
         $this->set('article', $article);
 		$list = $this->Articles->find()->order(['created' => 'DESC'])->limit(4);
-		$this->set('list',$list);
-		
-		$categorie = TableRegistry::get('Categories');
-		$categories = $categorie->find();				
-		$this->set('categories', $categories);
-		
+		$this->set('list',$list);		
+				
         $this->set('_serialize', ['article']);
     }
 
