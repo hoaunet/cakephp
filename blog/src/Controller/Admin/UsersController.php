@@ -12,7 +12,12 @@ use Cake\Event\Event;
  */
 class UsersController extends AppController
 {
-    
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $this->loadComponent('Auth');
+	    $this->Auth->allow(['add', 'logout']);
+    }
     /**
      * Index method
      *
@@ -29,10 +34,9 @@ class UsersController extends AppController
 
     public function login()
     {
-        if ($this->request->is('post')) {
-            $user = $this->Auth->identify();
-            if ($user) {
-				print_r($user);exit; 
+        if ($this->request->is('post')) {			
+            $user = $this->Auth->identify();						
+            if ($user) {				 
                 $this->Auth->setUser($user);
                 return $this->redirect($this->Auth->redirectUrl());
             }
@@ -54,7 +58,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => ['Articles']
+            'contain' => []
         ]);
 
         $this->set('user', $user);

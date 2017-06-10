@@ -47,7 +47,7 @@ echo $this->fetch('script');
             <li class="user-header bg-light-blue"><?php echo $this->Html->image("avatar_hoaunet_s3s.jpg", [
     "alt" => "Blog","class"=>"img-circle",'url' => ['controller' => 'Users', 'action' => 'view', 6]
 ]);?>
-              <p> Jane Doe - Web Developer <small>Member since Nov. 2012</small> </p>
+              <p>  </p>
             </li>
             <!-- Menu Body 
             <li class="user-body">

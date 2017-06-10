@@ -4,14 +4,6 @@ namespace App\Controller\Admin;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
-/**
- * Application Controller
- *
- * Add your application-wide methods in the class below, your controllers
- * will inherit them.
- *
- * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
- */
 class AppController extends Controller
 {
     
@@ -31,17 +23,18 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-		$this->loadComponent('Auth', [
+		/*$this->loadComponent('Auth', [
             	'loginRedirect' => [
                 	'controller' => 'Articles',
                 	'action' => 'index'
             	],
             	'logoutRedirect' => [
                 	'controller' => 'Users',
-                	'action' => 'login'
+                	'action' => 'index'
             	]
+				
         	]);
-			
+		*/	
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -53,27 +46,11 @@ class AppController extends Controller
 	
     public function isAuthorized($user)
 	{
-    	/*// Admin can access every action
+    	// Admin can access every action
     	if (isset($user['role']) && $user['role'] === 'admin') {
         	return true;
     	}
-
-    	// Default deny
-    	return false;*/
-		// All registered users can add articles
-		if ($this->request->getParam('action') === 'add') {
-			return true;
-		}
-	
-		// The owner of an article can edit and delete it
-		if (in_array($this->request->getParam('action'), ['edit', 'delete'])) {
-			$articleId = (int)$this->request->getParam('pass.0');
-			if ($this->Articles->isOwnedBy($articleId, $user['id'])) {
-				return true;
-			}
-		}
-	
-		return parent::isAuthorized($user);
+    	return false;		
 	}
  /**
      * Before render callback.
@@ -82,12 +59,11 @@ class AppController extends Controller
      * @return \Cake\Network\Response|null|void
      */
     public function beforeRender(Event $event)
-    {
-		$this->Auth->allow(['index', 'view', 'display']);
+    { 
+	    //$this->Auth->allow(['index', 'view', 'display','add']);
     }
 	public function beforefilter(Event $event)
 	{
-		
-		$this->set('username',$this->Auth->user('username'));
+		//$this->Auth->allow(['index', 'view', 'display','add']);
 	}
 }

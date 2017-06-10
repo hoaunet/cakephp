@@ -15,7 +15,7 @@ class ArticlesController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Flash'); // Include the FlashComponent
-		
+		$this->loadComponent('Auth');
     }
 
     /**
@@ -30,8 +30,24 @@ class ArticlesController extends AppController
         $this->set(compact('articles'));
         $this->set('_serialize', ['articles']);
     }
-
-    /**
+	/*public function isAuthorized($user)
+	{
+		// All registered users can add articles
+		if ($this->request->getParam('action') === 'add') {
+			return true;
+		}
+	
+		// The owner of an article can edit and delete it
+		if (in_array($this->request->getParam('action'), ['edit', 'delete'])) {
+			$articleId = (int)$this->request->getParam('pass.0');
+			if ($this->Articles->isOwnedBy($articleId, $user['id'])) {
+				return true;
+			}
+		}
+	
+		return parent::isAuthorized($user);
+	}
+*/    /**
      * View method
      *
      * @param string|null $id Article id.
@@ -76,7 +92,7 @@ class ArticlesController extends AppController
 				}
 			}
             $article = $this->Articles->patchEntity($article, $this->request->getData());
-			
+			$article->user_id = $this->Auth->user('id');
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('The article has been saved.'));
 

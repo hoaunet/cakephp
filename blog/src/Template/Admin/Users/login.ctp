@@ -21,10 +21,11 @@
 <body class="bg-black">
 <div class="form-box" id="login-box">
   <div class="header">Sign In</div>
-  <?= $this->Form->create(null,['url' => ['controller'=>'Users','action'=>'login']]) ?>
+  <?php //echo $this->Form->create('',['url' => ['controller'=>'Users','action'=>'login']]);
+         $this->Form->create(); ?>
   <div class="body bg-gray">
     <div class="form-group">
-      <?php //echo $this->Flash->render('Auth') ?>
+      <?php echo $this->Flash->render('Auth'); ?>
       <br>
       <?= __('Please enter your username and password') ?>
     </div>

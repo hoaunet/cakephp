@@ -6,10 +6,11 @@
     "license": "MIT",
     "require": {
         "php": ">=5.6",
-        "cakephp/cakephp": "3.4.*",
+        "cakephp/cakephp": "3.4.*",		
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
-        "cakephp/plugin-installer": "~1.0"
+        "cakephp/plugin-installer": "~1.0",
+        "burzum/cakephp-user-tools": "~1.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",
@@ -17,6 +18,7 @@
         "cakephp/bake": "~1.1"
     },
     "suggest": {
+		"friendsofcake/authenticate": "Authentication adapter collection", 
         "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible filter system for preprocessing and minification.",
         "dereuromark/cakephp-ide-helper": "After baking your code, this keeps your annotations in sync with the code evolving from there on for maximum IDE and PHPStan compatibility.",
         "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",

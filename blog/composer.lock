@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9313538735db55e7e7d29ec7f1006e9a",
+    "content-hash": "a583d02d7f26c517f08abd7182fa7d14",
     "packages": [
         {
             "name": "aura/intl",
@@ -51,6 +51,56 @@
                 "localization"
             ],
             "time": "2017-01-20T05:00:11+00:00"
+        },
+        {
+            "name": "burzum/cakephp-user-tools",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/burzum/cakephp-user-tools.git",
+                "reference": "3a3091a140b22fe03d8d64de6b94b03ba8f7a45a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/burzum/cakephp-user-tools/zipball/3a3091a140b22fe03d8d64de6b94b03ba8f7a45a",
+                "reference": "3a3091a140b22fe03d8d64de6b94b03ba8f7a45a",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "3.*",
+                "cakephp/plugin-installer": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.6.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Burzum\\UserTools\\": "src",
+                    "Burzum\\UserTools\\Test\\Fixture\\": "tests\\Fixture"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Krämer",
+                    "homepage": "http://florian-kraemer.net",
+                    "role": "Author"
+                }
+            ],
+            "description": "This plugin is a set of tools for user handling like registration, login, email verification, password reset and much more.",
+            "homepage": "http://github.com/burzum/cakephp-user-tools",
+            "keywords": [
+                "Users",
+                "login",
+                "registration",
+                "signup",
+                "user-management"
+            ],
+            "time": "2017-01-25T12:23:37+00:00"
         },
         {
             "name": "cakephp/cakephp",
@@ -729,16 +779,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
                 "shasum": ""
             },
             "require": {
@@ -750,7 +800,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -784,7 +834,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14T01:06:16+00:00"
+            "time": "2017-06-09T14:24:12+00:00"
         },
         {
             "name": "symfony/yaml",
