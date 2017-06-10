@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Controller\AppController;
 
@@ -20,9 +20,6 @@ class ManufacturersController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Manufacturers']
-        ];
         $manufacturers = $this->paginate($this->Manufacturers);
 
         $this->set(compact('manufacturers'));
@@ -39,7 +36,7 @@ class ManufacturersController extends AppController
     public function view($id = null)
     {
         $manufacturer = $this->Manufacturers->get($id, [
-            'contain' => ['Manufacturers']
+            'contain' => []
         ]);
 
         $this->set('manufacturer', $manufacturer);
@@ -63,8 +60,7 @@ class ManufacturersController extends AppController
             }
             $this->Flash->error(__('The manufacturer could not be saved. Please, try again.'));
         }
-        $manufacturers = $this->Manufacturers->Manufacturers->find('list', ['limit' => 200]);
-        $this->set(compact('manufacturer', 'manufacturers'));
+        $this->set(compact('manufacturer'));
         $this->set('_serialize', ['manufacturer']);
     }
 
@@ -89,8 +85,7 @@ class ManufacturersController extends AppController
             }
             $this->Flash->error(__('The manufacturer could not be saved. Please, try again.'));
         }
-        $manufacturers = $this->Manufacturers->Manufacturers->find('list', ['limit' => 200]);
-        $this->set(compact('manufacturer', 'manufacturers'));
+        $this->set(compact('manufacturer'));
         $this->set('_serialize', ['manufacturer']);
     }
 

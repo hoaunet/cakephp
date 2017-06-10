@@ -22,17 +22,17 @@
         </div>
         <!-- /.box-header --> 
         <!-- form start -->
-        <?php  echo $this->Form->create($article);?>
+        <?php  echo $this->Form->create($article, ['enctype' => 'multipart/form-data']);?>
         <div class="box-body">
           <div class="form-group"> <?php echo $this->Form->control('category_id');?> </div>
-          <div class="form-group">            
-            <?php echo $this->Form->control('title',["class"=>"form-control"]);?> </div>
-          <div class="form-group">
-            <?php echo $this->Form->control('body', ['rows' => '10','cols'=>'100']);?> </div>
+          <div class="form-group"> <?php echo $this->Form->control('title',["class"=>"form-control"]);?> </div>
+          <div class="form-group"> <?php echo $this->Form->input('upload', ['type' => 'file']);?></div>          
+          <div class="form-group"> <?php echo $this->Form->control('short_desc', ['rows' => '10','cols'=>'100']);?> </div>
+          <div class="form-group"> <?php echo $this->Form->control('body', ['rows' => '10','cols'=>'100']);?> </div>
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
-          <?php  echo $this->Form->button(__('Save Article'),["class"=>"btn btn-primary"]);//?>          
+          <?php  echo $this->Form->button(__('Save Article'),["class"=>"btn btn-primary"]);//?>
         </div>
         <?php  echo $this->Form->end();?>
       </div>

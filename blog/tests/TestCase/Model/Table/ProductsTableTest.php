@@ -39,7 +39,7 @@ class ProductsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Products') ? [] : ['className' => 'App\Model\Table\ProductsTable'];
+        $config = TableRegistry::exists('Products') ? [] : ['className' => ProductsTable::class];
         $this->Products = TableRegistry::get('Products', $config);
     }
 

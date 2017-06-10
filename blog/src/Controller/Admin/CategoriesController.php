@@ -12,12 +12,7 @@ use App\Controller\AppController;
  */
 class CategoriesController extends AppController
 {
-    public function initialize()
-    {
-        parent::initialize();
-        $this->loadComponent('Flash'); // Include the FlashComponent
-		$this->checkLogin();
-    }
+
     /**
      * Index method
      *
@@ -25,18 +20,11 @@ class CategoriesController extends AppController
      */
     public function index()
     {
-		/*$categories = $this->Categories->find()
-            ->order(['lft' => 'ASC']);
-			
         $this->paginate = [
             'contain' => ['ParentCategories']
         ];
         $categories = $this->paginate($this->Categories);
-       
-        $this->set(compact('categories'));
-        $this->set('_serialize', ['categories']);*/
-		$categories = $this->Categories->find()
-            ->order(['lft' => 'ASC']);
+
         $this->set(compact('categories'));
         $this->set('_serialize', ['categories']);
     }

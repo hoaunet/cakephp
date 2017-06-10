@@ -1,79 +1,56 @@
-<?php
-/**
-  * @var \App\View\AppView $this
-  */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Product'), ['action' => 'edit', $product->products_id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Product'), ['action' => 'delete', $product->products_id], ['confirm' => __('Are you sure you want to delete # {0}?', $product->products_id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Product'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Product'), ['controller' => 'Products', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?> </li>
+<?php  $this->layout = 'default';  ?>
+
+<div id="product">
+<h4><span><?=$product->products_name?></span></h4>
+  <div class="section">
+    <ul>
+      <li> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,'url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> </li>
+      <!--<li> <a href="product.html"><img src="images/boots-view2.jpg" alt="thumbnail"></a> </li>
+        <li> <a href="product.html"><img src="images/boots-view3.jpg" alt="thumbnail"></a> </li>
+        <li> <a href="product.html"><img src="images/boots-view4.jpg" alt="thumbnail"></a> </li>
+        <li> <a href="product.html"><img src="images/boots-view5.jpg" alt="thumbnail"></a> </li>-->
     </ul>
-</nav>
-<div class="products view large-9 medium-8 columns content">
-    <h3><?= h($product->products_id) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Product') ?></th>
-            <td><?= $product->has('product') ? $this->Html->link($product->product->products_id, ['controller' => 'Products', 'action' => 'view', $product->product->products_id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Model') ?></th>
-            <td><?= h($product->products_model) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Image') ?></th>
-            <td><?= h($product->products_image) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Category') ?></th>
-            <td><?= $product->has('category') ? $this->Html->link($product->category->name, ['controller' => 'Categories', 'action' => 'view', $product->category->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Quantity') ?></th>
-            <td><?= $this->Number->format($product->products_quantity) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Price') ?></th>
-            <td><?= $this->Number->format($product->products_price) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Weight') ?></th>
-            <td><?= $this->Number->format($product->products_weight) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Tax Class Id') ?></th>
-            <td><?= $this->Number->format($product->products_tax_class_id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Manufacturers Id') ?></th>
-            <td><?= $this->Number->format($product->manufacturers_id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Ordered') ?></th>
-            <td><?= $this->Number->format($product->products_ordered) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Date Added') ?></th>
-            <td><?= h($product->products_date_added) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Last Modified') ?></th>
-            <td><?= h($product->products_last_modified) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Date Available') ?></th>
-            <td><?= h($product->products_date_available) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Products Status') ?></th>
-            <td><?= $product->products_status ? __('Yes') : __('No'); ?></td>
-        </tr>
-    </table>
+    <div> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> </div>
+  </div>
+  <div class="section">
+     <p>Giá           : <span>
+      <?=$product->products_price?>
+      VNĐ</span></p>
+    <p>Model         :<?=$product->products_model?></p>
+    <p>Loại sản phẩm : <?php echo (!empty($product->productcategory->categories_name))?$this->Html->link( h($product->productcategory->categories_name),['controller' => 'Productcategories', 'action' => 'view',$product->productcategory->id]):"";?></p>
+    <p>Nhà sản xuất  : <?php echo (!empty($product->manufacturer->manufacturers_name))?$this->Html->link( h($product->manufacturer->manufacturers_name),['controller' => 'Manufacturers', 'action' => 'view',$product->manufacturer->id]):"";?></p>
+    <p>Số lượng      : <?=$product->products_quantity?><!--<form action="#" method="post">
+     <select>
+          <option>Select Size</option>
+        </select>
+       <!-- <select name="products_quantity">
+        <option>Chọn số lượng</option>
+        <?php for ($i=1;$i<$product->products_quantity;$i++){?>
+        <option value="<?=$i?>">
+        <?=$i?>
+        </option>
+        <?php }?>
+      </select>
+      <input type="submit" value="Thêm vào giỏ hàng" class="btn-cart">
+      <input type="submit" value="Yêu thích">
+    </form>--></p>  </div>
+</div>
+<div class="footer">
+  <h4><span>Sản phẩm mới nhất</span></h4>
+  <ul class="items">
+    <?php foreach ($products as $product): ?>
+    <li> <?php echo $this->Html->image($product->products_image, [
+			    "alt" => $product->products_model,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$product->products_id]
+]);?> <br />
+      <span>
+      <?=$product->products_price?>
+      VNĐ</span><br />
+      <?=$product->products_model?>
+      </a> </li>
+    <?php endforeach; ?>
+  </ul>
 </div>

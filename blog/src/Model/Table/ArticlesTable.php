@@ -9,6 +9,9 @@ use Cake\Validation\Validator;
 /**
  * Articles Model
  *
+ * @property \App\Model\Table\CategoriesTable|\Cake\ORM\Association\BelongsTo $Categories
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ *
  * @method \App\Model\Entity\Article get($primaryKey, $options = [])
  * @method \App\Model\Entity\Article newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Article[] newEntities(array $data, array $options = [])
@@ -32,13 +35,17 @@ class ArticlesTable extends Table
     {
         parent::initialize($config);
 
-       $this->setTable('articles');
-        /* $this->setDisplayField('title');
+        /*$this->setTable('articles');
+        $this->setDisplayField('title');
         $this->setPrimaryKey('id');*/
+		$this->addBehavior('Timestamp');        
 
-        $this->addBehavior('Timestamp');
-		$this->belongsTo('Categories', [
+        $this->belongsTo('Categories', [
             'foreignKey' => 'category_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id'
         ]);
     }
 
@@ -51,15 +58,40 @@ class ArticlesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->notEmpty('title')
-            ->requirePresence('title')
-            ->notEmpty('body')
-            ->requirePresence('body');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->requirePresence('title', 'create')
+            ->notEmpty('title');
+
+        $validator
+            ->requirePresence('body', 'create')
+            ->notEmpty('body');
+
+        $validator
+            ->requirePresence('short_desc', 'create')
+            ->notEmpty('short_desc');
+
+        $validator
+            ->requirePresence('articles_image', 'create')
+            ->notEmpty('articles_image');
 
         return $validator;
     }
-	public function isOwnedBy($articleId, $userId)
-	{
-    	return $this->exists(['id' => $articleId, 'user_id' => $userId]);
-	}
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['category_id'], 'Categories'));
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
+
+        return $rules;
+    }
 }

@@ -17,7 +17,7 @@ class CategoriesFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'parent_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'lft' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'rght' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
@@ -48,8 +48,8 @@ class CategoriesFixture extends TestFixture
             'rght' => 1,
             'name' => 'Lorem ipsum dolor sit amet',
             'description' => 'Lorem ipsum dolor sit amet',
-            'created' => '2017-06-01 07:28:19',
-            'modified' => '2017-06-01 07:28:19'
+            'created' => '2017-06-08 09:06:34',
+            'modified' => '2017-06-08 09:06:34'
         ],
     ];
 }

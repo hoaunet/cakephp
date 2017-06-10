@@ -8,13 +8,11 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $country->countries_id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $country->countries_id)]
+                ['action' => 'delete', $country->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $country->id)]
             )
         ?></li>
         <li><?= $this->Html->link(__('List Countries'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="countries form large-9 medium-8 columns content">

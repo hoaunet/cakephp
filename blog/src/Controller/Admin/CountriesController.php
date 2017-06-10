@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Controller\AppController;
 
@@ -20,9 +20,6 @@ class CountriesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Countries', 'AddressFormats']
-        ];
         $countries = $this->paginate($this->Countries);
 
         $this->set(compact('countries'));
@@ -39,7 +36,7 @@ class CountriesController extends AppController
     public function view($id = null)
     {
         $country = $this->Countries->get($id, [
-            'contain' => ['Countries', 'AddressFormats']
+            'contain' => []
         ]);
 
         $this->set('country', $country);
@@ -63,9 +60,7 @@ class CountriesController extends AppController
             }
             $this->Flash->error(__('The country could not be saved. Please, try again.'));
         }
-        $countries = $this->Countries->Countries->find('list', ['limit' => 200]);
-        $addressFormats = $this->Countries->AddressFormats->find('list', ['limit' => 200]);
-        $this->set(compact('country', 'countries', 'addressFormats'));
+        $this->set(compact('country'));
         $this->set('_serialize', ['country']);
     }
 
@@ -90,9 +85,7 @@ class CountriesController extends AppController
             }
             $this->Flash->error(__('The country could not be saved. Please, try again.'));
         }
-        $countries = $this->Countries->Countries->find('list', ['limit' => 200]);
-        $addressFormats = $this->Countries->AddressFormats->find('list', ['limit' => 200]);
-        $this->set(compact('country', 'countries', 'addressFormats'));
+        $this->set(compact('country'));
         $this->set('_serialize', ['country']);
     }
 

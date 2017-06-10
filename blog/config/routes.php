@@ -23,10 +23,13 @@ use Cake\Routing\Route\DashedRoute;
  *
  */
 Router::defaultRouteClass(DashedRoute::class);
-Router::prefix('admin', function (RouteBuilder $routes) {
+Router::prefix('admin', function ($routes) {
+    // All routes here will be prefixed with `/admin`
+    // And have the prefix => admin route element added.
 	
+	$routes->connect('/Productcategories', ['controller' => 'Productcategories', 'action' => 'index']);
 	$routes->connect('/', ['controller' => 'Articles', 'action' => 'index']);
-	$routes->fallbacks(DashedRoute::class);	
+    $routes->fallbacks('InflectedRoute');
 });
 Router::scope('/', function (RouteBuilder $routes) {
     /**
@@ -35,9 +38,10 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
 	 
      */
+	 	
 	$routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']); 
 	$routes->connect('/articles', ['controller' => 'Articles', 'action' => 'index']);
-	$routes->connect('/products', ['controller' => 'Products', 'action' => 'display']);
+	$routes->connect('/products', ['controller' => 'Products', 'action' => 'index']);	
 
 	//$routes->connect('/categories/article/*', ['controller' => 'Categories', 'action' => 'category']); 
    

@@ -9,9 +9,9 @@ use Cake\Validation\Validator;
 /**
  * Categories Model
  *
- * @property \Cake\ORM\Association\BelongsTo $ParentCategories
- * @property \Cake\ORM\Association\HasMany $Articles
- * @property \Cake\ORM\Association\HasMany $ChildCategories
+ * @property \App\Model\Table\CategoriesTable|\Cake\ORM\Association\BelongsTo $ParentCategories
+ * @property \App\Model\Table\ArticlesTable|\Cake\ORM\Association\HasMany $Articles
+ * @property \App\Model\Table\CategoriesTable|\Cake\ORM\Association\HasMany $ChildCategories
  *
  * @method \App\Model\Entity\Category get($primaryKey, $options = [])
  * @method \App\Model\Entity\Category newEntity($data = null, array $options = [])
@@ -37,9 +37,9 @@ class CategoriesTable extends Table
     {
         parent::initialize($config);
 
-        /*$this->setTable('categories');
+      /*  $this->setTable('categories');
         $this->setDisplayField('name');
-        $this->setPrimaryKey('id');*/
+        $this->setPrimaryKey('id');*/	
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('Tree');
@@ -50,8 +50,7 @@ class CategoriesTable extends Table
         ]);
         $this->hasMany('Articles', [
             'foreignKey' => 'category_id'
-        ])->setDependent(true);
-		
+        ]);
         $this->hasMany('ChildCategories', [
             'className' => 'Categories',
             'foreignKey' => 'parent_id'
@@ -72,21 +71,11 @@ class CategoriesTable extends Table
 
         $validator
             ->requirePresence('name', 'create')
-            ->notEmpty('name');			
+            ->notEmpty('name');
 
         $validator
             ->requirePresence('description', 'create')
             ->notEmpty('description');
-			
-		$validator
-        ->add('lft', 'valid', ['rule' => 'numeric'])
-    //    ->requirePresence('lft', 'create')
-        ->notEmpty('lft');
-
-    $validator
-        ->add('rght', 'valid', ['rule' => 'numeric'])
-    //    ->requirePresence('rght', 'create')
-        ->notEmpty('rght');	
 
         return $validator;
     }

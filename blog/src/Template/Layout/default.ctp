@@ -25,10 +25,10 @@ echo $this->fetch('script');
           <li><?php echo $this->Html->link('Tin tức',['controller' => 'Articles', 'action' => 'index', '_full' => true]);?></li>          
           <li><?php echo $this->Html->link('Nhà sản xuất',['controller' => 'Manufacturers', 'action' => 'index', '_full' => true]);?></li>          <li>Liên hệ</li> 
         </ul>
-        <ul id="secondary">
+        <!--<ul id="secondary">
           <li> <a href="checkout.html">Cart</a> </li>
           <li><?php echo $this->Html->link('Đăng nhập',['controller' => 'Users', 'action' => 'login', '_full' => true]);?> | <a href="index.html">Signup</a> </li>
-        </ul>
+        </ul>-->
       </div>
     </div>
     <div id="contents">
@@ -37,20 +37,26 @@ echo $this->fetch('script');
     <div id="footer">
       <div class="background">
         <div id="connect">
-          <h5>Get Social With us!</h5>
+          <h5>Mạng xã hội</h5>
           <ul>
-            <li> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> </li>
-            <li> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> </li>
-            <li> <a href="http://www.freewebsitetemplates.com/go/googleplus/" target="_blank" class="linkin"></a> </li>
+            <li> <a href="https://www.facebook.com/banhangonlinetohienthanh" target="_blank" class="facebook"></a> </li>
+            <li> <a href="https://twitter.com/banhangonlinetohienthanh" target="_blank" class="twitter"></a> </li>
+            <li> <a href="https://plus.google.com/u/0/118105361417315954748" target="_blank" class="linkin"></a> </li>
           </ul>
         </div>
         <ul class="navigation">
           <li>
-            <h5>Mens</h5>
-            <a href="mens.html">Sneakers</a> <a href="mens.html">Boots</a> <a href="mens.html">Winter socks</a> <a href="mens.html">Lace-ups</a> </li>
+            <h5>Tin tức</h5>
+            <?php echo $this->Html->link( h('Tình yêu phụ nữ'),['controller' => 'Categories', 'action' => 'view', 5]);?>
+            <?php echo $this->Html->link( h('Phụ nữ - Công sở'),['controller' => 'Categories', 'action' => 'view', 2]);?>
+            <?php echo $this->Html->link( h('Trang phục nữ'),['controller' => 'Categories', 'action' => 'view', 9]);?>
+            <?php echo $this->Html->link( h('Nam giới'),['controller' => 'Categories', 'action' => 'view', 3]);?>            
           <li>
-            <h5>Womens</h5>
-            <a href="womens.html">Sneakers</a> <a href="womens.html">Boots</a> <a href="womens.html">Winter socks</a> <a href="womens.html">Lace-ups</a> </li>
+            <h5>Thể loại</h5>
+            <?php echo $this->Html->link( h('Hành động'),['controller' => 'Productcategories', 'action' => 'view', 10]);?>
+             <?php echo $this->Html->link( h('Drama'),['controller' => 'Productcategories', 'action' => 'view', 15]);?>
+              <?php echo $this->Html->link( h('Gragets'),['controller' => 'Productcategories', 'action' => 'view', 21]);?>
+               <?php echo $this->Html->link( h('Graphics Cards'),['controller' => 'Productcategories', 'action' => 'view', 4]);?>
           <li class="latest">
             <h5>New Arrivals</h5>
             <a href="new.html">Cheverlyn Zespax</a> <a href="new.html">Alta Ulterior</a> <a href="new.html">Mikee</a> <a href="new.html">Jeeroks Copy</a> </li>

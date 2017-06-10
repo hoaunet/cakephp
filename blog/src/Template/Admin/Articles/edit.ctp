@@ -23,11 +23,20 @@
       </div>
       <!-- /.box-header --> 
       <!-- form start -->
-      <?php  echo $this->Form->create($article);?>
+      <?php  echo $this->Form->create($article, ['enctype' => 'multipart/form-data']);?>
         <div class="box-body">
+          <div class="form-group"> <?php echo $this->Form->control('category_id');?> </div>
           <div class="form-group">            
             <?php echo $this->Form->control('title',["class"=>"form-control"]);?>            
           </div>
+          <div class="form-group">            
+          <?php if(!empty($article->articles_image)):
+		  		    echo $this->Html->image($article->articles_image, ["alt" => '',"height"=>'100px',"width"=>'100px']);
+		     ?>
+          <?php endif?>
+            <p><?php echo $this->Form->input('upload', ['type' => 'file']);?> <?php echo $this->Form->control('articles_image', ['type' => 'hidden']);?></p>
+          </div>
+          <div class="form-group"><?php echo $this->Form->control('short_desc', ['rows' => '10','cols'=>'100']);?> </div>
           <div class="form-group">            
             <?php echo $this->Form->control('body', ['rows' => '5',"cols"=>"150"]);?>            
           </div>   

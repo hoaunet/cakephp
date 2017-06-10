@@ -1,15 +1,16 @@
-<!-- File: src/Template/Articles/index.ctp (delete links added) -->
-<?php $this->layout = "admin_template"; ?>
+<?php $this->layout = "admin_template"; 
+	  echo $this->Html->css('datatables/dataTables.bootstrap.css');	
+?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
-  <h1> Categories <small>Control panel</small> </h1>
+  <h1> <?= __('Thể loại') ?> <small>Control panel</small> </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active"><?= __('Actions') ?></li>
+    <li class="active"><?= __('Thể loại') ?></li>
   </ol>
 </section>
 <div class="row " ><div class="col-xs-12"><span class="label label-primary" >
-  <?= $this->Html->link('New Category', ['controller' => 'Categories','action' => 'add'],[ 'style'=>'height:35px; color:#fff']) ?>
+  <?= $this->Html->link('Thêm thể loại', ['controller' => 'Categories','action' => 'add'],[ 'style'=>'height:35px; color:#fff']) ?>
   </span> </div>
 </div>
 <section class="content">
@@ -17,7 +18,7 @@
     <div class="col-xs-12">
       <div class="box">
         <div class="box-header">
-          <h3 class="box-title"><?= __('Actions') ?></h3>
+          <h3 class="box-title"><?= __('Thể loại') ?></h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive">
@@ -25,13 +26,13 @@
             <thead>
               <tr>
                 <th>Id</th>
-                <th>Parent Id</th>
+                <th>ID cha</th>
                 <th>Lft</th>
                 <th>Rght</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Created</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Ngày</th>
+                <th class="actions"><?= __('Hành động') ?></th>
               </tr>
             </thead>
             <tbody>
@@ -45,11 +46,11 @@
             <td><?= h($category->description) ?></td>
             <td><?= h($category->created) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $category->id]) ?> || 
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $category->id]) ?> || 
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?> || 
-                <?= $this->Form->postLink(__('Move down'), ['action' => 'moveDown', $category->id], ['confirm' => __('Are you sure you want to move down # {0}?', $category->id)]) ?> || 
-                <?= $this->Form->postLink(__('Move up'), ['action' => 'moveUp', $category->id], ['confirm' => __('Are you sure you want to move up # {0}?', $category->id)]) ?>
+                <?= $this->Html->link(__('Xem chi tiết'), ['action' => 'view', $category->id]) ?> || 
+                <?= $this->Html->link(__('Chỉnh sửa'), ['action' => 'edit', $category->id]) ?> || 
+                <?= $this->Form->postLink(__('Xóa'), ['action' => 'delete', $category->id], ['confirm' => __('Bạn có thật sự muốn xóa # {0} không?', $category->id)]) ?> || 
+                <?= $this->Form->postLink(__('Giảm bậc'), ['action' => 'moveDown', $category->id], ['confirm' => __('Bạn có thật sự muốn giảm bật # {0} không?', $category->id)]) ?> || 
+                <?= $this->Form->postLink(__('Tăng bật'), ['action' => 'moveUp', $category->id], ['confirm' => __('Bạn có thật sự muốn tăng bật # {0} không?', $category->id)]) ?>
             </td>
               </tr>
               <?php endforeach; ?>
@@ -57,12 +58,12 @@
             <tfoot>
               <tr>
                 <th>Id</th>
-                <th>Parent Id</th>
+                <th>ID cha</th>
                 <th>Lft</th>
                 <th>Rght</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Created</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Ngày</th>
                 <th></th>
               </tr>
             </tfoot>

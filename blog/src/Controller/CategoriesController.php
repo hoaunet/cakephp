@@ -3,13 +3,6 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
-/**
- * Categories Controller
- *
- * @property \App\Model\Table\CategoriesTable $Categories
- *
- * @method \App\Model\Entity\Category[] paginate($object = null, array $settings = [])
- */
 class CategoriesController extends AppController
 {
 
@@ -20,19 +13,31 @@ class CategoriesController extends AppController
      */
     public function index()
     {
-		/*$categories = $this->Categories->find()
-            ->order(['lft' => 'ASC']);
-			
         $this->paginate = [
             'contain' => ['ParentCategories']
         ];
         $categories = $this->paginate($this->Categories);
-       
-        $this->set(compact('categories'));
-        $this->set('_serialize', ['categories']);*/
-		$categories = $this->Categories->find()
-            ->order(['lft' => 'ASC']);
+
         $this->set(compact('categories'));
         $this->set('_serialize', ['categories']);
     }
+
+    /**
+     * View method
+     *
+     * @param string|null $id Category id.
+     * @return \Cake\Http\Response|null
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
+    {
+        $category = $this->Categories->get($id, [
+            'contain' => ['ParentCategories', 'Articles', 'ChildCategories']
+        ]);
+
+        $this->set('category', $category);
+        $this->set('_serialize', ['category']);
+    }
+
+    
 }

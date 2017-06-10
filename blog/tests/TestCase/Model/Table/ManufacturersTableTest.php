@@ -35,7 +35,7 @@ class ManufacturersTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Manufacturers') ? [] : ['className' => 'App\Model\Table\ManufacturersTable'];
+        $config = TableRegistry::exists('Manufacturers') ? [] : ['className' => ManufacturersTable::class];
         $this->Manufacturers = TableRegistry::get('Manufacturers', $config);
     }
 
@@ -67,16 +67,6 @@ class ManufacturersTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

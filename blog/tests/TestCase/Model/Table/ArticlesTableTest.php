@@ -24,7 +24,9 @@ class ArticlesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.articles'
+        'app.articles',
+        'app.categories',
+        'app.users'
     ];
 
     /**
@@ -35,7 +37,7 @@ class ArticlesTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Articles') ? [] : ['className' => 'App\Model\Table\ArticlesTable'];
+        $config = TableRegistry::exists('Articles') ? [] : ['className' => ArticlesTable::class];
         $this->Articles = TableRegistry::get('Articles', $config);
     }
 
@@ -67,6 +69,16 @@ class ArticlesTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

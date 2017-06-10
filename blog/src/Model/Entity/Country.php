@@ -6,13 +6,12 @@ use Cake\ORM\Entity;
 /**
  * Country Entity
  *
- * @property int $countries_id
+ * @property int $id
  * @property string $countries_name
  * @property string $countries_iso_code_2
  * @property string $countries_iso_code_3
  * @property int $address_format_id
  *
- * @property \App\Model\Entity\Country $country
  * @property \App\Model\Entity\AddressFormat $address_format
  */
 class Country extends Entity
@@ -29,6 +28,6 @@ class Country extends Entity
      */
     protected $_accessible = [
         '*' => true,
-        'countries_id' => false
+        'id' => false
     ];
 }

@@ -1,72 +1,35 @@
 <?php
-/**
-  * @var \App\View\AppView $this
-  */
+$this->layout = 'default';//print_r($products);
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Product'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="products index large-9 medium-8 columns content">
-    <h3><?= __('Products') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('products_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_quantity') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_model') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_image') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_price') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_date_added') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_last_modified') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_date_available') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_weight') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_status') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_tax_class_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('manufacturers_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('products_ordered') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('categories_id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($products as $product): ?>
-            <tr>
-                <td><?= $product->has('product') ? $this->Html->link($product->product->products_id, ['controller' => 'Products', 'action' => 'view', $product->product->products_id]) : '' ?></td>
-                <td><?= $this->Number->format($product->products_quantity) ?></td>
-                <td><?= h($product->products_model) ?></td>
-                <td><?= h($product->products_image) ?></td>
-                <td><?= $this->Number->format($product->products_price) ?></td>
-                <td><?= h($product->products_date_added) ?></td>
-                <td><?= h($product->products_last_modified) ?></td>
-                <td><?= h($product->products_date_available) ?></td>
-                <td><?= $this->Number->format($product->products_weight) ?></td>
-                <td><?= h($product->products_status) ?></td>
-                <td><?= $this->Number->format($product->products_tax_class_id) ?></td>
-                <td><?= $this->Number->format($product->manufacturers_id) ?></td>
-                <td><?= $this->Number->format($product->products_ordered) ?></td>
-                <td><?= $product->has('category') ? $this->Html->link($product->category->name, ['controller' => 'Categories', 'action' => 'view', $product->category->id]) : '' ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $product->products_id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $product->products_id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $product->products_id], ['confirm' => __('Are you sure you want to delete # {0}?', $product->products_id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
+
+<h4><span>Sản phẩm</span></h4>
+<div id="stocks">
+  <ul>
+    <?php foreach ($products as $val): ?>
+    <li><br />
+      <?php echo $this->Html->image($val->products_image, [
+			    "alt" => $val->products_name,"height"=>'100px',"width"=>'100px','url' => ['controller' => 'Products', 'action' => 'display',$val->products_id]
+]);?>
+      <div><?=$val->products_price?>
+           <br /><?=$this->Text->truncate(h($val->products_name),22,array('ellipsis' => '...','exact' => false));?>
+           <br />Thể loại :<?php echo $this->Html->link( h($val->productcategory->categories_name),['controller' => 'Productcategories', 'action' => 'view', $val->productcategory->id]);?>
+           <br />Nhà sản xuất :<?php echo $this->Html->link( h($val->manufacturer->manufacturers_name),['controller' => 'Manufacturers', 'action' => 'view', $val->manufacturer->id]);?>
+        <br /><em><?=$val->products_model?></em> <!--<a href="#" class="btn-cart">Giỏ hàng</a> <a href="#" class="btn-wish">Yêu thích</a>--></div>
+    </li>
+    <?php endforeach; ?>
+  </ul>  
 </div>
+<center>
+<div class="paginator">
+    <ul class="pagination">
+      <?= $this->Paginator->first('<< ' . __('first')) ?>
+      <?= $this->Paginator->prev('< ' . __('previous')) ?>
+      <?= $this->Paginator->numbers() ?>
+      <?= $this->Paginator->next(__('next') . ' >') ?>
+      <?= $this->Paginator->last(__('last') . ' >>') ?>
+    </ul>
+    <p>
+      <?= $this->Paginator->counter(['format' => __('Tổng số trang :{{pages}}, Tổng số sản phẩm : {{count}} ')]) ?>
+    </p>
+ </div>
+</center>

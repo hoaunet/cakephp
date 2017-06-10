@@ -7,21 +7,20 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * ProductCategories Model
+ * Productcategories Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Categories
- * @property \Cake\ORM\Association\BelongsTo $ParentProductCategories
- * @property \Cake\ORM\Association\HasMany $ChildProductCategories
+ * @property \App\Model\Table\ProductcategoriesTable|\Cake\ORM\Association\BelongsTo $ParentProductcategories
+ * @property \App\Model\Table\ProductcategoriesTable|\Cake\ORM\Association\HasMany $ChildProductcategories
  *
- * @method \App\Model\Entity\ProductCategory get($primaryKey, $options = [])
- * @method \App\Model\Entity\ProductCategory newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\ProductCategory[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\ProductCategory|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\ProductCategory patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\ProductCategory[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\ProductCategory findOrCreate($search, callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Productcategory get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Productcategory newEntity($data = null, array $options = [])
+ * @method \App\Model\Entity\Productcategory[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Productcategory|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Productcategory patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Productcategory[] patchEntities($entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Productcategory findOrCreate($search, callable $callback = null, $options = [])
  */
-class ProductCategoriesTable extends Table
+class ProductcategoriesTable extends Table
 {
 
     /**
@@ -34,22 +33,23 @@ class ProductCategoriesTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('product_categories');
-        $this->setDisplayField('categories_id');
-        $this->setPrimaryKey('categories_id');
+        /*$this->setTable('productcategories');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');*/
+		$this->addBehavior('Timestamp');
+        $this->addBehavior('Tree');
 
-        $this->belongsTo('ProductCategories', [
-            'foreignKey' => 'categories_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('ParentProductCategories', [
-            'className' => 'ProductCategories',
+        $this->belongsTo('ParentProductcategories', [
+            'className' => 'Productcategories',
             'foreignKey' => 'parent_id'
         ]);
-       /* $this->hasMany('ChildProductCategories', [
-            'className' => 'ProductCategories',
+        $this->hasMany('ChildProductcategories', [
+            'className' => 'Productcategories',
             'foreignKey' => 'parent_id'
-        ]);*/
+        ]);
+		 $this->hasMany('Products', [
+            'foreignKey' => 'categories_id'
+        ]);
     }
 
     /**
@@ -60,6 +60,14 @@ class ProductCategoriesTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->requirePresence('categories_name', 'create')
+            ->notEmpty('categories_name');
+
         $validator
             ->allowEmpty('categories_image');
 
@@ -87,8 +95,7 @@ class ProductCategoriesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['categories_id'], 'ProductCategories'));
-        $rules->add($rules->existsIn(['parent_id'], 'ParentProductCategories'));
+        $rules->add($rules->existsIn(['parent_id'], 'ParentProductcategories'));
 
         return $rules;
     }

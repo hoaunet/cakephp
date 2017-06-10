@@ -1,19 +1,21 @@
 <!-- File: src/Template/Articles/index.ctp (delete links added) -->
-<?php $this->layout = "admin_template"; ?>
+<?php $this->layout = "admin_template"; 
+	  echo $this->Html->css('datatables/dataTables.bootstrap.css');	
+?>
 <!-- Content Header (Page header) -->
 
 <section class="content-header">
-  <h1> Blog articles<small>Control panel</small> </h1>
+  <h1> Tin tức<small>Control panel</small> </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
     <li class="active">
-      <?= __('Actions') ?>
+      <?= __('Tin tức') ?>
     </li>
   </ol>
 </section>
 <div class="row " >
   <div class="col-xs-12"><span class="label label-primary" >
-    <?= $this->Html->link('Add Article', ['controller' => 'Articles','action' => 'add'],[ 'style'=>'height:45px; color:#fff']) ?>
+    <?= $this->Html->link('Thêm tin tức', ['controller' => 'Articles','action' => 'add'],[ 'style'=>'height:45px; color:#fff']) ?>
     </span> </div>
 </div>
 <section class="content">
@@ -22,7 +24,7 @@
       <div class="box">
         <div class="box-header">
           <h3 class="box-title">
-            <?= __('Actions') ?>
+            <?= __('Tin tức') ?>
           </h3>
         </div>
         <!-- /.box-header -->
@@ -31,32 +33,34 @@
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Title</th>
-                <th>Created</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th>Tiêu đề</th>
+                <th>Ngày</th>
+                <th class="actions"><?= __('Hành động') ?></th>
               </tr>
             </thead>
             <tbody>
-              <?php foreach ($articles as $article): ?>
+              <?php foreach ($articles as $article):						        
+			 ?>
               <tr>
                 <td><?= $article->id ?></td>
                 <td><?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?></td>
-                <td><?= $article->created->format(DATE_RFC850) ?></td>
-                <td><?= $this->Form->postLink(
-                            'Delete',
+                <td><?php //echo $article->created->format(DATE_RFC850); ?></td>
+                <td> <?= $this->Html->link(__('Xem chi tiết'), ['action' => 'view', $article->id]) ?><span style="padding-left:5px">||</span>
+				    <?= $this->Form->postLink(
+                            'Xóa',
                             ['action' => 'delete', $article->id],
-                            ['confirm' => 'Are you sure?'])
+                            ['confirm' => 'Bạn có thật sự muốn xóa không?'])
                         ?>
                   <span style="padding-left:5px">||</span>
-                  <?= $this->Html->link('Edit', ['action' => 'edit', $article->id]) ?></td>
+                  <?= $this->Html->link('Chỉnh sửa', ['action' => 'edit', $article->id]) ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
             <tfoot>
               <tr>
                 <th>ID</th>
-                <th>Title</th>
-                <th>Created</th>
+                <th>Tiêu đề</th>
+                <th>Ngày</th>
                 <th></th>
               </tr>
             </tfoot>

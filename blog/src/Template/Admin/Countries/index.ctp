@@ -1,52 +1,78 @@
-<?php
-/**
-  * @var \App\View\AppView $this
-  */
+<?php $this->layout = "admin_template"; 
+	  echo $this->Html->css('datatables/dataTables.bootstrap.css'); 	
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Country'), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="countries index large-9 medium-8 columns content">
-    <h3><?= __('Countries') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
+<section class="content-header">
+  <h1> <?= __('Quốc gia') ?> <small>Control panel</small> </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active"><?= __('Quốc gia') ?></li>
+  </ol>
+</section>
+<div class="row " ><div class="col-xs-12"><span class="label label-primary" >
+  <?= $this->Html->link('Thêm quốc gia', ['controller' => 'Countries','action' => 'add'],[ 'style'=>'height:35px; color:#fff']) ?>
+  </span> </div>
+</div>
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title"><?= __('Quốc gia') ?></h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive">
+          <table id="example1" class="table table-bordered table-hover">
+           <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('countries_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('countries_name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('countries_iso_code_2') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('countries_iso_code_3') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('address_format_id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('ID') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('Tên') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('ISO code 2') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('ISO code 3') ?></th>                
+                <th scope="col" class="actions"><?= __('Hành động') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($countries as $country): ?>
             <tr>
-                <td><?= $country->has('country') ? $this->Html->link($country->country->countries_id, ['controller' => 'Countries', 'action' => 'view', $country->country->countries_id]) : '' ?></td>
+                <td><?= $this->Number->format($country->id) ?></td>
                 <td><?= h($country->countries_name) ?></td>
                 <td><?= h($country->countries_iso_code_2) ?></td>
                 <td><?= h($country->countries_iso_code_3) ?></td>
-                <td><?= $this->Number->format($country->address_format_id) ?></td>
+                
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $country->countries_id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $country->countries_id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $country->countries_id], ['confirm' => __('Are you sure you want to delete # {0}?', $country->countries_id)]) ?>
+                    <?= $this->Html->link(__('Xem'), ['action' => 'view', $country->id]) ?>  ||  
+                    <?= $this->Html->link(__('Chỉnh sửa'), ['action' => 'edit', $country->id]) ?>  ||  
+                    <?= $this->Form->postLink(__('Xóa'), ['action' => 'delete', $country->id], ['confirm' => __('Bạn thật sự muốn xóa # {0} không?', $country->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+    </tbody>
+            <tfoot>
+              <tr>
+                <th><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('Tên') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('ISO code 2') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('ISO code 3') ?></th>                               
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- /.box-body --> 
+      </div>
+      <!-- /.box --> 
     </div>
-</div>
+  </div>
+</section>
+
+<?php echo $this->Html->script('plugins/datatables/jquery.dataTables.js');//DATA TABES SCRIPT
+	  echo $this->Html->script('plugins/datatables/dataTables.bootstrap.js');//DATA TABES SCRIPT
+
+?><script type="text/javascript">
+            $(function() {
+                $("#example1").dataTable();
+               
+            });
+        </script>
+

@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\ProductCategoriesController;
+use App\Controller\ProductcategoriesController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
- * App\Controller\ProductCategoriesController Test Case
+ * App\Controller\ProductcategoriesController Test Case
  */
-class ProductCategoriesControllerTest extends IntegrationTestCase
+class ProductcategoriesControllerTest extends IntegrationTestCase
 {
 
     /**
@@ -16,9 +16,7 @@ class ProductCategoriesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.product_categories',
-        'app.categories',
-        'app.articles'
+        'app.productcategories'
     ];
 
     /**

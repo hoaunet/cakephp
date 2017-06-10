@@ -9,10 +9,9 @@ use Cake\Validation\Validator;
 /**
  * Products Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Products
- * @property \Cake\ORM\Association\BelongsTo $ProductsTaxClasses
- * @property \Cake\ORM\Association\BelongsTo $Manufacturers
- * @property \Cake\ORM\Association\BelongsTo $Categories
+ * @property \App\Model\Table\ProductsTaxClassesTable|\Cake\ORM\Association\BelongsTo $ProductsTaxClasses
+ * @property \App\Model\Table\ManufacturersTable|\Cake\ORM\Association\BelongsTo $Manufacturers
+ * @property \App\Model\Table\CategoriesTable|\Cake\ORM\Association\BelongsTo $Categories
  *
  * @method \App\Model\Entity\Product get($primaryKey, $options = [])
  * @method \App\Model\Entity\Product newEntity($data = null, array $options = [])
@@ -35,22 +34,19 @@ class ProductsTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('products');
-        $this->setDisplayField('products_id');
-        $this->setPrimaryKey('products_id');
+        /*$this->setTable('products');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');*/
+		$this->addBehavior('Timestamp');
 
-        $this->belongsTo('Products', [
-            'foreignKey' => 'products_id',
-            'joinType' => 'INNER'
-        ]);
-     /*   $this->belongsTo('ProductsTaxClasses', [
+        /*$this->belongsTo('ProductsTaxClasses', [
             'foreignKey' => 'products_tax_class_id',
             'joinType' => 'INNER'
-        ]);
+        ]);*/
         $this->belongsTo('Manufacturers', [
             'foreignKey' => 'manufacturers_id'
-        ]);*/
-        $this->belongsTo('ProductCategories', [
+        ]);
+        $this->belongsTo('Productcategories', [
             'foreignKey' => 'categories_id',
             'joinType' => 'INNER'
         ]);
@@ -65,6 +61,14 @@ class ProductsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->requirePresence('products_name', 'create')
+            ->notEmpty('products_name');
+
+        $validator
             ->integer('products_quantity')
             ->requirePresence('products_quantity', 'create')
             ->notEmpty('products_quantity');
@@ -74,6 +78,14 @@ class ProductsTable extends Table
 
         $validator
             ->allowEmpty('products_image');
+
+        $validator
+            ->requirePresence('products_description', 'create')
+            ->notEmpty('products_description');
+
+        $validator
+            ->requirePresence('products_url', 'create')
+            ->notEmpty('products_url');
 
         $validator
             ->decimal('products_price')
@@ -104,6 +116,11 @@ class ProductsTable extends Table
             ->notEmpty('products_status');
 
         $validator
+            ->integer('products_viewed')
+            ->requirePresence('products_viewed', 'create')
+            ->notEmpty('products_viewed');
+
+        $validator
             ->integer('products_ordered')
             ->requirePresence('products_ordered', 'create')
             ->notEmpty('products_ordered');
@@ -120,10 +137,9 @@ class ProductsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['products_id'], 'Products'));
-        $rules->add($rules->existsIn(['products_tax_class_id'], 'ProductsTaxClasses'));
+       // $rules->add($rules->existsIn(['products_tax_class_id'], 'ProductsTaxClasses'));
         $rules->add($rules->existsIn(['manufacturers_id'], 'Manufacturers'));
-        $rules->add($rules->existsIn(['categories_id'], 'ProductCategories'));
+        $rules->add($rules->existsIn(['categories_id'], 'Productcategories'));
 
         return $rules;
     }

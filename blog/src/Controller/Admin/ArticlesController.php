@@ -1,23 +1,23 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AppController;
 
 /**
  * Articles Controller
  *
- * @property \App\Model\Table\ArticlesTable $Articles
  *
  * @method \App\Model\Entity\Article[] paginate($object = null, array $settings = [])
  */
 class ArticlesController extends AppController
-{
-	public function initialize()
+{   
+    public function initialize()
     {
         parent::initialize();
         $this->loadComponent('Flash'); // Include the FlashComponent
-		$this->checkLogin();
+		
     }
+
     /**
      * Index method
      *
@@ -25,21 +25,10 @@ class ArticlesController extends AppController
      */
     public function index()
     {
-		$articles = $this->Articles->find('all');
-		$articles = $this->paginate($this->Articles);
-        //$this->view
+        $articles = $this->paginate($this->Articles);
+
         $this->set(compact('articles'));
         $this->set('_serialize', ['articles']);
-    }
-	
-	
-    public function category($id = null)
-    {
-        $articles = $this->Articles->find()->where(['category_id' => $id]);
-		//print_r($categories);
-		$this->set('articles', $articles);
-        //$this->set('_serialize', ['article']);
-		
     }
 
     /**
@@ -52,16 +41,7 @@ class ArticlesController extends AppController
     public function view($id = null)
     {
         $article = $this->Articles->get($id, [
-            'contain' => []
-        ]);
-
-        $this->set('article', $article);
-        $this->set('_serialize', ['article']);
-    }
-	 public function detail($id = null)
-    {
-        $article = $this->Articles->get($id, [
-            'contain' => []
+            'contain' => ['Categories']
         ]);
 
         $this->set('article', $article);
@@ -77,23 +57,38 @@ class ArticlesController extends AppController
     {
         $article = $this->Articles->newEntity();
         if ($this->request->is('post')) {
+			if (!empty($this->request->data)) {
+				if (!empty($this->request->data['upload']['name'])) {					
+					$file = $this->request->data['upload']; //put the data into a var for easy use				
+					$ext = substr(strtolower(strrchr($file['name'], '.')), 1); //get the extension
+					$arr_ext = array('jpg', 'jpeg', 'gif', 'png'); //set allowed extensions
+					$setNewFileName = time() . "_" . rand(000000, 999999);
+				
+					//only process if the extension is valid
+					if (in_array($ext, $arr_ext)) {
+						//do the actual uploading of the file. First arg is the tmp name, second arg is 
+						//where we are putting it
+						move_uploaded_file($file['tmp_name'], WWW_ROOT . '/img/news/' . $setNewFileName . '.' . $ext);
+				
+						//prepare the filename for database entry 
+						$this->request->data['articles_image'] = 'news/'.$setNewFileName . '.' . $ext;
+					}
+				}
+			}
             $article = $this->Articles->patchEntity($article, $this->request->getData());
-			 // Added this line
-			$article->user_id = $this->Auth->user('id');
-			// You could also do the following
-			//$newData = ['user_id' => $this->Auth->user('id')];
-			//$article = $this->Articles->patchEntity($article, $newData);
+			
             if ($this->Articles->save($article)) {
-                $this->Flash->success(__('Your article has been saved.'));
+                $this->Flash->success(__('The article has been saved.'));
+
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('Unable to add your article.'));
+            $this->Flash->error(__('The article could not be saved. Please, try again.'));
         }
-        $this->set('article', $article);
-        // Just added the categories list to be able to choose
-        // one category for an article
-        $categories = $this->Articles->Categories->find('treeList');
-        $this->set(compact('categories'));
+		$this->set('article', $article);
+        //$this->set(compact('article'));
+        //$this->set('_serialize', ['article']);
+		$categories = $this->Articles->Categories->find('treeList');
+		$this->set(compact('categories'));
     }
 
     /**
@@ -109,16 +104,38 @@ class ArticlesController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+			if (!empty($this->request->data)) {
+				if (!empty($this->request->data['upload']['name'])) {
+					if (is_dir(WWW_ROOT . 'img/news/')) {					
+						$file = $this->request->data['upload']; //put the data into a var for easy use						
+						$ext = substr(strtolower(strrchr($file['name'], '.')), 1); //get the extension
+						$arr_ext = array('jpg', 'jpeg', 'gif', 'png'); //set allowed extensions
+						$setNewFileName = time() . "_" . rand(000000, 999999);
+						
+						//only process if the extension is valid
+						if (in_array($ext, $arr_ext)) {
+							chmod(WWW_ROOT . 'img/news/', 755);							
+							move_uploaded_file($file['tmp_name'], WWW_ROOT . 'img/news/' . $setNewFileName . '.' . $ext);							
+							chmod(WWW_ROOT . 'img/news/', 600); 
+							$this->request->data['articles_image'] = 'news/'.$setNewFileName . '.' . $ext;
+						}else $this->Flash->error(__('File hợp lẽ jpg, jpeg, gif, png'));
+						
+					}else $this->Flash->error(__('Thư mục chưa tồn tại.'));
+				}
+			}
             $article = $this->Articles->patchEntity($article, $this->request->getData());
             if ($this->Articles->save($article)) {
-                $this->Flash->success(__('Your article has been updated'));
+                $this->Flash->success(__('The article has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('Unable to update your article.'));
+            $this->Flash->error(__('The article could not be saved. Please, try again.'));
         }
-        $this->set(compact('article'));
-        $this->set('_serialize', ['article']);	 
+        $this->set('article', $article);
+        //$this->set(compact('article'));
+        //$this->set('_serialize', ['article']);
+		$categories = $this->Articles->Categories->find('treeList');
+		$this->set(compact('categories'));
     }
 
     /**
@@ -133,11 +150,11 @@ class ArticlesController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $article = $this->Articles->get($id);
         if ($this->Articles->delete($article)) {
-             $this->Flash->success(__('The article with id: {0} has been deleted.', h($id)));
+            $this->Flash->success(__('The article has been deleted.'));
         } else {
             $this->Flash->error(__('The article could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);
-    }	
+    }
 }

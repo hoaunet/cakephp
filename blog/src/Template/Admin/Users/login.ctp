@@ -1,3 +1,4 @@
+<?php $this->layout = false;?>
 <!DOCTYPE html>
 <html class="bg-black">
 <head>
@@ -20,10 +21,10 @@
 <body class="bg-black">
 <div class="form-box" id="login-box">
   <div class="header">Sign In</div>
-  <?= $this->Form->create() ?>
+  <?= $this->Form->create(null,['url' => ['controller'=>'Users','action'=>'login']]) ?>
   <div class="body bg-gray">
     <div class="form-group">
-      <?= $this->Flash->render() ?>
+      <?php //echo $this->Flash->render('Auth') ?>
       <br>
       <?= __('Please enter your username and password') ?>
     </div>
@@ -40,7 +41,7 @@
   <div class="footer">
     <?= $this->Form->button(__('Login'),["class"=>"btn bg-olive btn-block"]); ?>
     <p><a href="#">I forgot my password</a></p>
-    <a href="register.html" class="text-center">Register a new membership</a> </div>
+    <a href="#" class="text-center">Register a new membership</a> </div>
   <?= $this->Form->end() ?>
   <div class="margin text-center"> <span>Sign in using social networks</span> <br/>
     <button class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>

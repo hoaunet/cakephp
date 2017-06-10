@@ -7,14 +7,6 @@ use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 
-
-/**
- * Static content controller
- *
- * This controller will render views from Template/Pages/
- *
- * @link http://book.cakephp.org/3.0/en/controllers/pages-controller.html
- */
 class PagesController extends AppController
 {
 
@@ -43,7 +35,7 @@ class PagesController extends AppController
 		$product = $products->find()->order(['products_date_added' => 'DESC'])->limit(4);				
 		$this->set('products', $product);
 			
-		$product_categories = TableRegistry::get('ProductCategories');
+		$product_categories = TableRegistry::get('Productcategories');
 		$product_cates = $product_categories->find()->where(['parent_id' => 0])->limit(4);					
 		$this->set('product_cates', $product_cates);
 		
@@ -77,6 +69,4 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
-	public function index(){
-	}
 }

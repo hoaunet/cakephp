@@ -6,13 +6,11 @@ use Cake\ORM\Entity;
 /**
  * Manufacturer Entity
  *
- * @property int $manufacturers_id
+ * @property int $id
  * @property string $manufacturers_name
  * @property string $manufacturers_image
  * @property \Cake\I18n\FrozenTime $date_added
  * @property \Cake\I18n\FrozenTime $last_modified
- *
- * @property \App\Model\Entity\Manufacturer $manufacturer
  */
 class Manufacturer extends Entity
 {
@@ -28,6 +26,6 @@ class Manufacturer extends Entity
      */
     protected $_accessible = [
         '*' => true,
-        'manufacturers_id' => false
+        'id' => false
     ];
 }

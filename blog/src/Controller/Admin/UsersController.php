@@ -12,39 +12,7 @@ use Cake\Event\Event;
  */
 class UsersController extends AppController
 {
-	public function initialize()
-    {
-        parent::initialize();
-        $this->loadComponent('Flash'); // Include the FlashComponent
-		$this->checkLogin();
-    }
-	public function beforeFilter(Event $event)
-    {
-        parent::beforeFilter($event);
-        // Allow users to register and logout.
-        // You should not add the "login" action to allow list. Doing so would
-        // cause problems with normal functioning of AuthComponent.
-        //$this->Auth->allow(['add', 'logout']);
-    }
-
-	public function login()
-	{
-		if ($this->request->is('post')) {
-			$user = $this->Auth->identify();
-			if ($user) {
-				$this->Auth->setUser($user);
-				return $this->redirect($this->Auth->redirectUrl());
-			}
-				$this->Flash->error(__('Invalid username or password, try again'));
-			}
-	}
-
-	public function logout()
-		{
-			return $this->redirect($this->Auth->logout());
-		}
-	
-
+    
     /**
      * Index method
      *
@@ -57,7 +25,25 @@ class UsersController extends AppController
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
     }
+    
 
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+				print_r($user);exit; 
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error(__('Invalid username or password, try again'));
+        }
+    }
+
+    public function logout()
+    {
+        return $this->redirect($this->Auth->logout());
+    } 
     /**
      * View method
      *
@@ -68,7 +54,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => []
+            'contain' => ['Articles']
         ]);
 
         $this->set('user', $user);
@@ -88,13 +74,12 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'add']);
+                return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-		$this->set('user', $user);
-        /*$this->set(compact('user'));
-        $this->set('_serialize', ['user']);*/
+        $this->set(compact('user'));
+        $this->set('_serialize', ['user']);
     }
 
     /**

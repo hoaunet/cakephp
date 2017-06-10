@@ -9,8 +9,6 @@ use Cake\Validation\Validator;
 /**
  * Manufacturers Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Manufacturers
- *
  * @method \App\Model\Entity\Manufacturer get($primaryKey, $options = [])
  * @method \App\Model\Entity\Manufacturer newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Manufacturer[] newEntities(array $data, array $options = [])
@@ -32,13 +30,11 @@ class ManufacturersTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('manufacturers');
-        $this->setDisplayField('manufacturers_id');
-        $this->setPrimaryKey('manufacturers_id');
-
-        $this->belongsTo('Manufacturers', [
-            'foreignKey' => 'manufacturers_id',
-            'joinType' => 'INNER'
+        /*$this->setTable('manufacturers');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');*/
+		$this->hasMany('Products', [
+            'foreignKey' => 'manufacturers_id'
         ]);
     }
 
@@ -50,6 +46,10 @@ class ManufacturersTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
         $validator
             ->requirePresence('manufacturers_name', 'create')
             ->notEmpty('manufacturers_name');
@@ -66,19 +66,5 @@ class ManufacturersTable extends Table
             ->allowEmpty('last_modified');
 
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->existsIn(['manufacturers_id'], 'Manufacturers'));
-
-        return $rules;
     }
 }

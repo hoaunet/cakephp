@@ -21,26 +21,12 @@ class ProductsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Products', 'ProductsTaxClasses', 'Manufacturers', 'Categories']
+            'contain' => [ 'Manufacturers', 'Productcategories']
         ];
         $products = $this->paginate($this->Products);
 
         $this->set(compact('products'));
         $this->set('_serialize', ['products']);
-    }
-	 
-    public function display($id = null)
-    {
-        $product = $this->Products->get($id, [
-            'contain' => []
-        ]);
-
-        $this->set('product', $product);
-		
-		$product1 = $this->Products->find()->order(['products_date_added' => 'DESC'])->limit(4);				
-		$this->set('products', $product1);
-		
-        $this->set('_serialize', ['product']);		
     }
 
     /**
@@ -53,7 +39,7 @@ class ProductsController extends AppController
     public function view($id = null)
     {
         $product = $this->Products->get($id, [
-            'contain' => ['Products', 'ProductsTaxClasses', 'Manufacturers', 'Categories']
+            'contain' => [ 'Manufacturers', 'Productcategories']
         ]);
 
         $this->set('product', $product);
@@ -77,11 +63,10 @@ class ProductsController extends AppController
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
-        $products = $this->Products->Products->find('list', ['limit' => 200]);
-        $productsTaxClasses = $this->Products->ProductsTaxClasses->find('list', ['limit' => 200]);
+        //$productsTaxClasses = $this->Products->ProductsTaxClasses->find('list', ['limit' => 200]);
         $manufacturers = $this->Products->Manufacturers->find('list', ['limit' => 200]);
-        $categories = $this->Products->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('product', 'products', 'productsTaxClasses', 'manufacturers', 'categories'));
+        $categories = $this->Products->Productcategories->find('list', ['limit' => 200]);
+        $this->set(compact('product',  'manufacturers', 'Productcategories'));
         $this->set('_serialize', ['product']);
     }
 
@@ -106,11 +91,10 @@ class ProductsController extends AppController
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
-        $products = $this->Products->Products->find('list', ['limit' => 200]);
-        $productsTaxClasses = $this->Products->ProductsTaxClasses->find('list', ['limit' => 200]);
+       // $productsTaxClasses = $this->Products->ProductsTaxClasses->find('list', ['limit' => 200]);
         $manufacturers = $this->Products->Manufacturers->find('list', ['limit' => 200]);
-        $categories = $this->Products->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('product', 'products', 'productsTaxClasses', 'manufacturers', 'categories'));
+        $categories = $this->Products->Productcategories->find('list', ['limit' => 200]);
+        $this->set(compact('product', 'productsTaxClasses', 'manufacturers', 'categories'));
         $this->set('_serialize', ['product']);
     }
 

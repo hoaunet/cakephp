@@ -9,8 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Countries Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Countries
- * @property \Cake\ORM\Association\BelongsTo $AddressFormats
+ * @property \App\Model\Table\AddressFormatsTable|\Cake\ORM\Association\BelongsTo $AddressFormats
  *
  * @method \App\Model\Entity\Country get($primaryKey, $options = [])
  * @method \App\Model\Entity\Country newEntity($data = null, array $options = [])
@@ -34,17 +33,13 @@ class CountriesTable extends Table
         parent::initialize($config);
 
         $this->setTable('countries');
-        $this->setDisplayField('countries_id');
-        $this->setPrimaryKey('countries_id');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
-        $this->belongsTo('Countries', [
-            'foreignKey' => 'countries_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('AddressFormats', [
+        /*$this->belongsTo('AddressFormats', [
             'foreignKey' => 'address_format_id',
             'joinType' => 'INNER'
-        ]);
+        ]);*/
     }
 
     /**
@@ -55,6 +50,10 @@ class CountriesTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
         $validator
             ->requirePresence('countries_name', 'create')
             ->notEmpty('countries_name');
@@ -76,12 +75,11 @@ class CountriesTable extends Table
      *
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
-     */
+    
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['countries_id'], 'Countries'));
-        $rules->add($rules->existsIn(['address_format_id'], 'AddressFormats'));
+     //   $rules->add($rules->existsIn(['address_format_id'], 'AddressFormats'));
 
         return $rules;
-    }
+    } */
 }

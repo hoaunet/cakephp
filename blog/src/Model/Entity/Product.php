@@ -6,10 +6,13 @@ use Cake\ORM\Entity;
 /**
  * Product Entity
  *
- * @property int $products_id
+ * @property int $id
+ * @property string $products_name
  * @property int $products_quantity
  * @property string $products_model
  * @property string $products_image
+ * @property string $products_description
+ * @property string $products_url
  * @property float $products_price
  * @property \Cake\I18n\FrozenTime $products_date_added
  * @property \Cake\I18n\FrozenTime $products_last_modified
@@ -18,10 +21,10 @@ use Cake\ORM\Entity;
  * @property bool $products_status
  * @property int $products_tax_class_id
  * @property int $manufacturers_id
+ * @property int $products_viewed
  * @property int $products_ordered
  * @property int $categories_id
  *
- * @property \App\Model\Entity\Product $product
  * @property \App\Model\Entity\ProductsTaxClass $products_tax_class
  * @property \App\Model\Entity\Manufacturer $manufacturer
  * @property \App\Model\Entity\Category $category
@@ -40,6 +43,6 @@ class Product extends Entity
      */
     protected $_accessible = [
         '*' => true,
-        'products_id' => false
+        'id' => false
     ];
 }

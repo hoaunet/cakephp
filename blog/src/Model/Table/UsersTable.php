@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
+ * @property \App\Model\Table\ArticlesTable|\Cake\ORM\Association\HasMany $Articles
+ *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\User[] newEntities(array $data, array $options = [])
@@ -32,11 +34,15 @@ class UsersTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('users');
+        /*$this->setTable('users');
         $this->setDisplayField('id');
-        $this->setPrimaryKey('id');
+        $this->setPrimaryKey('id');*/
 
         $this->addBehavior('Timestamp');
+
+        $this->hasMany('Articles', [
+            'foreignKey' => 'user_id'
+        ]);
     }
 
     /**
@@ -47,14 +53,25 @@ class UsersTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
-        return $validator
-            ->notEmpty('username', 'A username is required')
-            ->notEmpty('password', 'A password is required')
-            ->notEmpty('role', 'A role is required')
-            ->add('role', 'inList', [
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->allowEmpty('username');
+
+        $validator
+            ->allowEmpty('password');
+
+        $validator
+            ->allowEmpty('role');
+			
+		$validator->add('role', 'inList', [
                 'rule' => ['inList', ['admin', 'author']],
                 'message' => 'Please enter a valid role'
             ]);
+
+        return $validator;
     }
 
     /**

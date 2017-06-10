@@ -24,7 +24,8 @@ class UsersTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.users'
+        'app.users',
+        'app.articles'
     ];
 
     /**
@@ -35,7 +36,7 @@ class UsersTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Users') ? [] : ['className' => 'App\Model\Table\UsersTable'];
+        $config = TableRegistry::exists('Users') ? [] : ['className' => UsersTable::class];
         $this->Users = TableRegistry::get('Users', $config);
     }
 

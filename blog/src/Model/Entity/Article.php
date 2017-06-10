@@ -9,8 +9,15 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $title
  * @property string $body
+ * @property string $short_desc
+ * @property string $articles_image
+ * @property int $category_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property int $user_id
+ *
+ * @property \App\Model\Entity\Category $category
+ * @property \App\Model\Entity\User $user
  */
 class Article extends Entity
 {
