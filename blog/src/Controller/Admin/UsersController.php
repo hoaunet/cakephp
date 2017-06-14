@@ -38,6 +38,17 @@ class UsersController extends AppController
             $user = $this->Auth->identify();						
             if ($user) {				 
                 $this->Auth->setUser($user);
+				//
+				if($this->request->data('remember_me')) {
+					$this->Cookie->configKey('CookieAuth', [
+						'expires' => '+1 year',
+						'httpOnly' => true
+					]);
+					$this->Cookie->write('CookieAuth', [
+						'username' => $this->request->data('username'),
+						'password' => $this->request->data('password')
+					]);
+				}
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again'));

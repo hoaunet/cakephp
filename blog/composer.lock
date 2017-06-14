@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a583d02d7f26c517f08abd7182fa7d14",
+    "content-hash": "e238d42c8d57cf2d2f3107f5f1a34e7a",
     "packages": [
         {
             "name": "aura/intl",
@@ -327,6 +327,57 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-03-21T13:48:47+00:00"
+        },
+        {
+            "name": "friendsofcake/authenticate",
+            "version": "dev-cake3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/Authenticate.git",
+                "reference": "92145e66cf52abdb6fa065101ff74e8d6e70c4a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/Authenticate/zipball/92145e66cf52abdb6fa065101ff74e8d6e70c4a4",
+                "reference": "92145e66cf52abdb6fa065101ff74e8d6e70c4a4",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "FOC\\Authenticate\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ceeram",
+                    "role": "Author"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/ADmad",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CakePHP plugin with authentication classes for AuthComponent.",
+            "homepage": "http://github.com/FriendsOfCake/Authenticate",
+            "keywords": [
+                "authenticate",
+                "cakephp"
+            ],
+            "abandoned": true,
+            "time": "2015-06-17 19:04:56"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -890,6 +941,58 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2017-06-02T22:05:06+00:00"
+        },
+        {
+            "name": "xety/cake3-cookieauth",
+            "version": "v1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Xety/Cake3-CookieAuth.git",
+                "reference": "3fb54c89759dbfbc53c1f921d86855f85befcfc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Xety/Cake3-CookieAuth/zipball/3fb54c89759dbfbc53c1f921d86855f85befcfc1",
+                "reference": "3fb54c89759dbfbc53c1f921d86855f85befcfc1",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "php": ">=5.4.16"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "master-dev",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Xety\\Cake3CookieAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xety",
+                    "email": "zoro.fmt@gmail.com",
+                    "homepage": "https://github.com/Xety"
+                }
+            ],
+            "description": "A simple Cake3 plugin to authenticate users with Cookies.",
+            "homepage": "https://github.com/Xety/Cake3-CookieAuth",
+            "keywords": [
+                "auth",
+                "authenticate",
+                "cake3",
+                "cakephp",
+                "cookie",
+                "login",
+                "plugin"
+            ],
+            "time": "2016-10-25T06:10:13+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1982,6 +2085,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "friendsofcake/authenticate": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

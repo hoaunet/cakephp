@@ -22,7 +22,7 @@
 <div class="form-box" id="login-box">
   <div class="header">Sign In</div>
   <?php //echo $this->Form->create('',['url' => ['controller'=>'Users','action'=>'login']]);
-         $this->Form->create(); ?>
+        echo $this->Form->create(); ?>
   <div class="body bg-gray">
     <div class="form-group">
       <?php echo $this->Flash->render('Auth'); ?>
@@ -36,7 +36,7 @@
       <?= $this->Form->control('password',["class"=>"form-control","placeholder"=>"Password"]) ?>      
     </div>
     <div class="form-group">
-      <input type="checkbox" name="remember_me"/>
+      <?php echo $this->Form->checkbox('remember_me');?>
       Remember me </div>
   </div>
   <div class="footer">

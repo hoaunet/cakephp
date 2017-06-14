@@ -6,6 +6,16 @@ use Cake\Event\Event;
 
 class AppController extends Controller
 {
+	 public $components = [
+		'Cookie',
+		'Auth' => [
+			'authenticate' => [
+				'Form',
+				'Xety/Cake3CookieAuth.Cookie'
+			]
+		]
+	
+	];
     
     /**
      * Initialization hook method.
@@ -64,6 +74,28 @@ class AppController extends Controller
     }
 	public function beforefilter(Event $event)
 	{
+		//Automaticaly Login.
+		if (!$this->Auth->user() && $this->Cookie->read('CookieAuth')) {
+			$this->loadModel('Users');
+	
+			$user = $this->Auth->identify();
+			if ($user) {
+				$this->Auth->setUser($user);
+	
+				$user = $this->Users->newEntity($user);
+				$user->isNew(false);
+	
+				//Last login date
+				$user->last_login = new Time();
+				//Last login IP
+				$user->last_login_ip = $this->request->clientIp();
+				//etc...
+	
+				$this->Users->save($user);
+			} else {
+				$this->Cookie->delete('CookieAuth');
+			}
+		}
 		//$this->Auth->allow(['index', 'view', 'display','add']);
 	}
 }

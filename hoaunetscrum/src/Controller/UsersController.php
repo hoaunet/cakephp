@@ -6,7 +6,6 @@ use App\Controller\AppController;
 /**
  * Users Controller
  *
- * @property \App\Model\Table\UsersTable $Users
  *
  * @method \App\Model\Entity\User[] paginate($object = null, array $settings = [])
  */
@@ -20,15 +19,19 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Uniqs', 'Btprofiles', 'Timezones']
-        ];
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
     }
-
+	
+	 public function login()
+	 {
+		 
+	 }
+     public function forgotpassword()
+	 {
+	 } 
     /**
      * View method
      *
@@ -39,7 +42,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => ['Uniqs', 'Btprofiles', 'Timezones', 'UserSubscriptions', 'Archives', 'CaseActions', 'CaseActivities', 'CaseFiles', 'CaseFilters', 'CaseRecents', 'CaseSettings', 'CaseTemplates', 'CaseUserEmails', 'CaseUserViews', 'CompanyUsers', 'CustomFilters', 'DailyUpdates', 'DailyupdateNotifications', 'DefaultProjectTemplateCases', 'DefaultProjectTemplates', 'EasycaseMilestones', 'Easycases', 'EmailReminders', 'LogActivities', 'Milestones', 'OsSessionLogs', 'ProjectTemplateCases', 'ProjectTemplates', 'ProjectUsers', 'Projects', 'SaveReports', 'TemplateModuleCases', 'Transactions', 'UserInfos', 'UserInvitations', 'UserLogins', 'UserNotifications']
+            'contain' => []
         ]);
 
         $this->set('user', $user);
@@ -63,10 +66,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $uniqs = $this->Users->Uniqs->find('list', ['limit' => 200]);
-        $btprofiles = $this->Users->Btprofiles->find('list', ['limit' => 200]);
-        $timezones = $this->Users->Timezones->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'uniqs', 'btprofiles', 'timezones'));
+        $this->set(compact('user'));
         $this->set('_serialize', ['user']);
     }
 
@@ -91,10 +91,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $uniqs = $this->Users->Uniqs->find('list', ['limit' => 200]);
-        $btprofiles = $this->Users->Btprofiles->find('list', ['limit' => 200]);
-        $timezones = $this->Users->Timezones->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'uniqs', 'btprofiles', 'timezones'));
+        $this->set(compact('user'));
         $this->set('_serialize', ['user']);
     }
 

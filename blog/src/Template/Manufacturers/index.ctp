@@ -10,8 +10,10 @@ $this->layout = 'default';
       <?php echo $this->Html->image($manufacturer->manufacturers_image, [
 			    "alt" => $manufacturer->manufacturers_name,"height"=>'100px',"width"=>'100px','url' =>
 				['controller' => 'Manufacturers', 'action' => 'view',$manufacturer->id]]);?>
-      <div  >
-        <?=$this->Text->truncate(h($manufacturer->manufacturers_name),22,array('ellipsis' => '...','exact' => false));?>
+      <div>
+         <?php echo $this->Html->link( h($this->Text->truncate(h($manufacturer->manufacturers_name),22,array('ellipsis' => '...','exact' => false))),
+		                                    ['controller' => 'Manufacturers', 'action' => 'view',$manufacturer->id]);?>
+       
       </div>
     </li>
     <?php endforeach; ?>

@@ -221,3 +221,6 @@ if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 Plugin::load('Burzum/UserTools');
+Plugin::load('FOC/Authenticate');//https://github.com/FriendsOfCake/Authenticate/tree/cake3
+Plugin::load('Xety/Cake3CookieAuth');
+

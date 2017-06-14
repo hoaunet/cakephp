@@ -53,16 +53,17 @@ echo $this->fetch('script');
             <?php echo $this->Html->link( h('Nam giới'),['controller' => 'Categories', 'action' => 'view', 3]);?>            
           <li>
             <h5>Thể loại</h5>
-            <?php echo $this->Html->link( h('Hành động'),['controller' => 'Productcategories', 'action' => 'view', 10]);?>
-             <?php echo $this->Html->link( h('Drama'),['controller' => 'Productcategories', 'action' => 'view', 15]);?>
-              <?php echo $this->Html->link( h('Gragets'),['controller' => 'Productcategories', 'action' => 'view', 21]);?>
-               <?php echo $this->Html->link( h('Graphics Cards'),['controller' => 'Productcategories', 'action' => 'view', 4]);?>
+           <?php echo $this->Html->link( h('Hành động'),['controller' => 'Productcategories', 'action' => 'view', 10]);?>
+           <?php echo $this->Html->link( h('Drama'),['controller' => 'Productcategories', 'action' => 'view', 15]);?>
+           <?php echo $this->Html->link( h('Gragets'),['controller' => 'Productcategories', 'action' => 'view', 21]);?>
+           <?php echo $this->Html->link( h('Graphics Cards'),['controller' => 'Productcategories', 'action' => 'view', 4]);?>
           <li class="latest">
-            <h5>New Arrivals</h5>
-            <a href="new.html">Cheverlyn Zespax</a> <a href="new.html">Alta Ulterior</a> <a href="new.html">Mikee</a> <a href="new.html">Jeeroks Copy</a> </li>
-          <li class="latest">
-            <h5>On Sale Items</h5>
-            <a href="sale.html">Cheverlyn Zespax</a> <a href="sale.html">Alta Ulterior</a> <a href="sale.html">Mikee</a> <a href="sale.html">Jeeroks Copy</a> </li>
+            <h5>Nhà sản xuất</h5>
+             <?php echo $this->Html->link( h('Microsoft'),['controller' => 'Manufacturers', 'action' => 'view', 2]);?>
+             <?php echo $this->Html->link( h('Fox'),['controller' => 'Manufacturers', 'action' => 'view', 4]);?>
+              <?php echo $this->Html->link( h('Matrox'),['controller' => 'Manufacturers', 'action' => 'view', 1]);?>
+             <?php echo $this->Html->link( h('Samsung'),['controller' => 'Manufacturers', 'action' => 'view', 10]);?>
+          
         </ul>
         <p class="footnote"> &copy; Copyirght &copy; 2011. <a href="index.html">Company name</a> all rights reserved. </p>
       </div>
